@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+    <body>
+        <p><b>Project name: </b> {{ current_section_output["project_name"] }}</p>
+        <p><b>Domain: </b> {{ current_section_output["domain_name"] }}</p>
+        <p><b>Account: </b> {{ current_section_output["account"] }}</p>
+        <p><b>Version: </b> {{ current_section_output["version"] }}</p>
+        <p><b>Result: </b> [{{ current_section_output["passed_tc"] }}] Passed [{{ current_section_output["failed_tc"] }}] Failed</p>
+        <p></p>
+        <table border=1 cellspacing="0" cellpadding="5">
+            <tr>
+               <td width="8%">No</td>
+               <td width="12%">Menu</td>
+               <td width="15%">Sub-menu</td>
+               <td width="38%">Test Case</td>
+               <td width="12%">Status</td>
+               <td width="15%">Date</td>
+            </tr>
+        {% for tc_id in current_section_output["testcase_dict"].keys() %}
+            <tr>
+                <td>{{ current_section_output["testcase_dict"][tc_id]["no"] }}</td>
+                <td>{{ current_section_output["testcase_dict"][tc_id]["menu"] }}</td>
+                <td>{{ current_section_output["testcase_dict"][tc_id]["division"] }}</td>
+                <td>{{ current_section_output["testcase_dict"][tc_id]["testcase"] }}</td>
+                <td>{{ current_section_output["testcase_dict"][tc_id]["status"] }}</td>
+                <td>{{ current_section_output["testcase_dict"][tc_id]["date"] }}</td>
+            </tr>
+        {% endfor %}
+        </table>
+    </body>
+</html>

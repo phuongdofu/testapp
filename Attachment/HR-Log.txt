@@ -1,0 +1,29 @@
+ 
+<----HR AutoTest---->
+Input hr id
+Input hr pw
+Cick Sign button
+Log in successfully
+Access Dashboard HR successfully
+Night work modal not found
+Confirm O/T modal is not visible
+clock in/out reminder pop-up not found
+Access Basic Setings
+Access Approval page in Basic Setings
+Select Automatic approval for OT
+Access My Timecard - Timesheets page
+day 10
+assigned_day_list ['25', '3', '5', '22', '23', '17', '10', '2', '19', '9']
+scenario_list[day_index]: scenario_6
+Selected scenario: scenario_6
+-> clockin_status On Time
+-> apply_pre_ot False
+-> clockout_status On Time
+ -> vacation_type: Hourly
+-> time_request AM
+Vacation request is not available
+Clock In after vacation request is approved
+   [Request Vacation] Hourly-AM
+clock in/out reminder pop-up not found
+Select vacation date
+Select hourly

@@ -1,0 +1,5 @@
+<----HR AutoTest---->
+Log in successfully
+Selected scenario: scenario_6
+Clock In after vacation request is approved
+   [Request Vacation] Hourly-AM

@@ -1,0 +1,168 @@
+1642999538962	geckodriver	INFO	Listening on 127.0.0.1:64764
+1642999861457	geckodriver	INFO	Listening on 127.0.0.1:64801
+1642999864567	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\Hanbiro\\AppData\\Local\\Temp\\rust_mozprofilepFpEPW"
+1642999864856	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Hanbiro\\AppData\\Local\\Temp\\rust_mozprofilepFpEPW\\search.json.mozlz4", (void 0)))
+1642999866580	Marionette	INFO	Listening on port 64809
+1642999866607	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://dofu.hanbiro.net/ngw/app/assets/js/login2.min.js?v=v3.8.56&h=1884ffa2c487454bd5781759e800a710de9d6ad5, line 48: TypeError: setting getter-only property "permission"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://dofu.hanbiro.net"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: http://dofu.hanbiro.net/ngw/app/assets/js/login2.min.js?v=v3.8.56&h=1884ffa2c487454bd5781759e800a710de9d6ad5, line 48: TypeError: setting getter-only property "permission"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://dofu.hanbiro.net"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://dofu.hanbiro.net"
+JavaScript error: http://dofu.hanbiro.net/ngw/app/assets/js/login2.min.js?v=v3.8.56&h=1884ffa2c487454bd5781759e800a710de9d6ad5, line 48: TypeError: setting getter-only property "permission"
+1643004135212	Marionette	INFO	Stopped listening on port 64809
+1643004508266	geckodriver	INFO	Listening on 127.0.0.1:59596
+1643004511292	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\Hanbiro\\AppData\\Local\\Temp\\rust_mozprofilekMjTFN"
+1643004511606	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Hanbiro\\AppData\\Local\\Temp\\rust_mozprofilekMjTFN\\search.json.mozlz4", (void 0)))
+1643004513448	Marionette	INFO	Listening on port 59604
+1643004513983	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://dofu.hanbiro.net/ngw/app/assets/js/login2.min.js?v=v3.8.56&h=1884ffa2c487454bd5781759e800a710de9d6ad5, line 48: TypeError: setting getter-only property "permission"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://dofu.hanbiro.net"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: http://dofu.hanbiro.net/ngw/app/assets/js/login2.min.js?v=v3.8.56&h=1884ffa2c487454bd5781759e800a710de9d6ad5, line 48: TypeError: setting getter-only property "permission"
+1643004603862	Marionette	INFO	Stopped listening on port 59604
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1643004642626	geckodriver	INFO	Listening on 127.0.0.1:59931
+1643004645710	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\Hanbiro\\AppData\\Local\\Temp\\rust_mozprofileqnx4vy"
+1643004646035	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Hanbiro\\AppData\\Local\\Temp\\rust_mozprofileqnx4vy\\search.json.mozlz4", (void 0)))
+1643004647837	Marionette	INFO	Listening on port 59939
+1643004647887	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://groupware57.hanbiro.net/ngw/app/assets/js/login2.min.js?v=v3.8.57&h=c85bfb371aa5ecbed88d0a2bd766128d8c1ee079, line 48: TypeError: setting getter-only property "permission"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://groupware57.hanbiro.net"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1643004774881	geckodriver	INFO	Listening on 127.0.0.1:59125
+1643004778010	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\Hanbiro\\AppData\\Local\\Temp\\rust_mozprofilerdJJn8"
+1643004778330	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Hanbiro\\AppData\\Local\\Temp\\rust_mozprofilerdJJn8\\search.json.mozlz4", (void 0)))
+1643004780284	Marionette	INFO	Listening on port 59133
+1643004780695	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://groupware57.hanbiro.net/ngw/app/assets/js/login2.min.js?v=v3.8.57&h=c85bfb371aa5ecbed88d0a2bd766128d8c1ee079, line 48: TypeError: setting getter-only property "permission"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://groupware57.hanbiro.net"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: http://groupware57.hanbiro.net/ngw/app/assets/js/login2.min.js?v=v3.8.57&h=c85bfb371aa5ecbed88d0a2bd766128d8c1ee079, line 48: TypeError: setting getter-only property "permission"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://groupware57.hanbiro.net"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://groupware57.hanbiro.net"
+JavaScript error: http://groupware57.hanbiro.net/ngw/app/assets/js/login2.min.js?v=v3.8.57&h=c85bfb371aa5ecbed88d0a2bd766128d8c1ee079, line 48: TypeError: setting getter-only property "permission"
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1643005282722	geckodriver	INFO	Listening on 127.0.0.1:58430
+1643005285798	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\Hanbiro\\AppData\\Local\\Temp\\rust_mozprofile4Nygv5"
+1643005286109	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Hanbiro\\AppData\\Local\\Temp\\rust_mozprofile4Nygv5\\search.json.mozlz4", (void 0)))
+1643005288258	Marionette	INFO	Listening on port 58438
+1643005288479	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://groupware57.hanbiro.net/ngw/app/assets/js/login2.min.js?v=v3.8.57&h=c85bfb371aa5ecbed88d0a2bd766128d8c1ee079, line 48: TypeError: setting getter-only property "permission"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://groupware57.hanbiro.net"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: http://groupware57.hanbiro.net/ngw/app/assets/js/login2.min.js?v=v3.8.57&h=c85bfb371aa5ecbed88d0a2bd766128d8c1ee079, line 48: TypeError: setting getter-only property "permission"
+1643005486371	Marionette	INFO	Stopped listening on port 58438
+1643007527926	geckodriver	INFO	Listening on 127.0.0.1:59249
+1643007531006	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\Hanbiro\\AppData\\Local\\Temp\\rust_mozprofiledFTJBT"
+1643007531333	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Hanbiro\\AppData\\Local\\Temp\\rust_mozprofiledFTJBT\\search.json.mozlz4", (void 0)))
+1643007533269	Marionette	INFO	Listening on port 59258
+1643007533648	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://dofu.hanbiro.net/ngw/app/assets/js/login2.min.js?v=v3.8.56&h=1884ffa2c487454bd5781759e800a710de9d6ad5, line 48: TypeError: setting getter-only property "permission"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://dofu.hanbiro.net"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: http://dofu.hanbiro.net/ngw/app/assets/js/login2.min.js?v=v3.8.56&h=1884ffa2c487454bd5781759e800a710de9d6ad5, line 48: TypeError: setting getter-only property "permission"
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1643008031540	Marionette	INFO	Stopped listening on port 59258
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1643009652044	geckodriver	INFO	Listening on 127.0.0.1:51204
+1643009655139	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\Hanbiro\\AppData\\Local\\Temp\\rust_mozprofileybICto"
+1643009655453	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Hanbiro\\AppData\\Local\\Temp\\rust_mozprofileybICto\\search.json.mozlz4", (void 0)))
+1643009657238	Marionette	INFO	Listening on port 51212
+1643009657283	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://dofu.hanbiro.net/ngw/app/assets/js/login2.min.js?v=v3.8.56&h=1884ffa2c487454bd5781759e800a710de9d6ad5, line 48: TypeError: setting getter-only property "permission"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://dofu.hanbiro.net"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: http://dofu.hanbiro.net/ngw/app/assets/js/login2.min.js?v=v3.8.56&h=1884ffa2c487454bd5781759e800a710de9d6ad5, line 48: TypeError: setting getter-only property "permission"
+1643009751205	geckodriver	INFO	Listening on 127.0.0.1:51489
+1643009754293	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\Hanbiro\\AppData\\Local\\Temp\\rust_mozprofileVt4O6K"
+1643009754601	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Hanbiro\\AppData\\Local\\Temp\\rust_mozprofileVt4O6K\\search.json.mozlz4", (void 0)))
+1643009756297	Marionette	INFO	Listening on port 51498
+1643009756332	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://dofu.hanbiro.net/ngw/app/assets/js/login2.min.js?v=v3.8.56&h=1884ffa2c487454bd5781759e800a710de9d6ad5, line 48: TypeError: setting getter-only property "permission"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://dofu.hanbiro.net"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: http://dofu.hanbiro.net/ngw/app/assets/js/login2.min.js?v=v3.8.56&h=1884ffa2c487454bd5781759e800a710de9d6ad5, line 48: TypeError: setting getter-only property "permission"
+1643009972443	Marionette	INFO	Stopped listening on port 51498
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1643010216077	geckodriver	INFO	Listening on 127.0.0.1:51815
+1643010219172	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\Hanbiro\\AppData\\Local\\Temp\\rust_mozprofileQvk5DZ"
+1643010219488	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Hanbiro\\AppData\\Local\\Temp\\rust_mozprofileQvk5DZ\\search.json.mozlz4", (void 0)))
+1643010221217	Marionette	INFO	Listening on port 51823
+1643010221334	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://dofu.hanbiro.net/ngw/app/assets/js/login2.min.js?v=v3.8.56&h=1884ffa2c487454bd5781759e800a710de9d6ad5, line 48: TypeError: setting getter-only property "permission"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://dofu.hanbiro.net"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: http://dofu.hanbiro.net/ngw/app/assets/js/login2.min.js?v=v3.8.56&h=1884ffa2c487454bd5781759e800a710de9d6ad5, line 48: TypeError: setting getter-only property "permission"
+1643010443247	Marionette	INFO	Stopped listening on port 51823
+1643012164989	geckodriver	INFO	Listening on 127.0.0.1:54647
+1643012168070	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\Hanbiro\\AppData\\Local\\Temp\\rust_mozprofileSncmNa"
+1643012168380	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Hanbiro\\AppData\\Local\\Temp\\rust_mozprofileSncmNa\\search.json.mozlz4", (void 0)))
+1643012170234	Marionette	INFO	Listening on port 54657
+1643012170757	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://dofu.hanbiro.net/ngw/app/assets/js/login2.min.js?v=v3.8.56&h=1884ffa2c487454bd5781759e800a710de9d6ad5, line 48: TypeError: setting getter-only property "permission"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://dofu.hanbiro.net"
+1643012201909	Marionette	INFO	Stopped listening on port 54657
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1643012225541	geckodriver	INFO	Listening on 127.0.0.1:54820
+1643012228655	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\Hanbiro\\AppData\\Local\\Temp\\rust_mozprofileUgWE0N"
+1643012228968	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Hanbiro\\AppData\\Local\\Temp\\rust_mozprofileUgWE0N\\search.json.mozlz4", (void 0)))
+1643012230858	Marionette	INFO	Listening on port 54828
+1643012231336	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://dofu.hanbiro.net/ngw/app/assets/js/login2.min.js?v=v3.8.56&h=1884ffa2c487454bd5781759e800a710de9d6ad5, line 48: TypeError: setting getter-only property "permission"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://dofu.hanbiro.net"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: http://dofu.hanbiro.net/ngw/app/assets/js/login2.min.js?v=v3.8.56&h=1884ffa2c487454bd5781759e800a710de9d6ad5, line 48: TypeError: setting getter-only property "permission"
+1643012269052	Marionette	INFO	Stopped listening on port 54828
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1643012333118	geckodriver	INFO	Listening on 127.0.0.1:55104
+1643012336229	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\Hanbiro\\AppData\\Local\\Temp\\rust_mozprofileFCpQDi"
+1643012336547	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Hanbiro\\AppData\\Local\\Temp\\rust_mozprofileFCpQDi\\search.json.mozlz4", (void 0)))
+1643012338660	Marionette	INFO	Listening on port 55114
+1643012338907	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://dofu.hanbiro.net/ngw/app/assets/js/login2.min.js?v=v3.8.56&h=1884ffa2c487454bd5781759e800a710de9d6ad5, line 48: TypeError: setting getter-only property "permission"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://dofu.hanbiro.net"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: http://dofu.hanbiro.net/ngw/app/assets/js/login2.min.js?v=v3.8.56&h=1884ffa2c487454bd5781759e800a710de9d6ad5, line 48: TypeError: setting getter-only property "permission"
+1643012402197	Marionette	INFO	Stopped listening on port 55114
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+

@@ -1,0 +1,3296 @@
+{   
+    "local_path": {
+        "clouddisk_folder": "\\Attachment\\CloudDisk\\",
+        "image": "\\Attachment\\download.jpg",
+        "asset_import": "\\Attachment\\Asset-SeleniumPython.xls",
+        "expense_import": "\\Attachment\\",
+        "contact_import": "\\Attachment\\Contact-SeleniumPython.xls",
+        "calendar_import": "\\Attachment\\Calendar-SeleniumPython.xls",
+        "organization_import": "\\Attachment\\Organization-SeleniumPython.xls"
+    },
+
+    "tooltip": {
+        "domain": "Domain name",
+        "id": "User id for login",
+        "pw": "User pw for login",
+        "email": "Email address to receive test result",
+        "recipient": "Recipient id/name as task report recipient / approver of approval menu",
+        "import": "Upload file to run on multiple domain",
+        "plan": "Register with your email address to save log on web"
+    },
+
+    "chromedriver_path": "D:\\PhuongDofu\\chromedriver.exe",
+
+    "postmaster_pw": "$Bhngk6@",
+
+    "user":{
+        "id":"phuongdofu4",
+        "pw":"phuong1!!!"
+    },
+
+    "user1":{
+        "id":"my",
+        "pw":"123456a!"
+    },
+
+    "folder":{
+        "board":"/ngw/app/#/board/list/u0_127/",
+        "archive":"/ngw/app/#/archive/list/p_43_0/",
+        "asset":"/ngw/app/#/asset/asset/list/0_5//",
+        "project":"/ngw/app/#/project/view/1_0_0/pseqno/0_13",
+        "resource_reservation":"/ngw/app/#/resource/list/14_0/",
+        "resource_permission":"Phong hop 2",
+        "clouddisk_folder":"Selenium Folder",
+        "clouddisk_folder_id":852
+    },
+
+    "recipient":{
+        "id": "phuongdofu2",
+        "name":"Dept2/PhuongDofu2 (Adviser)"
+    },
+
+    "recipient1":{
+        "id": "my2",
+        "name":"test2"
+    },
+    
+    "attached_file":{
+        "image":"\\Attachment\\download.jpg",
+        "asset_import":"\\Attachment\\Asset-SeleniumPython.xls",
+        "expense_import":"\\Attachment\\Expense-SeleniumPython.xls",
+        "contact_import":"\\Attachment\\Contact-SeleniumPython.xls",
+        "calendar_import":"\\Attachment\\Calendar-SeleniumPython.xls",
+        "organization_import":"\\Attachment\\Organization-SeleniumPython.xls"  
+    },
+
+    "security_password":"automationtest1!",
+
+    "testlink":{
+        "url": "http://qavn.hanbiro.net/testlink/lib/api/xmlrpc/v1/xmlrpc.php",
+        "devkey": "8936282296edf7a2a15884e623e34eb4",
+        "testplan_id":"8508",
+        "build_name":"V3.8.29"   
+    },
+
+    "alert":{
+        "undefined": "undefined",
+        "login_change": "Your login information has changed. The page will be refreshed."
+    },
+
+    "new_config":{
+        "recipient_id": ""
+    },
+
+    "common":{
+        "loading_dialog": "//div[@class='loading-dialog hide']",
+        "ok_button": "//button[@ng-click='ok()']",
+        "linktext": "//a[contains(., '%s')]",
+        "span": "//span[text()='%s']",
+        "page_error": "//div[@class='error-container-wrap']",
+        "id": "//*[@id='%s']",
+        "list_nodata": "//span[contains(@class, 'text-warning') and contains(., 'No Data')]"
+    },
+
+    "select_form":{
+        "form":"//ul[contains(@ng-if, 'option.form.length')]/li",
+        "form_order":"//ul[contains(@ng-if, 'option.form.length')]/li[%s]",
+        "form_name":"//ul[contains(@ng-if, 'option.form.length')]/li[%s]/span",
+        "select_button":"//div[@id='mail-compose-select-form']/div/div/div[3]/button"
+    },
+
+    "editor":{
+        "input_p": "//*[@id='tinymce']/p",
+        "empty_content": "//*[@id='tinymce']/div",
+        "included_content": "//*[@id='tinymce']/div/div",
+        "tox_editor_header": "//*[@class='tox-editor-header']",
+        "tox_iframe": "//*[@class='tox-edit-area__iframe']"
+    },
+
+    "attachment":{
+        "attach_button":"//a[contains(.,' Attach File')]",
+        "pc_container":"//div/div/div[2]/input",
+        "file_placeholder":"//li/span[@class='attach-name']",
+        "clouddisk_upload":"//form[@id='archive-form-write']/div[4]/div/div/ul/li[2]/a[contains(text(),'CloudDisk')]",
+        "add_clouddisk":"//div[starts-with(@id, 'cloud-tab-archive_')]/div/div/div/div/span",
+        "clouddisk_file":"//div[@id='home3']/div/ul/li[@class='upload_delete']",
+        "cloud_container":"//input[contains(@ng-model, 'search.keyword')]",
+        "search_button":"/html/body/div[8]/div/div/div[2]/div[1]/div/div[3]/div/span[1]/button",
+        "counter_selected":"//div[@id='popup-container']/ul/li[6]/a/span[2]",
+        "attach_cloud": "//button[contains(.,'Attach file')]",
+        "cloud_placeholder":"//ul[starts-with(@id, 'clouddisk-filelist-archive_')]/li/span[2]",
+        "file_input": "//input[@name='myfile']",
+        "close_clouddisk": "//button[@data-ng-click='close()']"
+    },
+
+    "login":{
+        "user_id": "//input[@id='log-userid']",
+        "user_pw": "//*[@id='p']",
+        "pw_iframe": "//*[@id='iframeLoginPassword']",
+        "login_button": "//*[@id='btn-log']",
+        "alert": "//div[contains(@class, 'alert-warning')]"
+    },
+
+    "home": {
+        "user_capicity": "//span[@class='infobox-text']",
+        "todaythought_reload": "//a[contains(@ng-click, 'reloadToday()')]/i",
+        "close_punch": "//button[contains(@class, 'close-punch-btn')]"
+    },
+
+    "right_sidebar": {
+        "open_sidebar": "//a[contains(@class, 'open-sidebar')]",
+        "user_settings": "//a[@title='Settings']",
+        "timecard_path":{
+            "name": "[Timecard Path]",
+            "xpath": "//div[@data-ng-include='templateTimecardPath']",
+            "timewait": 10,
+            "click": false
+        },
+
+        "in_out":{
+            "name": "[Clock In/Out]",
+            "xpath": "//div[@id='timecard']/div/div/div[2]/div/button",
+            "time_wait": 10,
+            "click": false
+        },
+
+        "clock_in":{
+            "name": "[Clock In]",
+            "xpath": "//button[contains(., 'Clock In')]",
+            "time_wait": 5,
+            "click": true
+        }
+
+    },
+
+    "excel_menu_list": {
+        "Mail": 2,
+        "Board": 3,
+        "Contact": 4,
+        "Task Work Diary": 5,
+        "Task Report": 6,
+        "Calendar": 7,
+        "CloudDisk": 8,
+        "Circular": 9,
+        "ToDo": 10,
+        "Project": 11,
+        "Archive": 12,
+        "Asset": 13,
+        "Expense": 14,
+        "Resource": 15,
+        "Approval": 16,
+        "Whisper": 17
+    },
+
+    "user_settings":{
+        "header_title": "//span[@class='menu-text' and contains(., 'General Settings')]",
+        "general_settings": "//div[@ng-show='activeTab.general']",
+        "language": "//select[@ng-model='formData4.lang']",
+        "selected_language": "//select[@ng-model='formData4.lang']/option[@selected='selected']",
+        "timezone_dropdown": "//a[contains(@class, 'select2-choice')]",
+        "timezone": "//select[@ng-model='formData4.timeZone']",
+        "date_format": "//select[@ng-model='formData4.dateFormat']",
+        "selected_timezone": "//div[@ng-bind='$select.selected.name']",
+        "save": "//button[@ng-click='generalProcess()']"  
+    },
+    
+    "mail":{
+        "allmail_submenu": "//span[@class='menu-text' and text()='All Mail']",
+        "spam_submenu": "//li[contains(@class, 'highlight')]/a/span[@class='menu-text' and contains(., 'Spam')]",
+        "compose_to_me": "//div[starts-with(@id, 'reply-forward')]/form/div[2]/div/div/div/a/i",
+        "cc_holder":"//div[@id='reply-forward-all']/form/div[3]/div/div/mail-auto-complete/div/div/div/span",
+        "send_button": "//button/span[contains(.,'Send')]",
+        "list_item": "//div[@id='message-list']/react-mail-list/div/div[contains(@class, 'message-item')]",
+        "pen_button":"//div[starts-with(@id, 'ngw.mail.list.mail')]/split-screen-view/list-view/div/div/div[2]/div/button[2]",
+        "title": "//input[@name='subject']",
+        "content_subject": "//div[@id='print-mail-detail']/div/div/div/span/span",
+        "back_button": "//div[starts-with(@id, 'ngw.mail.list.mail')]/split-screen-view/list-view/div/div/div[3]/div/div[2]/div[2]/div/span/button",
+        "back_button2": "//div[starts-with(@id, 'ngw.mail.list.mail')]/split-screen-view/list-view/div/div/div[3]/div/div[2]/div[2]/div[1]/span",
+        "list_footer": "//div[starts-with(@id, 'ngw.mail.list.mail')]/split-screen-view/list-view/div/div[2]/div/div[2]/div/div[1]",
+        "list_footer_drafts": "//div[@id='ngw.mail.list.mail_Temp']/split-screen-view/list-view/div/div[2]/div/div[2]/div/div[1]",
+        "leftside_badge":"//div[starts-with(@id, 'mCSB') and contains(@id, 'container')]/div/ul/li[2]/a/span/span",
+        "unread_badge":"//div[@id='main-navi']/nav-menu-react/nav/a[contains(@href, 'mail')]/span[2]",
+        "all_mail":"//div[starts-with(@id, 'mCSB') and contains(@id, 'container')]/div/ul/li/a/span[contains(.,'All Mail')]",
+        "recipient_tag": "//span[@class='tag-name']",
+        "list_target": "//div[@id='message-list']/react-mail-list/div/div",
+        "item_suf": "/div/div/a/span[2]",
+        "recipient_span": "//*[@id='to']/div/div/div[2]/span",
+        "recipient_input": "//*[@id='to']/div/div/div[2]/input",
+        "file_uploader": "//div[@class='moxie-shim moxie-shim-html5']/input",
+        "list_mail_title": "//react-mail-list/div/div[1]/div/div/a/span[@class='text']",
+        "content_view_body": "//div[contains(@class, 'content-view-body')]",
+        "block_quote": "//*[@id='tinymce']/blockquote",
+        "back_button_2": "//list-view/div/div[1]/div[3]/div/div[2]/div[2]/div[1]/span/button",
+        "reply_button": "//*[@id='print-mail-detail']/div[1]/div[2]/a[3]/span",
+        "fwd_button": "//*[@id='print-mail-detail']/div[1]/div[2]/a[4]/span",
+        "replied_recipients": "//div[starts-with(@id, 'reply-forward')]/form/div[2]/div/div/mail-auto-complete/div/div/span[@class='tag']",
+        "list_mail_span": "//*[@id='ngw.mail.list.mail_%s']/split-screen-view/list-view/div/div[2]/div/div[1]/div/react-mail-list/div/div[1]/div/div/a/span[2]",
+        "list_mail_div": "//react-mail-list/div/div[contains(@class, 'message-item')][1]",
+        "list_mail_checkbox": "//react-mail-list/div/div[contains(@class, 'message-item')][1]/div/label[1]",
+        "list_mail": "//div[@id='message-list']/react-mail-list/div/div[%s]/div/div/a/span[1]",
+        "page_total": "//div[starts-with(@id, 'ngw.mail.list.mail') and contains(@class, 'active')]/split-screen-view/list-view/div/div[2]/div/div[2]/div/div[2]/ul/li[3]/span[2]",
+        "current_page": "//div[starts-with(@id, 'ngw.mail.list.mail') and contains(@class, 'active')]/split-screen-view/list-view/div/div[2]/div/div[2]/div/div[2]/ul/li[3]/span[1]/input",
+        "nextpage_icon": "//div[starts-with(@id, 'ngw.mail.list.mail') and contains(@class, 'active')]/split-screen-view/list-view/div/div[2]/div/div[2]/div/div[2]/ul/li[4]/span/i",
+        "nextpage_disabled": "//div[starts-with(@id, 'ngw.mail.list.mail') and contains(@class, 'active')]/split-screen-view/list-view/div/div[2]/div/div[2]/div/div[2]/ul/li[contains(@class, 'disabled')]/span[contains(@class, 'next_paging')]/i",
+        "unread_filter": "//a[@class='un-read-mail']",
+        "read_msg": "//div[@class='message-item']",
+        "current_email": "//small[@data-ng-if='listData.myeamil']",
+        "unread_msg": "//div[@class='message-unread message-item']",
+        "mail_msg": "//span[contains(., '%s')]",
+        "alias_mail": "//span[contains(., '△')]",
+        "suspected_mail": "//i[contains(@class, 'fa-exclamation-triangle')]",
+        "previous_date": "//div[@class='message-unread message-item']/div/span[contains(@class, 'time') and contains(., '/')]",
+        "search_details": "//span[text()='Details']",
+        "inbox_counter": "//span[@class='menu-text' and contains(., 'Inbox')]/span[contains(@class, 'badge')]",
+        "inbox_counter_number": "//span[@class='menu-text' and contains(., 'Inbox')]/span[contains(@class, 'badge') and contains(., 'counter_number')]",
+        "write_back_xpath": "//div[starts-with(@id, 'ngw.mail.list.mail') and contains(@class, 'active')]/split-screen-view/list-view/div/div[1]/div[3]/div/div[2]/div[2]/div/span/button",
+        "view_back_xpath": "//div[starts-with(@id, 'ngw.mail.list.mail') and contains(@class, 'active')]/split-screen-view/list-view/div/div[1]/div[3]/div/div[2]/div[2]/div[1]/span/button",
+        "list_nodata": "//div[contains(@class, 'active')]/split-screen-view/list-view/div/div[2]/div/div[1]/div[1]/div[2]/span[@class='text-warning' and contains(., 'No Data')]",
+        "mail_div": {
+            "row_item": "//*[@id='message-list']/react-mail-list/div/div",
+            "sender": "//*[@id='message-list']/react-mail-list/div/div[1]/div/span[2]",
+            "subject": "//*[@id='message-list']/react-mail-list/div/div[1]/div/div/a/span[2]",
+            "attachment_icon": "//*[@id='message-list']/react-mail-list/div/div[1]/div/span[5]/i",
+            "mail_box": "//*[@id='message-list']/react-mail-list/div/div/div/div/a/span[1]"
+        },
+        "search": {
+            "sender": "//div[@class='search-inline']/div/div[1]/input",
+            "content_select": "//div[@class='search-inline']/div/div[3]/label[contains(., 'Content')]/following-sibling::div/select",
+            "content_input": "//div[@class='search-inline']/div/div[3]/div/input",
+            "attachment": "//div[@class='search-inline']/div[1]/div[4]/div/div/label",
+            "status_select":"//div[@class='search-inline']/div[1]/div[5]/div/div/select",
+            "mail_box_open": "//div[@class='search-inline']/div[2]/div[2]/div/span/a/i",
+            "mail_box_name": "//div[@id='mailbox_tree_folder']/ul/li/span/a[text()='folder_name']",
+            "search_button": "//div[@class='search-inline']/div[1]/div[6]/button",
+            "reset_button": "//div[@class='search-inline']/div[2]/div[4]/button"
+        },
+        "search_input":[
+            "//div[starts-with(@id, 'ngw.mail.list.mail')]/split-screen-view/list-view/div/div[2]/div/div[2]/div/div",
+            "//div[@id='message-list']/react-mail-list/div/div[contains(@class, 'message-item')]",
+            "//div[@id='message-list']/react-mail-list/div/div[",
+            "]/div/div/a/span[1]",
+            "//div[starts-with(@id, 'ngw.mail.list.mail')]/split-screen-view/list-view/div/div/div[3]/div/div/div[2]/div[3]/form/div/input",
+            "//div[@id='message-list']/react-mail-list/div/div/div/div/a/span[2]"
+        ]
+    },
+    
+    "whisper":{
+        "inbox": "//div[starts-with(@id, 'mCSB') and contains(@id, 'container')]/div/ul/li/a/span",
+        "list_footer": "//div[@id='ngw.whisper.container']/split-screen-view/list-view/div/div[2]/div/div/whisper-list/div[2]/div",
+        "recipient_autocomplete": "//span[contains(.,'Please enter a name or ID.')]",
+        "send": "//div[@id='ngw.whisper.container']/split-screen-view/list-view/div/div/div[3]/div/div[3]/button",
+        "list_item":"//div[@id='whisper-list']/whisper-react-list/div/div/div/span[3]/span",
+        "pen_button":"//div[@id='ngw.whisper.container']/split-screen-view/list-view/div/div/div[2]/div/button[2]",
+        "leftside_badge": "//div[starts-with(@id, 'mCSB') and contains(@id, 'container')]/div/ul/li/a/span[2]",
+        "menu_badge": "//div[@id='main-navi']/nav-menu-react/nav/a[contains(@href, '#/whisper')]/span[2]",
+        "back_button":"//div[@id='ngw.whisper.container']/split-screen-view/list-view/div/div/div[3]/div/div[2]/div/button",
+        "content_load": "//p[contains(.,'Loading...')]",
+        "org_input":"//div[@id='getListContact']/div/div/div[2]/div/div/div[3]/div/form/span/input",
+        "listbox":"//div[@id='getListContact']/div/div/div[2]/div[2]/div[2]/div/div/ul/li[contains(@class, 'listbox')]",
+        "save_org":"//div[@id='getListContact']/div/div/div[3]/button",
+        "selected_org":"//div[@id='div-sender']/div/org-auto-complete/div/div/span",
+        "unread_badge":"//div[@id='main-navi']/nav-menu-react/nav/a[contains(@href, '/whisper')]/span[2]",
+        "content":"//div[@id='whisper-view']/div/div[2]/p/div/p",
+        "recipient_list":"//div[@id='div-sender']/div/org-auto-complete/div/div/span",
+        "item":"//div[@id='whisper-list']/whisper-react-list/div/div/div",
+        "top_counter": "//div[@id='main-navi']/nav-menu-react/nav/a[@data-name='whisper,Whisper']/span[2]",
+        "left_counter": "//div[starts-with(@id, 'mCSB') and contains(@id, 'container')]/div/ul/li/a/span[2]",
+        "list_target":"//div[@id='whisper-list']/whisper-react-list/div/div",
+        "item_suf":"/div/span[3]/span",
+        "page_total":"//div[@id='ngw.whisper.container']/split-screen-view/list-view/div/div[2]/div/div/whisper-list/div[2]/div[2]/ul/li[3]/span[2]",
+        "nextpage_icon":"//div[@id='ngw.whisper.container']/split-screen-view/list-view/div/div[2]/div/div/whisper-list/div[2]/div[2]/ul/li[4]/span",
+        "add_user":"//div[@id='getListContact']/div/div/div[2]/div[2]/div/div/a/i",
+        "reload_button":"//div[@id='ngw.whisper.container']/split-screen-view/list-view/div/div/div[2]/div/button",
+        "search_placeholder": "//div[@class='search-placeholder']",
+        "write_back_xpath": "//*[@id='ngw.whisper.container' and contains(@class, 'active')]/split-screen-view/list-view/div/div[1]/div[3]/div/div[2]/div[1]/button",
+        "view_back_xpath": "//*[@id='ngw.whisper.container' and contains(@class, 'active')]/split-screen-view/list-view/div/div[1]/div[3]/div/div[2]/div[1]/button",
+        "search_input":[
+            "//div[@id='ngw.whisper.container']/split-screen-view/list-view/div/div[2]/div/whisper-list/div[2]/div",
+            "//div[@id='whisper-list']/whisper-react-list/div/div",
+            "//div[@id='whisper-list']/whisper-react-list/div/div[",
+            "]/div/span[3]/span",
+            "//div[@id='ngw.whisper.container']/split-screen-view/list-view/div/div/div[3]/div/div/div[2]/div[3]/list-search-component/form/div/input",
+            "//div[@id='whisper-list']/whisper-react-list/div/div/div/span[3]/span"
+        ]  
+    },
+
+    "board":{
+        "company_board_span": "//span[@class='menu-text' and text()=' Company Board']",
+        "select_box": "//select[@name='folder']",
+        "folder_selected": "//select[@name='folder']/option[text()='Select Folder']/following-sibling::option[@selected='selected']",
+        "send_button": "//div[starts-with(@id, 'ngw.board.container.')]/split-screen-view/list-view/div/div/div[3]/div/div/div[2]/span/button/span",
+        "back_button": "//div[starts-with(@id, 'ngw.board.container')]/split-screen-view/list-view/div/div/div[3]/div/div/ng-include/div[2]/div/span/button",
+        "write_back_btn": "//i[contains(@class, 'fa-arrow-lef')]/../..",
+        "list_footer": "//div[starts-with(@id, 'ngw.board.container')]/split-screen-view/list-view/div/div[2]/div/div[2]/div",
+        "board_div": "//div[@class='tab-pane active' and starts-with(@id, 'ngw.board.container')]/split-screen-view/list-view/div/div[2]/div/div[1]/div/board-react-list/div/div[1]",
+        "folder_target":"//div[starts-with(@id, 'mCSB') and contains(@id, 'container')]/div/ul/li/ul/li",
+        "list_header": "//div[starts-with(@id, 'ngw.board.container')]/split-screen-view/list-view/div/div/div[2]/h1/span",
+        "save_comment": "//div[@id='boardComment']/form/div[2]/button/span[contains(.,' Save')]",
+        "comment_counter":"//div[@id='print_board_detail']/div/div[2]/div/div/div/span[2]",
+        "board_content":"//div[@id='board_content']/div/p",
+        "board_content_div": "//*[@id='board_content']",
+        "company_board":"//div[starts-with(@id, 'mCSB') and contains(@id, 'container')]/div/ul/li/a/span[contains(.,'Company Board')]",
+        "unread_counter": "//div[starts-with(@id, 'ngw.board.container.')]/split-screen-view/list-view/div/div/div[3]/div/div/div/div[2]/span",
+        "top_counter": "//div[@id='main-navi']/nav-menu-react/nav/a[contains(@data-name, 'board,Board')]/span[2]",
+        "left_counter": "//div[starts-with(@id, 'mCSB') and contains(@id, 'container')]/div/ul/li/a/span[2]",
+        "red_pen":"//div[starts-with(@id, 'ngw.board.container')]/split-screen-view/list-view/div/div/div[2]/div/button[2]",
+        "title":"//input[@id='form-field-subject']",
+        "nextpage_icon": "//div[starts-with(@id, 'ngw.board.container')]/split-screen-view/list-view/div/div[2]/div/div[2]/div[2]/ul/li[4]/span",
+        "list_target":"//div[contains(@id, 'message-list') and not(contains(@class, 'ng-hide'))]/board-react-list/div/div",
+        "page_total":"//div[starts-with(@id, 'ngw.board.container')]/split-screen-view/list-view/div/div[2]/div/div[2]/div[2]/ul/li[3]/span[2]",
+        "item_suf":"/span[8]/span",
+        "list_creator": "//span[contains(@class, 'sender')]",
+        "board_comment":"//p[contains(., '%s')]",
+        "comment_save":"//div[@id='boardComment']/form/div[2]/button",
+        "dropdown_toggle":"//div[starts-with(@id, 'ngw.board.container')]/split-screen-view/list-view/div/div/div[3]/div/div/div[2]/div/div/a",
+        "dropdown_view_all":"//a[contains(@ng-click, 'refreshPage()')]",
+        "write_back_xpath": "//div[starts-with(@id, 'ngw.board.container.') and contains(@class, 'active')]/split-screen-view/list-view/div/div[1]/div[3]/div/div/div[1]/span/button",
+        "view_back_xpath": "//div[starts-with(@id, 'ngw.board.container.') and contains(@class, 'active')]/split-screen-view/list-view/div/div[1]/div[3]/div/div/ng-include/div[2]/div[1]/span/button",
+        "importing": "//p[contains(.,' Importing data...')]",
+        "comp_board": "//li[@data-section='comp']",
+        "comp_dropdown": "//li[@data-section='comp']/a/b",
+        "comp_folder": "//li[@data-section='comp']/ul/li",
+        "my_dropdown": "//span[@class='menu-text' and contains(., 'My Board')]/following-sibling::b",
+        "my_folder": "//span[@class='menu-text' and contains(., 'My Board')]/../following-sibling::ul/li[1]/a/span/span",
+        "search_details": {
+            "menu_name": "board",
+            "listfooter_xpath": "//div[@class='tab-pane active' and starts-with(@id, 'ngw.board.container')]/split-screen-view/list-view/div/div[2]/div/div[2]/div[1]",
+            "search_dict": {},
+            "expander_xpath": "//a[@id='board-search-expand']",
+            "selectbox_xpath": "//select[@id='board-search-field']",
+            "searchinput_xpath": "//input[@id='board-search-content']",
+            "search_button_xpath": "//button[@id='btn-board-search']"
+        },
+        "search_input":[
+            "//div[starts-with(@id, 'ngw.board.container')]/split-screen-view/list-view/div/div[2]/div/div[2]/div",
+            "//div[@id='message-list']/board-react-list/div/div",
+            "//div[@id='message-list']/board-react-list/div/div[",
+            "]/span[7]/span/span",
+            "//div[starts-with(@id, 'ngw.board.container')]/split-screen-view/list-view/div/div/div[3]/div/div/div[2]/div[3]/form/div/input",
+            "//div[@id='message-list']/board-react-list/div/div/span[7]/span/span"
+        ],
+        "search_input_gallery":[
+            "//div[starts-with(@id, 'ngw.board.container')]/split-screen-view/list-view/div/div[2]/div/div[2]/div",
+            "//div[@id='message-list']/div[3]/div/board-photo-react-list/div/div",
+            "//div[@id='message-list']/div[3]/div/board-photo-react-list/div/div[",
+            "]/div[2]/h3/a/span",
+            "//div[starts-with(@id, 'ngw.board.container')]/split-screen-view/list-view/div/div/div[3]/div/div/div[2]/div[3]/form/div/input",
+            "//div[@id='message-list']/div[3]/div/board-photo-react-list/div/div/div[2]/h3/a/span"
+        ],
+        "view_content":[
+            "//div[starts-with(@id, 'ngw.board.container')]/split-screen-view/list-view/div/div[2]/div/div[2]/div",
+            "//div[@id='message-list']/board-react-list/div/div",
+            "//div[@id='message-list']/board-react-list/div/div[",
+            "]/span[8]/span/span",
+            "//div[@id='message-list']/board-react-list/div/div[",
+            "]/span[8]/span/span[2]",
+            "//div[@id='board_content']"
+        ]
+    },
+
+    "calendar_folder":{
+        "folder_write_button":"//div[@id='ngw.calendar.container.calendar_mycal']/list-view/div/div/div[2]/div/button[2]",
+        "my_calendar_sub":"//span[@class='menu-text' and text()=' My Calendar']",
+        "my_calendar_folder":"//i[@class='fa fa-flag']/parent::span[@class='title']/parent::a/parent::li[contains(@class, 'active')]",
+        "my_write_button":"//div[starts-with(@id, 'ngw.calendar.container.calendar')]/list-view/div/div[1]/div[2]/div/button[2]",
+        "save_button":"//div[starts-with(@id, 'ngw.calendar.container.calendar')]/list-view/div/div[1]/div[3]/div[1]/div[1]/div[2]/div/button",
+        "weekday_grid":"//div[@id='tuicalendar']/div/div[1]/div[2]/div[contains(@class, 'tui-full-calendar-month-week-item')]",
+        "event": "//span[contains(@class, 'tui-full-calendar-weekday-schedule-title')]",
+        "event_@title": "//span[contains(@title, '%s')]",
+        "event_span": "//span[contains(.,'%s')]",
+        "more_button": "//div[starts-with(@id, 'ngw.calendar.container.calendar')]/list-view/div/div/div[3]/div[2]/div/div/div/div/div/button",
+        "import_table": "//*[@id='form_file']/div/div[4]/hot-table[@settings='importdata.settings']",
+        "save_import": "//div[@id='import-calendar']/ul/button",
+        "start_date":"//div[@id='write-calendar']/form/div[4]/div/div/div/ace-datepicker/div/input",
+        "end_date":"//div[@id='write-calendar']/form/div[4]/div/div[2]/div/ace-datepicker/div/input",
+        "close_warning":"//html/body/div[8]/div/div/div[3]/button",
+        "back_button":"//button[contains(@data-ng-click, 'backList(calview.backid)')]",
+        "details_view":"//button[contains(.,' Details')]",
+        "detailview_date":"//div[starts-with(@id, 'ngw.calendar.container.calendar')]/list-view/div/div[2]/div/div[2]/div/div/div/div[2]/span",
+        "event_desc":"//span[contains(.,'Event Description')]",
+        "close_view":"//span[contains(@class, 'tui-full-calendar-icon-close')]",
+        "details_button":"//span[contains(., 'Repeat, Description')]/preceding-sibling::label",
+        "fullday_checkbox":"//label[contains(@ng-if, 'formdata.showallday')]",
+        "fullday_uncheck":"//input[contains(@ng-checked, 'formdata.allday') and contains(@class, 'ng-empty')]",
+        "start_hour":"//select[@name='starthour']",
+        "start_min":"//select[contains(@ng-selected, 'formdata.startmin')]",
+        "end_hour":"//select[contains(@ng-selected, 'formdata.endhour')]",
+        "end_min":"//select[contains(@ng-selected, 'formdata.endmin')]",
+        "public_button":"//div[@id='write-calendar']/form/div[7]/div/label",
+        "repeat_tab":"//a[contains(@ng-click, 'ActiveTabRepeat(2)')]",
+        "active_repeat":"//label[contains(., 'Repeat')]/following-sibling::label",
+        "repeat_type":"//select[@name='rpt_type']",
+        "datepicker_button":"//ace-datepicker[@id='rptdate']/div/span",
+        "datepicker":"//div[contains(@class, 'datepicker-days')]",
+        "datepicker_switch":"//div[contains(@class, 'datepicker-days')]/table/thead/tr/th[contains(@class, 'datepicker-switch')]",
+        "datepicker_prev":"//div[contains(@class, 'datepicker-days')]/table/thead/tr/th[contains(@class, 'prev')]",
+        "end_month":"//td[contains(@class, 'new day')]/preceding-sibling::td[@class='day'][1]",
+        "end_month_newrow":"//td[contains(@class, 'new day')]/parent::tr/preceding-sibling::tr[1]/td[7]",
+        "event_item":"//span[contains(@class, 'tui-full-calendar-weekday-schedule-title')]",
+        "event_item0":"//span[contains(@class, 'tui-full-calendar-weekday-schedule-title') and contains(., '%s')]",
+        "public_calendar":"//a[@data-tree-id='public']/span",
+        "viewmode_date":"//div[contains(@class, 'tui-full-calendar-popup-container')]/div/div[2]/span",
+        "calendar_folder": "//li[contains(@class, 'active')]/ul/li/a/span/i[contains(@class, 'fa-flag')]/preceding-sibling::span",
+        "title_input": "//input[@name='title']",
+        "timezone": "//*[@id='timezone']",
+        "details_active": "//input[contains(@ng-model, 'formdata.isdetail') and contains(@class, 'ng-not-empty')]",
+        "calendar_location": "//*[@id='calendar-location']",
+        "calendar_content": "//*[@id='calendar-content']",
+        "repetition": "//*[@id='rpt_freq']",
+        "unlimited_isactive": "//input[contains(@ng-model, 'formdata.use_rptdate') and contains(@class, 'ng-not-empty')]",
+        "unlimited_toggle": "//label[contains(., 'Unlimited Repeat')]/following-sibling::label",
+        "unlimited_datepicker": "//ace-datepicker[contains(@id, 'rptdate')]",
+        "datepicker_days": "//div[contains(@class, 'datepicker-days')]",
+        "alert_select_category": "//div[contains(.,'Please add category')]",
+        "edit_button": "//button[contains(.,' Edit')]",
+        "save_edit_button": "//div[@class='message-toolbar']/following-sibling::div/div/button/span[contains(., 'Save')]",
+        "view_container": "//*[contains(@class, 'tui-full-calendar-popup-container')]",
+        "event_date": "//span[contains(@ng-if, 'schedule.start_format != schedule.end_format')]",
+        "details_location": "//span[contains(.,'Event Location')]",
+        "import_button": "//a[contains(., 'Import')]",
+        "file_uploader": "//input[@name='myfile']",
+        "page_header": "//span[@class='page-header-title']",
+        "copy_button": "//button[contains(@ng-click, 'openCopy(schedule)')]",
+        "mycal_expander": "//a[contains(., 'My Calendar')]/preceding-sibling::span[contains(@class, 'dynatree-expander')]",
+        "mycal": "//a[@class='dynatree-title' and text()='My Calendar']/parent::span/following-sibling::ul/li/span/a[contains(., '%s')]",
+        "copy_save": "//div[starts-with(@id, 'calendar-move-tree')]/div/div/div[3]/button",
+        "alert_popup": "//div[@class='modal-body ']",
+        "alert_close": "//button[contains(@ng-click, 'cancel(false)')]",
+        "reload_button": "//div[starts-with(@id, 'ngw.calendar.container.calendar')]/list-view/div/div/div[2]/div/button",
+        "delete_button": "//button[contains(., 'Delete')]/span[contains(@class, 'tui-full-calendar-ic-delete')]",
+        "warning_modal": "//h4[contains(@class, 'modal-title') and contains(., 'Warning')]",
+        "delete_all": "//div[text()=' Delete all event repetitions']/input",
+        "ok_button": "//button[@ng-click='ok()']",
+        "mycalendar_ul": "//span[@class='menu-text' and text()=' My Calendar']/parent::a/following-sibling::ul",
+        "mycalendar_b": "//span[@class='menu-text' and text()=' My Calendar']/following-sibling::b",
+        "mycalendar_flagged": "//i[contains(@class, 'fa-flag')]/preceding-sibling::span[@class='menu-text']",
+        "mycalendar_span": "//li[@data-section='my'][1]/a/span/i[contains(@class, 'fa-flag')]/preceding-sibling::span",
+        "calendar_event": "//span[@class='tui-full-calendar-schedule-title']",
+        "view_location": "//span[@tooltip='Place']/following-sibling::span",
+        "view_creator": "//span[@tooltip='Writer']/following-sibling::span",
+        "view_priority": "//span[@tooltip='Priority']/following-sibling::span/span",
+        "view_date": "//div[contains(@class, 'tui-full-calendar-popup-detail-date')]/span",
+        "view_details_b": "//button[@ng-click='goView(schedule)']",
+        "details_title": "//div[@class='content-view-wrap']/div[1]/span",
+        "details_back_b": "//button[@data-ng-click='backList(calview.backid)']",
+        "move_prev": "//button[@data-action='move-prev']",
+        "move_next": "//button[@data-action='move-next']",
+        "month_header": "//span[@id='renderRange']",
+        "search_dropdown": "//input[@data-ng-enter='searchCalendar()']/following-sibling::a",
+        "search_title": "//label[text()='Title']/parent::div/following-sibling::div/input",
+        "search_location": "//label[text()='Place']/parent::div/following-sibling::div/input",
+        "search_priority": "//select[@name='priority']",
+        "search_creator": "//label[text()='Owner']/parent::div/following-sibling::div/input",
+        "search_button": "//button[@data-ng-click='searchCalendar()']",
+        "search_result": "//table[@class='list-body-table']/tbody/tr",
+        "reset_button": "//button[@data-ng-click='searchRemove()']",
+        "close_search": "//div[@class='input-icon open']/a"
+    },
+
+    "calendar": {
+        "write_back_xpath": "//div[starts-with(@id, 'ngw.calendar.container.calendar') and contains(@class, 'active')]/list-view/div/div[1]/div[3]/div[1]/div[2]/div/span/button",
+        "view_back_xpath": "//div[starts-with(@id, 'ngw.calendar.container.calendar') and contains(@class, 'active')]/list-view/div/div[1]/div[3]/div[1]/div[2]/div/span/button"
+    },
+
+    "calendar_category":{
+        "write_button":"//div[@id='ngw.calendarnew.container.calendarnew_default']/list-view/div/div/div[2]/div/button[2]",
+        "save_button":"//span[contains(.,'Save')]"
+    },
+
+    "contact":{
+        "write_button":"//div[starts-with(@id, 'ngw.addrbook.container.addrbook_')]/split-screen-view/list-view/div/div/div[2]/div/button[2]/i",
+        "list_footer":"//div[starts-with(@id, 'ngw.addrbook.container.addrbook_')]/split-screen-view/list-view/div/div[2]/div/div[2]/div",
+        "more_button":"//div[starts-with(@id, 'ngw.addrbook.container.addrbook_')]/split-screen-view/list-view/div/div/div[3]/div/div/div/div/button/i[2]",
+        "select_box":"//div[@id='user-info']/div/div/select",
+        "folder_target":"//div[starts-with(@id, 'mCSB') and contains(@id, 'container')]/div/ul/li[3]/ul/li",
+        "name": "//*[@name='name']",
+        "email0": "//*[@name='email0']",
+        "phone0": "//*[@name='phone0']",
+        "company":"//input[contains(@data-ng-model, 'writeScope.formData.company')]",
+        "position":"//input[contains(@data-ng-model, 'writeScope.formData.posname')]",
+        "phone_label":"//div[@id='user-info']/div[7]/div/div/div/div[3]/select/option[contains(@selected, 'selected')]",
+        "save_button":"//button/span[contains(.,' Save')]",
+        "back_button": "//div[starts-with(@id, 'ngw.addrbook.container.addrbook_')]/split-screen-view/list-view/div/div/div[3]/div/div[2]/div/button",
+        "contact_name": "//div[starts-with(@id, 'ngw.addrbook.container.addrbook_')]/split-screen-view/list-view/div/div[2]/div/div[2]/div/div/div[2]/span",
+        "list_target":"//div[@id='accordion']/div[contains(@class, 'message-item')]",
+        "item_suf":"/div/span/span",
+        "page_total":"//div[starts-with(@id, 'ngw.addrbook.container.addrbook_')]/split-screen-view/list-view/div/div[2]/div/div[2]/div[2]/ul/li[3]/span[2]",
+        "nextpage_icon":"//div[starts-with(@id, 'ngw.addrbook.container.addrbook_')]/split-screen-view/list-view/div/div[2]/div/div[2]/div[2]/ul/li[4]/span",
+        "exposure":"//div[@id='accordion']/div[%s]/div/span[contains(@ng-class, 'viewColumn.%s')]/span",
+        "exposure_phone": "//div[@id='accordion']/div[%s]/div/span[contains(@ng-class, 'viewColumn.%s')]/a/span",
+        "list_dropdown":"//div[starts-with(@id, 'ngw.addrbook.container.addrbook_')]/split-screen-view/list-view/div/div/div[3]/div/div[3]/div[2]/div[2]/a",
+        "dropdown_exposure":"//div[starts-with(@id, 'ngw.addrbook.container.addrbook_')]/split-screen-view/list-view/div/div/div[3]/div/div[3]/div[2]/div[2]/ul/li[7]/ul/li/label/input[contains(@ng-model, 'viewColumn.column_name')]",
+        "exposure_column":"//div[@id='message-list']/div/span[contains(@ng-class, 'viewColumn.%s')]/span",
+        "public_downnarrow":"//span[contains(., 'Public Contacts')]/following-sibling::b",
+        "save_copy":"//div[starts-with(@id, 'contact-move-tree-copy')]/div/div/div[3]/button",
+        "copy_msg_success":"//div[contains(., 'Successfully copied')]",
+        "close_modal":"//button[contains(@ng-click, 'cancel(false)')]",
+        "mycontacts_downnarrow":"//span[contains(.,'My Contacts')]/following-sibling::b",
+        "import_group": "//div[starts-with(@id, 'ngw.addrbook.container.addrbook_')]/split-screen-view/list-view/div/div[2]/div/div[2]/div/div[2]/div/div/div[2]",
+        "import_dept": "//div[starts-with(@id, 'ngw.addrbook.container.addrbook_')]/split-screen-view/list-view/div/div[2]/div/div[2]/div/div[2]/div/div[3]/div[2]",
+        "import_position": "//div[starts-with(@id, 'ngw.addrbook.container.addrbook_')]/split-screen-view/list-view/div/div[2]/div/div[2]/div/div[2]/div/div[4]/div[2]",
+        "import_memo": "//div[starts-with(@id, 'ngw.addrbook.container.addrbook_')]/split-screen-view/list-view/div/div[2]/div/div[2]/div/div[2]/div/div[5]/div[2]",
+        "write_back_xpath": "//div[starts-with(@id, 'ngw.addrbook.container.addrbook') and contains(@class, 'active')]/split-screen-view/list-view/div/div[1]/div[3]/div/div[2]/div/button",
+        "view_back_xpath": "//div[starts-with(@id, 'ngw.addrbook.container.addrbook') and contains(@class, 'active')]/split-screen-view/list-view/div/div[1]/div[3]/div/div[2]/div/button",
+        "my_contacts": "//span[contains(.,'My Contacts')]",
+        "my_contacts_span": "//span[contains(.,'My Contacts ')]",
+        "mycontacts_folder": "//i[contains(@class, 'fa-flag')]/preceding-sibling::span[@class='menu-text']",
+        "import_button": "//a[@data-ng-click='goImport()']",
+        "file_uploader": "//input[@name='myfile']",
+        "htcontainer": "//*[@class='htContainer']",
+        "importing": "//p[contains(text(),' Importing data... ')]",
+        "contact_item": "//div[@id='accordion']/div/div/span/span",
+        "contact_title_name": "//div[@id='accordion']/div/div/span/span[contains(., '%s')]",
+        "addr_item_list": "//div[contains(@class, 'addr-item-list')]",
+        "search_expander": "//div[starts-with(@id, 'ngw.addrbook.container.addrbook_')]/split-screen-view/list-view/div/div/div[3]/div/div[3]/div[3]/form/div/a",
+        "search_content": "//*[@id='search-content']",
+        "mycompany_contacts": "//span[@class='menu-text' and contains(., 'My Company')]",
+        "company_checkbox": "//*[@id='org-list']/div/div[1]/label",
+        "copy_button": "//a[contains(., 'Copy')]",
+        "copy_org_li": "//div[@class='org_tree']/ul/li",
+        "mycontact_link": "//a[contains(text(),'My Contacts')]",
+        "search_input":[
+            "//div[starts-with(@id, 'ngw.addrbook.container.addrbook')]/split-screen-view/list-view/div/div[2]/div/div[2]/div",
+            "//div[@id='accordion']/div[contains(@class, 'message-item')]",
+            "//div[@id='accordion']/div[",
+            "]/div/span/span",
+            "//div[contains(@data-ng-show, 'isListView()')]/div[3]/form/div/input",
+            "//div[@id='accordion']/div/div/span/span"
+        ],
+        "import_data": {
+            "Group": "Contact Import",
+            "Name": "contact_name",
+            "Email Type 1": "User",
+            "Email Value 1": "contact[contact_no].1@email.com",
+            "Email Type 2": "Company",
+            "Email Value 2": "contact[contact_no].2@email.com",
+            "Email Type 3": "Personal",
+            "Email Value 3": "contact[contact_no].3@email.com",
+            "Phone Type 1": "Mobile",
+            "Phone Value 1": "random_number",
+            "Phone Type 2": "Company",
+            "Phone Value 2": "random_number",
+            "Phone Type 3": "Telephone (Home)",
+            "Phone Value 3": "random_number",
+            "Phone Type 4": "Company Fax",
+            "Phone Value 4": "random_number",
+            "Phone Type 5": "Personal",
+            "Phone Value 5": "random_number",
+            "Home": "Home",
+            "Company Addr.": "Company Addr.",
+            "Company": "Company Name",
+            "Position": "Position",
+            "Dept.": "Dept.",
+            "Memo": "Memo",
+            "Date Joined": "Date Joined",
+            "Homepage": "homepage.com"
+        }
+    },
+
+    "circular":{
+        "pen_button":"//div[@id='ngw.circular.container']/split-screen-view/list-view/div/div/div[2]/div/button[2]",
+        "subject":"//form[@id='form_write_circular']/div[3]/div/input",
+        "address_holder_recipient":"//form[@id='form_write_circular']/div[6]/div/org-auto-complete/div/div/div/span",
+        "send_button":"//div[@id='ngw.circular.container']/split-screen-view/list-view/div/div/div[3]/div/div[2]/div/button",
+        "list_footer": "//circular-list-component[starts-with(@id, 'getComponentId')]/div[2]/div",
+        "sent_circular": "//div[starts-with(@id, 'mCSB') and contains(@id, 'container')]/div/ul/li[2]/a/span",
+        "circular": "//circular-list-component[starts-with(@id, 'getComponentId')]/div/div/circular-react-list/div/div/span[6]/span",
+        "circular_item": "//span[@class='text' and contains(., '%s')]",
+        "circular_linktext": "//a[text()='%s']",
+        "circular_content":"//div[@id='circular-content']/div[2]/div/div/p",
+        "receive_check":"//span[text()=' Received']",
+        "comment_save":"//*[@id='circular-to']/div[2]/div/form/div/div/button",
+        "back_button":"//div[@id='ngw.circular.container']/split-screen-view/list-view/div/div/div[3]/div/div[3]/div/button",
+        "top_counter": "//div[@id='main-navi']/nav-menu-react/nav/a[contains(@data-name, 'circular,Circular')]/span[2]",
+        "left_counter": "//div[starts-with(@id, 'mCSB') and contains(@id, 'container')]/div/ul/li/a/span[2]/span",
+        "list_target":"//circular-list-component[starts-with(@id, 'getComponentId')]/div/div/circular-react-list/div/div",
+        "item_suf":"/span[7]/span",
+        "list_item": "//div[contains(@class, 'message-item') and contains(@class, 'message-unread')]/span[7]/span",
+        "list_circular": "//div[contains(@class, 'message-item') and contains(@class, 'message-unread')]/span[7]/span[contains(., '%s')]",
+        "page_total":"//circular-list-component[starts-with(@id, 'getComponentId')]/div[2]/div[2]/ul/li[3]/span[2]",
+        "nextpage_icon":"//circular-list-component[starts-with(@id, 'getComponentId')]/div[2]/div[2]/ul/li[4]/span",
+        "write_back_xpath": "//*[@id='ngw.circular.container' and contains(@class, 'active')]/split-screen-view/list-view/div/div[1]/div[3]/div/div[3]/div/button",
+        "view_back_xpath": "//*[@id='ngw.circular.container' and contains(@class, 'active')]/split-screen-view/list-view/div/div[1]/div[3]/div/div[3]/div/button",
+        "confirm_receipt": "//input[@name='isrecv']",
+        "circular_view": "//*[@id='circular-view']",
+        "circular_title": "//circular-react-list/div/div/span[7]/span",
+        "content_view": "//*[@id='circular-content']/div[contains(@class, 'content-view')]",
+        "circular_div": "//circular-react-list/div/div",
+        "normal_circular": "//circular-react-list/div/div[1]/span[7]/span[1]",
+        "secure_circular": "//circular-react-list/div/div[1]/span[7]/span/span[2]",
+        "search_sender": "//span[@class='sender']",
+        "search_details": {
+            "menu_name": "circular",
+            "listfooter_xpath": "//circular-list-component[starts-with(@id, 'getComponentId')]/div[2]/div",
+            "search_dict": {},
+            "expander_xpath": "//list-search-component/form/div/a",
+            "selectbox_xpath": "//select[@id='search-field']",
+            "searchinput_xpath": "//input[@id='search-keyword']",
+            "search_button_xpath": "//button[@data-ng-click='control.search()']"
+        },
+        "search_input":[
+            "//circular-list-component[starts-with(@id, 'getComponentId')]/div[2]/div",
+            "//circular-list-component[starts-with(@id, 'getComponentId')]/div/div/circular-react-list/div/div[contains(@class, 'message-item')]",
+            "//circular-list-component[starts-with(@id, 'getComponentId')]/div/div/circular-react-list/div/div[",
+            "]/span[7]/span",
+            "//div[@id='ngw.circular.container']/split-screen-view/list-view/div/div/div[3]/div/div[4]/list-search-component/form/div/input",
+            "//circular-list-component[starts-with(@id, 'getComponentId')]/div/div/circular-react-list/div/div/span[7]/span"
+        ]
+    },
+    
+    "todo":{
+        "red_pen": "//div[starts-with(@id, 'ngw.todo.list')]/split-screen-view/list-view/div/div/div[2]/div/button[2]",
+        "subject": "//input[@id='form-field-subject']",
+        "list_footer": "//div[starts-with(@id, 'ngw.todo.list')]/split-screen-view/list-view/div/div[2]/div/div[2]/div",
+        "todo_item": "//div[@id='todo-list']/todo-react-list/div/div/span[6]/a",
+        "save_button": "//div[starts-with(@id, 'ngw.todo.list')]/split-screen-view/list-view/div/div/div[3]/div/div[2]/div/button/span",
+        "content_subject":"//div[@id='todo-view']/div/div/div/span/span[2]",
+        "progress_memo":"//form[@id='post-work-progress']/div[2]/textarea",
+        "save_progress":"//form[@id='post-work-progress']/div[3]/button[2]",
+        "new_progress":"//div[@id='todo-to']/div/div[3]/div/span/strong[contains(.,'100%')]",
+        "new_memo":"//div[@id='todo-to']/div/div[3]/div/div[2]",
+        "success_label":"//div[@id='todo-view']/div/div/div/span/span[contains(@data-ng-click, 'workChange(viewitems.tData, true)')]",
+        "back_button":"//div[starts-with(@id, 'ngw.todo.list')]/split-screen-view/list-view/div/div/div[3]/div/div[4]/div/button",
+        "list_target":"//div[@id='todo-list']/todo-react-list/div/div",
+        "item_suf":"/span[6]/a",
+        "todo_title": "//div[@id='todo-list']/todo-react-list/div/div/span[6]/a[contains(.,'%s')]",
+        "page_total":"//div[starts-with(@id, 'ngw.todo.list')]/split-screen-view/list-view/div/div[2]/div/div[2]/div[2]/ul/li[3]/span[2]",
+        "nextpage_icon":"//div[starts-with(@id, 'ngw.todo.list')]/split-screen-view/list-view/div/div[2]/div/div[2]/div[2]/ul/li[4]/span",
+        "mytodo_header": "//div[@id='ngw.todo.list.my']/split-screen-view/list-view/div/div/div[2]/h1/span",
+        "write_back_xpath": "//div[starts-with(@id, 'ngw.todo.list') and contains(@class, 'active')]/split-screen-view/list-view/div/div[1]/div[3]/div/div[4]/div/button",
+        "view_back_xpath": "//div[starts-with(@id, 'ngw.todo.list') and contains(@class, 'active')]/split-screen-view/list-view/div/div[1]/div[3]/div/div[4]/div/button",
+        "todo_nav": "//*[@id='main-navi']/nav-menu-react/nav/a[@data-name='todo,To-Do']",
+        "todo_menu": "//ul[@class='ulnavDropdown-child']/li/a[@data-name='todo,To-Do']",
+        "todo_inline": "//a[@data-name='todo,To-Do' and @style='display: inline;']",
+        "my_todo": "//span[contains(.,' My To-Do')]",
+        "list_todo_title": "//a[contains(@class, 'black text')]",
+        "search_details": {
+            "menu_name": "todo",
+            "listfooter_xpath": "//div[starts-with(@id, 'ngw.todo.list')]/split-screen-view/list-view/div/div[2]/div/div[2]/div",
+            "search_dict": {},
+            "expander_xpath": "//div[contains(@class, 'todo-list-search')]/form/div/a",
+            "selectbox_xpath": "//select[@id='todo-search-field']",
+            "searchinput_xpath": "//input[@id='todo-search-keyword']",
+            "search_button_xpath": "//button[@data-ng-click='searchAction(1)']"
+        },
+        "search_input":[
+            "//div[starts-with(@id, 'ngw.todo.list')]/split-screen-view/list-view/div/div[2]/div/div[2]/div",
+            "//div[@id='todo-list']/todo-react-list/div/div",
+            "//div[@id='todo-list']/todo-react-list/div/div[",
+            "]/span[6]/a",
+            "//div[@id='ngw.todo.list.my']/split-screen-view/list-view/div/div/div[3]/div/div[5]/div[3]/form/div/input",
+            "//div[@id='todo-list']/todo-react-list/div/div/span[6]/a"
+
+        ]
+    },
+
+    "expense":{
+        "expense_item": "//*[@id='expense-list']/expense-react-list/div/div[1]/span[5]/a[contains(., '%s')]",
+        "list_footer":"//div[starts-with(@id, 'ngw.expense.container')]/split-screen-view/list-view/div/div[2]/div/div[2]/div[1]",
+        "save_item_button":"//button[contains(@data-ng-click, 'addItemSubmit($event)')]",
+        "save_expense_button":"//list-view/div/div/div[3]/div/div[2]/div/button",
+        "api_title_item":"//table[@id='expense-items-list']/tbody/tr[2]/td[3]",
+        "currency_select": "//select[@name='currency']/option[contains(@selected, 'selected')]",
+        "duration_start":"//ace-date-range-picker/div/div/ace-datepicker/div/input",
+        "duration_end":"//ace-date-range-picker/div/div[2]/ace-datepicker/div/input",
+        "unlimited_budget":"//*[@id='expense-form-write']/div[3]/div/input[contains(@disabled, 'disabled')]",
+        "budget_limit":"//*[@id='expense-form-write']/div[3]/div/input",
+        "pen_button":"//div[starts-with(@id, 'ngw.expense.container')]/split-screen-view/list-view/div/div/div[2]/div/button[2]/i",
+        "subject":"//input[@name='title']",
+        "list_item":"//*[@id='expense-list']/expense-react-list/div/div[1]/span[5]/a",
+        "item_plus":"//form[@id='expense-form-write']/div[8]/label/button",
+        "item_subject":"//form[@id='add-item-form']/div/div/input",
+        "iten_date":"//form[@id='add-item-form']/div[2]/div/ace-datepicker/div/input",
+        "item_purpose":"//form[@id='add-item-form']/div[4]/div[2]/er-usepurpose-manage/div[2]/div/a/span",
+        "item_header_close":"//div[13]/div/div/div/button",
+        "item_payment":"//select[@name='payment_method']/option[contains(@selected, 'selected')]",
+        "credit_card":"//select[@name='credit_card']/option",
+        "item_amount":"//input[@name='amount']",
+        "item_header":"//div[@id='expense-view']/div/div[2]/div/div/div/span",
+        "content_subject":"//div[@id='expense-view']/div/div/span",
+        "list_item_name":"//table[@id='expense-items-list']/tbody/tr[2]/td[4]",
+        "list_item_date":"//table[@id='expense-items-list']/tbody/tr[2]/td[5]",
+        "list_item_amount":"//table[@id='expense-items-list']/tbody/tr[2]/td[6]",
+        "item_list_footer":"//table[@id='expense-items-list']/tbody/tr[2]",
+        "back_button": "//div[starts-with(@id, 'ngw.expense.container') and contains(@class, 'active')]/split-screen-view/list-view/div/div/div[3]/div/div[4]/div",
+        "editor_item":"//han-editor[contains(@ng-model, 'itemData.memo')]/div[3]/div/div[2]/div/iframe[@class='tox-edit-area__iframe']",
+        "editor_header":"//han-editor[contains(@ng-model, 'itemData.memo')]/div[3]/div/div[@class='tox-editor-header']",
+        "content_more":"//div[starts-with(@id, 'ngw.expense.container')]/split-screen-view/list-view/div/div/div[3]/div/div/div/div/button",
+        "content_approval":"//div[starts-with(@id, 'ngw.expense.container')]/split-screen-view/list-view/div/div/div[3]/div/div/div/div/ul/li/a",
+        "approval_expense_title":"//*[@id='expense-view']/div/div/div/span/span[contains(.,'Title')]",
+        "approval_save":"//div[@id='mail-compose-select-form']/following-sibling::div[1]/div/div/div[3]/button[1]",
+        "apply_button":"//button[contains(.,' Apply')]",
+        "list_target":"//div[@id='expense-list']/expense-react-list/div/div",
+        "item_suf":"/span[5]/a",
+        "page_total":"//div[starts-with(@id, 'ngw.expense.container')]/split-screen-view/list-view/div/div[2]/div/div[2]/div[2]/ul/li[3]/span[2]",
+        "nextpage_icon":"//div[starts-with(@id, 'ngw.expense.container')]/split-screen-view/list-view/div/div[2]/div/div[2]/div[2]/ul/li[4]/span",
+        "import_button":"//button[contains(@data-ng-click, 'goImport($event)')]",
+        "import_warning":"//h4[text()='Warning']",
+        "import_confirm":"//button[text()='OK']",
+        "item_title_expense":"//table[@id='expense-items-list']/tbody/tr[2]/td[4]",
+        "item_amount_expense":"//table[@id='expense-items-list']/tbody/tr[2]/td[6]",
+        "item_details":"//table[@id='expense-items-list']/tbody/tr[2]/td[9]/a",
+        "item_wrapper":"//div[contains(@class, 'profile-user-info')]/div",
+        "item_title_details":"//div[contains(@ng-click, 'close($event)')]/div/div/div[2]/div/div[2]/div[2]",
+        "item_amount_details":"//div[contains(@class, 'profile-info-name')  and contains(., 'Amount')]/following-sibling::div[contains(@class, 'profile-info-value')]",
+        "close_view_item":"//button[contains(@data-ng-click, 'cancel(false)')]",
+        "write_back_xpath": "//div[starts-with(@id, 'ngw.expense.container') and contains(@class, 'active')]/split-screen-view/list-view/div/div[1]/div[3]/div/div[4]/div/button",
+        "view_back_xpath": "//div[starts-with(@id, 'ngw.expense.container') and contains(@class, 'active')]/split-screen-view/list-view/div/div[1]/div[3]/div/div[4]/div/button",
+        "ht_container": "//div[contains(@class, 'htContainer')]",
+        "ok_button": "//button[contains(@data-ng-click, 'ok($event)')]",
+        "import_table": "//table[@id='expense-items-list']",
+        "imported_item": "//td[contains(., 'Import Item')]",
+        "td_item": "//td[contains(., '%s')]",
+        "recipient_xpath": "//*[contains(@style, 'display: block')]/div/div/div[2]/div/div[2]/div/div/ul/li/span/span/i[contains(@class, 'fa-user')]/parent::span/following-sibling::a",
+        "recipient_block_xpath": "//*[contains(@style, 'display: block')]/div/div/div[2]/div/div[2]/div/div/ul/li/ul/li/span/span/i[contains(@class, 'fa-user')]/parent::span/following-sibling::a",
+        "user_org_xpath": "//i[contains(@class, 'fa-user')]/parent::span/following-sibling::a",
+        "2nd_approver": "//li[contains(@class, 'listbox')][2]",
+        "approval_frame": "//*[@id='approval-callback-content']",
+        "myexpense_submenu": "//span[@class='menu-text' and contains(., 'My Expenses')]",
+        "admin_submenu": "//span[@class='menu-text' and contains(., 'My Expenses')]/../parent::li/following-sibling::li/a/span[contains(., 'Admin')]",
+        "admin_list_footer": "//div[@id='ngw.expense.paymentMethod' and contains(@class, 'active')]/expense-admin-container-view/div/div[2]/div/div[2]/div[1]",
+        "currency_submenu": "//span[@class='menu-text' and contains(., 'Currency')]",
+        "currency_headerCol": "//th[contains(., 'Currency name')]",
+        "list_empty": "//div[@id='ngw.expense.paymentMethod' and contains(@class, 'active')]/expense-admin-container-view/div/div[2]/div/div[1]/div/div/table/tbody/tr/td[contains(@class, 'text-warning') and contains(., 'No Data')]",
+        "add_payment": "//div[@id='ngw.expense.paymentMethod' and contains(@class, 'active')]/expense-admin-container-view/div/div[1]/div[2]/div/button[2]",
+        "select_currency": "//select[@name='currency_id']",
+        "save_payment": "//div[@id='ngw.expense.paymentMethod' and contains(@class, 'active')]/expense-admin-container-view/div/div[1]/div[3]/div/div[2]/div/button/span",
+        "actions_button": "//div[@id='ngw.expense.paymentMethod' and contains(@class, 'active')]/expense-admin-container-view/div/div[2]/div/div[1]/div/div/table/tbody/tr[1]/td[@class='action-buttons']",
+        "payment_submenu": "//span[@class='menu-text' and contains(., 'Payment Method')]",
+        "payment_headerCol": "//th[contains(., 'Payment method name')]",
+        "payment_name_input": "//input[contains(@placeholder, 'payment method name')]",
+        "cash_payment": "//input[@value='1']/parent::label[contains(., 'Yes')]",
+        "active_payment": "//label[contains(., 'Active')]/following-sibling::div/label/input[contains(@class, 'ng-not-empty')]",
+        "activate_payment": "//label[contains(., 'Active')]/following-sibling::div/label",
+        "confirm_success": "//h4[text()='Success']/preceding-sibling::button",
+        "invalid_card": "//select[@name='credit_card' and contains(@class, 'ng-invalid')]",
+        "payment_length": "//select[@name='payment_method']/option",
+        "payment_method": "//select[@name='payment_method']",
+        "credit_card_select": "//select[@name='credit_card']",
+        "search_details": {
+            "menu_name": "expense",
+            "listfooter_xpath": "//div[starts-with(@id, 'ngw.expense.container')]/split-screen-view/list-view/div/div[2]/div/div[2]/div[1]",
+            "search_dict": {},
+            "expander_xpath": "//div[contains(@class, 'todo-list-search')]/form/div/a",
+            "selectbox_xpath": "//div[contains(@class, 'open')]/div[contains(@class, 'search-layer')]/dl/dd/select",
+            "searchinput_xpath": "//div[starts-with(@id, 'ngw.expense.container')]/split-screen-view/list-view/div/div/div[3]/div/div[5]/div[3]/form/div/input",
+            "search_button_xpath": "//button[@data-ng-click='searchAction()']"
+        },
+        "search_input":[
+            "//div[starts-with(@id, 'ngw.expense.container')]/split-screen-view/list-view/div/div[2]/div/div[2]/div",
+            "//div[@id='expense-list']/expense-react-list/div/div",
+            "//div[@id='expense-list']/expense-react-list/div/div[",
+            "]/span[5]/a",
+            "//div[starts-with(@id, 'ngw.expense.container')]/split-screen-view/list-view/div/div/div[3]/div/div[5]/div[3]/form/div/input",
+            "//div[@id='expense-list']/expense-react-list/div/div/span[5]/a"
+        ]
+    },
+
+    "approval":{
+        "write_button":"//div[@id='ngw.approval.container ']/split-screen-view/list-view/div/div/div[2]/div/button[2]",
+        "agreement_checkbox": "//label[contains(., 'Agreement Route')]",
+        "approval_type_selected": "//label[contains(@class, 'fix-radio-inline')]",
+        "2nd_approver_selected": "//li[contains(@class, 'listbox')][2]",
+        "list_approval": "//approval-react-list/div/div",
+        "official_doc_href": "//a[contains(.,' Official Documentation')]",
+        "loading_doc_iframe": "//iframe[contains(@loading-document, 'loadingDocument')]",
+        "copy_archive_href": "//a[contains(., 'Copy to Archive')]",
+        "error_page": "//div[@class='error-container-wrap']",
+        "approval_route":"//form[@id='write-form']/div/div/div[7]/div/ul/li/div",
+        "approval_form":"//form[@id='write-form']/div/div/div[4]/div/div/a/span[2]/span",
+        "approval_type":"//content-write/div/div/form/div/div/div/div/label/input[contains(@class, 'ng-untouched')]",
+        "subject":"//form[@id='write-form']/div/div[2]/div/div[2]/div/div/div/input",
+        "save_org_tree":"//div[starts-with(@id, 'setline')]/div/div/div[3]/button[1]",
+        "close_org_tree": "//div[starts-with(@id, 'setline')]/div/div/div[3]/button[2]",
+        "submit_button":"//div[3]/div/div[3]/div/div[3]/button",
+        "apply_button":"//button[contains(.,' Apply')]",
+        "list_item":"//*[@id='ngw.approval.container ']/split-screen-view/list-view/div/div[2]/div/div[1]/div/content-list/div/div/approval-react-list/div/div[1]/span[6]/a/span",
+        "approval_name": "//*[@id='ngw.approval.container ']/split-screen-view/list-view/div/div[2]/div/div[1]/div/content-list/div/div/approval-react-list/div/div[1]/span[6]/a/span[contains(., '%s')]",
+        "defined_approval": "//span[contains(@class, 'text') and contains(., '%s')]",
+        "undefined_approval": "//*[@id='ngw.approval.container ']/split-screen-view/list-view/div/div[2]/div/div[1]/div/content-list/div/div/approval-react-list/div/div[1]/span[5]/a/span",
+        "doc_item":"//div[@id='ngw.approval.container ']/list-view/div/div[2]/div/div/div/content-list/div/div/approval-react-list/div/div",
+        "document_item":"//div[@id='ngw.approval.container ']/split-screen-view/list-view/div/div[2]/div/div/div/content-list/div/div/approval-react-list/div/div/span[5]/a",
+        "approver_org": "//form[@id='write-form']/div/div/div[7]/label/button",
+        "list_footer": "//div[@id='ngw.approval.container ']/split-screen-view/list-view/div/div[2]/div/div[2]/div",
+        "official_doc": "//div[starts-with(@id, 'mCSB') and contains(@id, 'container')]/div/ul/li[6]/a[contains(@href, '#/approval/list/official/default/')]",
+        "org_input": "//div[starts-with(@id, 'setline')]/div/div/div[2]/div[2]/div[1]/div[2]/div/form/span/input",
+        "org_drafter": "//div[starts-with(@id, 'setline')]/div/div/div[2]/div[3]/div[2]/div/div/ul/li",
+        "org_plus":"//div[starts-with(@id, 'setline')]/div/div/div[2]/div[3]/div/div/a/i",
+        "selected_approver": "//label[contains(., 'Approval Route')]/following-sibling::div/ul/li[2]",
+        "send_mail": "//input[contains(@id, 'sendmail')]",
+        "document_frame":"//iframe[contains(@loading-document, 'loadingDocument')]",
+        "content_category":"//div[@id='ngw.approval.container ']/split-screen-view/list-view/div/div[2]/div/div/div[2]/div/div/div/div[2]/div/div[2]",
+        "content_doc":"//div[@id='ngw.approval.container ']/split-screen-view/list-view/div/div[2]/div/div/div[2]/div/div/div/div[2]/div/div[4]",
+        "content_title":"//div[@id='ngw.approval.container ']/split-screen-view/list-view/div/div[2]/div/div/div[2]/div/div/div/div[2]/div[2]/div[2]",
+        "list_target":"//div[@id='ngw.approval.container ']/split-screen-view/list-view/div/div[2]/div/div/div/content-list/div/div/approval-react-list/div/div",
+        "item_suf":"/span",
+        "page_total":"//div[@id='ngw.approval.container ']/split-screen-view/list-view/div/div[2]/div/div[2]/div[2]/ul/li[3]/span[2]",
+        "nextpage_icon":"//div[@id='ngw.approval.container ']/split-screen-view/list-view/div/div[2]/div/div[2]/div[2]/ul/li[4]/span",
+        "select_approver":"//div[starts-with(@id, 'setline')]/div/div/div[2]/div[2]/div[2]/div/div/ul/li[2]/span/a[contains(., '%s')]",
+        "select_approver_fav":"//div[starts-with(@id, 'setline')]/div/div/div[2]/div[2]/div[2]/div/div/ul/li[2]/ul/li/span/a[contains(., '%s')]",
+        "approve_button":"//button[contains(.,' Decide')]",
+        "back_button":"//button[contains(@data-ng-click, 'view.scope.goList()')]",
+        "back_to_list": "//*[@id='ngw.approval.container ']/split-screen-view/list-view/div/div[1]/div[3]/div/div[3]/div/div[2]/button",
+        "officialform_select":"//div[@id='ngw.approval.container ']/split-screen-view/list-view/div/div[2]/div/div/content-write/div/div/div/div/div/div/select",
+        "officialform_save":"//div[@id='ngw.approval.container ']/split-screen-view/list-view/div/div/div[3]/div/div[3]/div/div[2]/button",
+        "document_content":"//div[@class='annie-editor']",
+        "document_id":"//div[@id='info']",
+        "more_button":"//div[@id='ngw.approval.container ']/split-screen-view/list-view/div/div/div[3]/div/div[3]/div/div/div[3]/button",
+        "official_submenu": "//span[@class='menu-text' and text()='Official Documentation']",
+        "reload_button": "//*[@id='ngw.approval.container ']/split-screen-view/list-view/div/div[1]/div[2]/div/button[1]/i",
+        "search_button": "//*[@id='ngw.approval.container ']/split-screen-view/list-view/div/div[2]/div/div[1]/div[1]/div[2]/button[1]/span[text()=' Search']",
+        "search_details_button": "//*[@id='ngw.approval.container ']/split-screen-view/list-view/div/div[1]/div[3]/div/div[1]/div[2]/div[3]/form/div/a/span[text()='Details']",
+        "documentation_header": "//span[@class='page-header-title' and contains(., 'Official Documentation')]",
+        "completed_submenu": "//span[@class='menu-text' and text()='Completed']",
+        "write_back_xpath": "//*[@id='ngw.approval.container ' and contains(@class, 'active')]/split-screen-view/list-view/div/div[1]/div[3]/div/div[3]/div/div[2]/button",
+        "view_back_xpath": "//*[@id='ngw.approval.container ' and contains(@class, 'active')]/split-screen-view/list-view/div/div[1]/div[3]/div/div[3]/div[2]/div/button",
+
+        "approval_div": {
+            "item": "//div[@class='message-item']",
+            "doc_no": "//approval-react-list/div/div[1]/span[1]",
+            "drafter": "//approval-react-list/div/div[1]/span[2]",
+            "title": "//approval-react-list/div/div[1]/span[5]/a/span"
+        },
+        "search_details": {
+            "doc_no": "//div[@class='search-detail']/div/div[2]/input",
+            "drafter": "//div[@class='search-detail']/div/div[7]/input",
+            "title": "//div[@class='search-detail']/div/div[5]/input"
+        },
+        "org_performance":[
+            "//form[@id='write-form']/div/div/div[7]/label/button/i",
+            "//div[starts-with(@id, 'setline')]/div/div/div[2]/div[3]/div/div/a/i",
+            "//div[starts-with(@id, 'setline')]/div/div/div[2]/div[3]/div[2]/div/div/ul/li[2]"
+        ],
+        "search_input":[
+            "//div[@id='ngw.approval.container ']/split-screen-view/list-view/div/div[2]/div/div[2]/div",
+            "//div[@id='ngw.approval.container ']/split-screen-view/list-view/div/div[2]/div/div/div/content-list/div/div/approval-react-list/div/div",
+            "//div[@id='ngw.approval.container ']/split-screen-view/list-view/div/div[2]/div/div/div/content-list/div/div/approval-react-list/div/div[",
+            "]/span",
+            "//div[@id='ngw.approval.container ']/split-screen-view/list-view/div/div/div[3]/div/div/div[2]/div[3]/form/div/input",
+            "//div[@id='ngw.approval.container ']/split-screen-view/list-view/div/div[2]/div/div/div/content-list/div/div/approval-react-list/div/div/span"
+        ]
+    },
+
+    "work_diary":{
+        "save_button":"//button/span[contains(.,'Save')]",
+        "pen_button":"//div[@id='ngw.task.list.pdefault']/split-screen-view/list-view/div/div/div[2]/div/button[2]/i",
+        "list_footer":"//div[@id='ngw.task.list.pdefault']/split-screen-view/list-view/div/div[2]/div/div[2]/div[1]",
+        "subject":"//input[@name='subject']",
+        "list_item": "//div[@id='diary-list']/task-react-list/div/div/span[6]/a",
+        "content_subject":"//div[@id='diary-view']/div/div/span",
+        "content_subject_text":"//div[@id='diary-view']/div/div/span[contains(text(),'%s')]",
+        "back_button":"//div[@id='ngw.task.list.pdefault']/split-screen-view/list-view/div/div/div[3]/div/div[2]/div/button",
+        "content_more":"//div[@id='ngw.task.list.pdefault']/split-screen-view/list-view/div/div/div[3]/div/div/div[2]/div/button/span",
+        "modify_button":"//a[@data-ng-click='goEdit()']",
+        "list_target":"//div[@id='diary-list']/task-react-list/div/div",
+        "item_suf":"/span[contains(@class, 'item-hiding-title')]/a",
+        "page_total":"//div[@id='ngw.task.list.pdefault']/split-screen-view/list-view/div/div[2]/div/div[2]/div[2]/ul/li[3]/span[2]",
+        "nextpage_icon":"//div[@id='ngw.task.list.pdefault']/split-screen-view/list-view/div/div[2]/div/div[2]/div[2]/ul/li[4]/span",
+        "ok_button": "//button[contains(.,'OK')]",
+        "task_view_content": "//div[@id='diary-view']/div/div[2]/div/p",
+        "comment_button": "//button[contains(.,' Comment')]",
+        "confirm_button": "//button[contains(@data-ng-click, 'ok($event)')]",
+        "new_comment": "//li[starts-with(@id, 'content')]/div[2]/div[4]/div/p[contains(., '%s')]",
+        "task_view_title": "//div[@id='diary-view']/div/div/span",
+        "task_view_more": "//div[@id='ngw.task.list.pdefault']/split-screen-view/list-view/div/div/div[3]/div/div/div[2]/div/button",
+        "copy_archive": "//a[@data-ng-click='toArchive()']",
+        "list_diary_title": "//a[contains(@class, 'view-detail')]",
+        "content_view": "//div[contains(@class, 'content-view-body')]",
+        "diary_item": "//task-react-list/div[@class='han-react-list']/div[contains(@class, 'message-item')]",
+        "item_div": {
+            "writer": "//*[@id='diary-list']/task-react-list/div/div[1]/span[1]",
+            "subject": "//*[@id='diary-list']/task-react-list/div/div[1]/span[6]/a"
+        },
+        "search_details": {
+            "writer": "//div[@class='search-detail']/div[1]/div[4]/input",
+            "subject": "//div[@class='search-detail']/div[1]/div[3]/input"
+        },
+        "search_input":[
+            "//div[@id='ngw.task.list.pdefault']/split-screen-view/list-view/div/div[2]/div/div[2]/div",
+            "//div[@id='diary-list']/task-react-list/div/div",
+            "//div[@id='diary-list']/task-react-list/div/div[",
+            "]/span[6]/a",
+            "//div[@id='ngw.task.list.pdefault']/split-screen-view/list-view/div/div/div[3]/div/div[6]/div[3]/form/div/input",
+            "//div[@id='diary-list']/task-react-list/div/div/span[6]/a"
+        ]
+    },
+
+    "task_report":{
+        "list_footer":"//div[@id='ngw.task.list.udefault']/split-screen-view/list-view/div/div[2]/div/div[2]/div[1]",
+        "pen_button":"//div[@id='ngw.task.list.udefault']/split-screen-view/list-view/div/div/div[2]/div/button[2]",
+        "subject":"//form[@id='report-form-write']/div/div/input",
+        "org_tree":"//form[@id='report-form-write']/div[6]/label/a",
+        "org_input":"//div[@id='getReportTargetList']/div/div/div[2]/div/div/div[3]/div/form/span/input",
+        "org_plus":"//div[@id='getReportTargetList']/div/div/div[2]/div[2]/div/div/a/i",
+        "selected_rep":"//div[@id='getReportTargetList']/div/div/div[2]/div[2]/div[2]/div/div/ul/li",
+        "org_save":"//div[@id='getReportTargetList']/div/div/div[3]/button",
+        "save_button":"//div[@id='ngw.task.list.udefault']/split-screen-view/list-view/div/div/div[3]/div/div[3]/div/button",
+        "content_subject":"//div[@id='report-view']/div/div/div/span",
+        "report_recipient": "//ul[@id='report-target']/li/span",
+        "back_button":"//div[@id='ngw.task.list.udefault']/split-screen-view/list-view/div/div/div[3]/div/div[2]/div/button",
+        "list_target":"//div[@id='report-list']/report-react-list/div/div",
+        "item_suf":"/span[5]/span",
+        "page_total":"//div[@id='ngw.task.list.udefault']/split-screen-view/list-view/div/div[2]/div/div[2]/div[2]/ul/li[3]/span[2]",
+        "nextpage_icon":"//div[@id='ngw.task.list.udefault']/split-screen-view/list-view/div/div[2]/div/div[2]/div[2]/ul/li[4]/span",
+        "back_write": "//*[@id='ngw.task.list.udefault']/split-screen-view/list-view/div/div[1]/div[3]/div/div[2]/div/button",
+        "selected_user": "//*[@id='report-form-write']/div[6]/div/ul/li/span[1]",
+        "recipient": "//a[contains(., 'Recipient(s)')]",
+        "close_org": "//*[@id='getReportTargetList']/div/div/div[3]/button[2]",
+        "list_report_title": "//div[@id='report-list']/report-react-list/div/div/span[5]/span",
+        "view_report_content": "//div[@id='report-view']/div/div[4]/div/p",
+        "view_report_title": "//div[@id='report-view']/div/div/div/span",
+        "view_report_more": "//div[@id='ngw.task.list.udefault']/split-screen-view/list-view/div/div/div[3]/div/div/div/div/button",
+        "list_report_gotitle": "//span[contains(@class, 'view-detail')]",
+        "report_item": "//report-react-list/div[@class='han-react-list']/div[contains(@class, 'message-item')]",
+        "back_button_2": "//div[contains(@id, 'ngw.task.list') and contains(@class, 'active')]/split-screen-view/list-view/div/div[1]/div[3]/div/div[2]/div/button",
+        "search_details_b": "//span[text()='Details']",
+        "search_subject": "//div[@class='search-detail']/div/div/label[text()='Subject']/following-sibling::input",
+        "search_button": "//div[@class='sch-btn']/button[@data-ng-click='searchAction()']",
+        "no_data": "//span[@class='text-warning' and text()='No Data']",
+        "content_wrap": "//div[@class='error-container-wrap']",
+        "search_reset": "//div[@class='sch-btn']/button[@data-ng-click='resetPage()']",
+        "item_div": {
+            "writer": "//*[@id='report-list']/report-react-list/div/div[1]/span[1]",
+            "subject": "//*[@id='report-list']/report-react-list/div/div[1]/span[5]/span[1]"
+        },
+        "search_details": {
+            "writer": "//div[@class='search-detail']/div[1]/div[4]/input",
+            "subject": "//div[@class='search-detail']/div[1]/div[2]/input"
+        },
+        "search_input":[
+            "//div[@id='ngw.task.list.udefault']/split-screen-view/list-view/div/div[2]/div/div[2]/div",
+            "//div[@id='report-list']/report-react-list/div/div",
+            "//div[@id='report-list']/report-react-list/div/div[",
+            "]/span[5]/span",
+            "//*[@id='ngw.task.list.udefault']/split-screen-view/list-view/div/div/div[3]/div/div[3]/div[3]/form/div/input",
+            "//div[@id='report-list']/report-react-list/div/div/span[5]/span"
+        ],
+        "org_select":[
+            "//form[@id='report-form-write']/div[6]/label/a",
+            "//div[@id='getReportTargetList']/div/div/div[2]/div/div/div[3]/div/form/span/input",
+            "//div[@id='getReportTargetList']/div/div/div[2]/div[2]/div/div/a/i",
+            "//div[@id='getReportTargetList']/div/div/div[2]/div[2]/div[2]/div/div/ul/li",
+            "//div[@id='getReportTargetList']/div/div/div[3]/button"
+        ]    
+    },
+
+    "task": {
+        "write_back_xpath": "//div[starts-with(@id, 'ngw.task.list') and contains(@class, 'active')]/split-screen-view/list-view/div/div[1]/div[3]/div/div[2]/div/button",
+        "view_back_xpath": "//div[starts-with(@id, 'ngw.task.list') and contains(@class, 'active')]/split-screen-view/list-view/div/div[1]/div[3]/div/div[2]/div/button"
+    },
+
+    "clouddisk":{
+        "file_container":"//input[@id='input-file-clouddisk']",
+        "close_complete": "//label[contains(.,' Close after transfer completes.')]",
+        "save_button": "//button[contains(.,'Upload')]",
+        "attach_name": "//div[starts-with(@id, 'mCSB') and contains(@id, 'container')]/div/li/span",
+        "close_button":"//div[23]/div/div/div/div[3]/button[2]",
+        "search_input":"//div[@id='clouddisk-search-nav']/form/div/input",
+        "clouddisk_item":"//div[34]/div/span[4]/a",
+        "reload": "//div[starts-with(@id, 'ngw.clouddisk.list') and contains(@class, 'active')]/list-view/div/div/div[2]/div/button[1]",
+        "list_target":"//div[@id='clouddisk-list']/div/div/span[4]/a",
+        "suf_target":"/div/span[4]/a",
+        "page_total":"//div[starts-with(@id, 'ngw.clouddisk.list')]/list-view/div/div[2]/div/div[2]/div[2]/ul/li[3]/span[2]",
+        "nextpage_icon":"//div[starts-with(@id, 'ngw.clouddisk.list')]/list-view/div/div[2]/div/div[2]/div[2]/ul/li[4]/span",
+        "list_footer": "//div[starts-with(@id, 'ngw.clouddisk.list')]/list-view/div/div[2]/div/div[2]/div",
+        "list_number":"//div[@id='clouddisk-list']/div",
+        "upload": "//div[starts-with(@id, 'ngw.clouddisk.list')]/list-view/div/div/div[2]/div/button[2]",
+        "select_file_checkbox":"//div[@id='clouddisk-list']/div[%s]/div/label",
+        "folder_checkbox": "//div[@id='clouddisk-list']/div[%s]/div/span[contains(@class, 'is_dir')]",
+        "active_checkbox": "//div[@id='clouddisk-list']/div[contains(@class, 'draggable')]/div/label",
+        "select_file_icon":"//div[@id='clouddisk-list']/div[%s]/div/span[4]/span/i",
+        "more_button":"//div[starts-with(@id, 'ngw.clouddisk.list')]/list-view/div/div/div[3]/div/div/div/div[4]/button",
+        "weblink":"//a[contains(@data-ng-click, 'webLinkAction()')]",
+        "preview":"//a[contains(@data-ng-click, 'preview(selectedItem)')]",
+        "lock":"//a[contains(.,' File Lock')]",
+        "unlock":"//a[contains(.,' File Unlock')]",
+        "create_weblink":"//button[contains(@data-ng-click, 'createLink()')]",
+        "new_weblink":"//span[contains(@class, 'list-group-item-text')]",
+        "close_modal":"//button[contains(@ng-click, 'close()')]",
+        "preview_frame":"//iframe[contains(@ng-src, '/cloud/preview/')]",
+        "copy":"//li[@ng-if='isCopy']/a",
+        "folder_dropdown":"//button[contains(@data-target, '#copyfolder')]",
+        "copied_file":"//ul[@id='tasks']/li",
+        "my_folder":"//div[@id='copyfolder']/div/ul/li[1]/span/span[1]",
+        "my_subfolder":"//div[@id='copyfolder']/div/ul/li/ul/li/span/a",
+        "write_back_xpath": "",
+        "view_back_xpath": "",
+        "test": "div[%s]",
+        "complete_load": "//div[contains(@data-percent, '100%')]",
+        "close_upload": "//button[contains(@data-ng-click, 'close()')]",
+        "my_folder_span": "//span[contains(.,'My Folder')]",
+        "manage_version": "//div[%s]/a[contains(@title, 'Manage versions')]/span",
+        "clouddisk_folder": "//div[3]/div/span[contains(@class, 'is_dir')]",
+        "create_folder": "//button[@data-ng-click='createFolder()']/span",
+        "folder_name": "//input[@id='name']",
+        "folder_li":"//a[text()='%s']",
+        "folder_id": "//a[text()='%s']/parent::span",
+        "folder_size": "//div[@id='%s']/span[3]",
+        "clouddisk_items": "//*[@id='clouddisk-list']/div",
+        "selected_item": "//*[@id='clouddisk-list']/div[%s]/div/label/input[contains(@class, 'ng-not-empty')]/..",
+        "save_folder": "//button[@data-ng-click='saveFolder(folder)']",
+        "dynatree_folder": "//a[@class='dynatree-title' and text()='%s']",
+        "copy_button":"//button[contains(@data-ng-click, 'saveAction(folder)')]",
+        "copy_disable": "//button[contains(@data-ng-click, 'saveAction(folder)') and contains(@disabled, 'disabled')]"
+    },
+
+    "project":{
+        "my_projects":"//div/div/div/div/ul/li[2]/a",
+        "inprogress_projects":"//div[starts-with(@id, 'mCSB') and contains(@id, 'container')]/div/ul/li[2]/a/span[contains(.,'In Progress Projects')]",
+        "project_name":"//div[@id='message-list']/div/project-react-list/div/div/span[5]/a",
+        "project_list_footer":"//div[starts-with(@id, 'ngw.project.container.project')]/list-view/div/div[2]/div/div[2]/div[1]",
+        "work_list_footer":"//div[@id='project-detail-work-list']/div/div/div[2]/div/div[2]/div",
+        "work_add":"//div[starts-with(@id, 'ngw.project.container.project')]/list-view/div/div/div[2]/div/button[2]",
+        "subject":"//input[@name='subject']",
+        "assign_dropdown":"//tags-input/div/div/input",
+        "assignee":"//form[@id='project-write-task']/div[7]/div/span/tags-input/div/auto-complete/div/ul/li/ti-autocomplete-match/ng-include/div/div/span",
+        "assign_holder":"//form[@id='project-write-task']/div[7]/div/span/tags-input/div/auto-complete/div/ul/li/ti-autocomplete-match/ng-include/div/div/span[2]",
+        "work_save":"//span[contains(.,'Save')]",
+        "list_container":"//div[@id='project-detail-work-list']/div/div/div[2]/div/div[1]/tree-gird-react/table",
+        "work_list_item":"//div[@id='project-detail-work-list']/div/div/div[2]/div/div/tree-gird-react/table/tbody/tr/td[2]/span/span",
+        "list_work_name":"//div[@id='project-detail-work-list']/div/div/div[2]/div/div/tree-gird-react/table/tbody/tr/td[2]/span/span[contains(., '%s')]",
+        "content_title": "//div[starts-with(@id, 'ngw.project.container.project')]/list-view/div/div[2]/div/div[2]/div/div/div/div/span[3]",
+        "work_content":"//div[starts-with(@id, 'ngw.project.container.project')]/list-view/div/div[2]/div/div[2]/div/div/div[2]/div[2]/div/p",
+        "more_dropdown":"//div[starts-with(@id, 'ngw.project.container.project')]/list-view/div/div/div[3]/div/div/div/div[3]/button/span",
+        "modify_button":"//div[starts-with(@id, 'ngw.project.container.project')]/list-view/div/div/div[3]/div/div/div/div[3]/ul/li[2]/a",
+        "back_button":"//div[starts-with(@id, 'ngw.project.container.project')]/list-view/div/div/div[3]/div/div/div[2]/div/span/button",
+        "update_done":"//select[@id='form-field-select-1']/option[contains(@selected, 'selected') and contains(., '100%')]",
+        "status_update":"//div[starts-with(@id, 'ngw.project.container.project')]/list-view/div/div[2]/div/div[2]/div/div/div/div/span[contains(.,' Resolved')]",
+        "percent_update":"//div[starts-with(@id, 'ngw.project.container.project')]/list-view/div/div[2]/div/div[2]/div/div/div/div/div/div[contains(@data-percent, '100%')]",
+        "ticket_item":"//div[@id='project-detail-ticket-list']/div/div/div[2]/div/div/project-ticket-list-react/table/tbody/tr/td[2]/a/span",
+        "list_ticket_name": "//div[@id='project-detail-ticket-list']/div/div/div[2]/div/div/project-ticket-list-react/table/tbody/tr/td[2]/a/span[contains(., '%s')]",
+        "ticket_content":"//div[starts-with(@id, 'ngw.project.container.project')]/list-view/div/div[2]/div/div[2]/div/div/div/div[2]/div/p",
+        "work_item":"//div[@id='project-detail-work-list']/div/div/div[2]/div/div/tree-gird-react/table/tbody/tr/td[2]",
+        "page_total":"//div[@id='project-detail-work-list']/div/div/div[2]/div/div[2]/div[2]/ul/li[3]/span[2]",
+        "write_back_xpath": "//div[starts-with(@id, 'ngw.project.container.project') and contains(@class, 'active')]/list-view/div/div[1]/div[3]/div/div/div[3]/div/span/button",
+        "view_back_xpath": "//div[starts-with(@id, 'ngw.project.container.project') and contains(@class, 'active')]/list-view/div/div[1]/div[3]/div/div/div[2]/div/span/button",
+        "nextpage_icon":"//div[@id='project-detail-work-list']/div/div/div[2]/div/div[2]/div[2]/ul/li[4]/span",
+        "no_project": "//project-react-list/following-sibling::div[2]/span[@class='text-warning' and contains(., 'No Data')]",
+        "project": "//*[@id='message-list']/div/project-react-list/div/div[1]/span[5]/a",
+        "work_list": "//div[@id='project-detail-work-list']",
+        "create_project": "//button[@data-target='write']",
+        "code_name": "//input[@name='code_name']",
+        "project_name_input": "//input[@name='subject']",
+        "user_div": "//label[contains(., '%s')]/parent::div/div/org-auto-complete/div/div[1]",
+        "user_input": "//label[contains(., '%s')]/parent::div/div/org-auto-complete/div/div[1]/input",
+        "user_is.selected": "//ul[contains(@class, 'ui-autocomplete') and contains(@style, 'block')]/li[1]/div",
+        "save_project": "//span[text()='Save']",
+        "project_linktext": "//a[@title='%s']",
+        "start_day": "//form[@id='project-write-task']/div[6]/div[2]/ace-datepicker[contains(@ng-model, 'writeTaskScope.frmData.start_date')]/div/input",
+        "change_status": "//button[contains(.,' Change Status')]",
+        "status_selectbox": "//select[@name='status']",
+        "ok_button": "//button[contains(@ng-click, 'ok()')]",
+        "content_view_wrap": "//*[@class='content-view-wrap']",
+        "write_ticket": "//button[contains(@title, 'Write Ticket')]",
+        "save_span": "//span[contains(.,'Save')]",
+        "related_ticket": "//a[contains(., 'Related Tickets')]",
+        "add_ticket": "//a[contains(@ng-click, 'addRelateTicket($event)')]",
+        "ticket_table": "//table/tbody/tr/td/label",
+        "insert_ticket": "//button[contains(.,'Insert Ticket')]",
+        "select_user": "//label[contains(., '%s')]/parent::div/div/org-auto-complete/div/div[1]/div/input",
+        "selected_ticket": "//div[@id='project-task-view-ticket']/div/div/div[2]/div/div/table/tbody/tr/td/a/span",
+        "add_reference": "//div[@id='project-detail-reference-list']/div/div/div/div/a[contains(@data-ng-click, 'goWriteTaskReference($event, viewScope.rows.pseq)')]",
+        "new_reference": "//div[@id='project-detail-reference-list']/div/div/div[2]/div/div/table/tbody/tr/td/a[contains(., '%s')]",
+        "reference_tab": "//a[contains(@href, '#project-detail-reference-list')]",
+        "list_reference": "//div[@id='project-detail-reference-list']/div/div/div[2]/div/div/table/tbody/tr/td/a",
+        "content_reference_title": "//div[starts-with(@id, 'ngw.project.container.project')]/list-view/div/div[2]/div/div[2]/div/div/div/span",
+        "reference_more": "//div[starts-with(@id, 'ngw.project.container.project')]/list-view/div/div/div[3]/div/div/div[2]/div/span/button",
+        "reference_back": "//button[contains(@data-ng-click, 'goTaskList($event)')]",
+        "save_button": "//button[contains(.,'Save')]",
+        "work_add_reference": "//div[@id='project-task-view-reference']/div/div/div/div/a[contains(@ng-click, 'addTaskReference($event)')]",
+        "insert_reference": "//button[contains(.,'Insert a Reference')]",
+        "selected_reference": "//div[@id='project-task-view-reference']/div/div/div[2]/div/div/table/tbody/tr/td/a",
+        "comment_button": "//button[contains(.,' Comment')]",
+        "new_comment": "//div[@id='project-task-view-comment']/ul/li/div[2]/div[3]/div/p[contains(., '%s')]"  
+    },
+
+    "archive":{
+        "nav_archive": "//*[@id='main-navi']/nav-menu-react/nav/a[contains(@class, 'active')]",
+        "archive_item": "//div[contains(@class, 'active')]/list-view/div/div[2]/div/div[1]/div[2]/div[2]/div/span[5]/a[contains(.,'%s')]",
+        "new_archive": "//a[contains(.,'%s')]",
+        "view_archive_title": "//td[contains(.,'%s')]",
+        "archive_leftside": "//h2[@class='page-title' and contains(., 'Archive')]",
+        "active_submenu_li": "//span[@class='menu-text' and text()='[folder]']/parent::a/parent::li[contains(@class, 'open')]",
+        "left_arrow_submenu": "//span[@class='menu-text' and text()='[folder]']/following-sibling::b",
+        "companyarchive_folder": "//span[@class='menu-text' and text()='[folder]']/parent::a/following-sibling::ul/li[1]/ul/li[1]/a/span/span[contains(., '[folder_name]')]",
+        "myarchive_folder": "//span[@class='menu-text' and text()='[folder]']/parent::a/following-sibling::ul/li[1]/a/span/span[contains(., '[folder_name]')]",
+        "secure_input": "//input[contains(@data-ng-enter, 'securityLogin()')]",
+        "archived_date": "//div[@id='message-list']/div[2]/div[2]/span[3]",
+        "list_sorting": "//div[@ui-view='ngw.archive.list' and contains(@class, 'active')]/list-view/div/div[2]/div/div[1]/div[2]/div[1]/span[3]/a/i",
+        "copy_archive_my": "//*[contains(@id, 'to-archive-tree') and contains(@style, 'display: block')]/div/div/div[2]/div/div[2]/div/div/ul/li[2]/span/a[text()='My Archive']/parent::span/following-sibling::ul/li[1]/span/a",
+        "copy_archive_company": "//*[contains(@id, 'to-archive-tree') and contains(@style, 'display: block')]/div/div/div[2]/div/div[2]/div/div/ul/li[1]/span/a[text()='Company Archive']/parent::span/following-sibling::ul/li[1]/span/a",
+        "copy_archive_company_folder": "//a[text()='Company Archive']/parent::span/following-sibling::ul/li[1]/ul/li[1]/span/a",
+        "save_copy_archive": "//div[contains(@id, 'to-archive-tree') and contains(@style, 'display: block')]/div/div/div[3]/button[1]",
+        "close_copy_archive": "//div[contains(@id, 'to-archive-tree') and contains(@style, 'block')]/div/div/div[3]/button[2]",
+        "secure_pw":"//div[contains(@class, 'secret-pw')]/div/div[2]/span/input",
+        "tree_folder":"//div[2]/div/div/ul/li/ul/li[contains(@class, 'dynatree-lastsib')]",
+        "my_archive":"//span[@class='menu-text' and text()='My Archive']",
+        "my_archive_folder":"//span[@class='menu-text' and text()='My Archive']/parent::a/following-sibling::ul[contains(@style, 'block')]/li[1]/a/span/span[@class='menu-text']",
+        "folder_li": "//span[@class='menu-text' and text()='My Archive']/parent::a/following-sibling::ul/li",
+        "archive_folder": "//span[@class='menu-text' and text()='My Archive']/parent::a/following-sibling::ul/li[1]/a/span/span[@class='menu-text']",
+        "list_footer":"//div[@id='archive-tab-content']/div/list-view/div/div[2]/div/div[2]/div[1]",
+        "archive_image":"//label[contains(.,' Upload Image Files')]",
+        "save_button":"//div[@id='archive-tab-content']/div/list-view/div/div/div[3]/div/div[2]/div/button[contains(.,'Save ')]",
+        "list_item":"//div[@id='message-list']/div[2]/div[2]/span[5]/a",
+        "content_attachment": "/html/table/tbody/tr[6]/td[contains(.,'Attach Files')]",
+        "view_close": "//div[contains(@class, 'modal-footer')]/button[contains(@data-ng-click, 'cancel')]",
+        "root":"//a[contains(text(),'My Archive')]",
+        "folder_plus":"//div[@id='set-my-arch']/div/div/div/div[2]/a/i",
+        "enabled_write":"//div[@id='set-my-arch']/div/div[2]/div[2]/div/form/div[2]/div/span/label/span",
+        "save_folder":"//div[@id='set-my-arch']/div/div[2]/div[3]/button/span[contains(.,'OK')]",
+        "list_target":"//div[@id='message-list']/div[2]/div[2]",
+        "page_total": "//div[@id='archive-tab-content']/div/list-view/div/div[2]/div/div[2]/div[2]/ul/li[3]/span[2]",
+        "item_suf":"/span[5]/a",
+        "nextpage_icon":"//div[@id='archive-tab-content']/div/list-view/div/div[2]/div/div[2]/div[2]/ul/li[4]/span",
+        "write_back_xpath": "//*[@id='archive-tab-content' and contains(@class, 'active')]/div/list-view/div/div[1]/div[3]/div/div[3]/div/button",
+        "view_back_xpath": "//*[@id='archive-tab-content' and contains(@class, 'active')]/div/list-view/div/div[1]/div[3]/div/div[3]/div/button",
+        "company_submenu": "//span[@class='menu-text' and text()='Company Archive']/parent::a/parent::li",
+        "company_archive_submenu": "//span[@class='menu-text' and text()='Company Archive']/parent::a/parent::li/ul/li/a/span/span[@class='menu-text']",
+        "company_archive_folder": "//ul[contains(@style, 'display:block')]/li[position]/a/span/span[@class='menu-text']/i[contains(@class, 'fa-upload')]",
+        "creator": "//div[contains(@class, 'message-item')]/span[contains(@class, 'sender')]",
+        "company_archive_item": "//div[contains(@class, 'active')]/div[3]/div/list-view/div/div[2]/div/div[1]/div[2]/div[2]/div/span[5]/a",
+        "newarchive_tree": "//a[@class='dynatree-title' and contains(., 'My Archive')]",
+        "newarchive_tree_active": "//a[@class='dynatree-title' and contains(., 'My Archive')]/parent::span[contains(@class, 'dynatree-active')]",
+        "add_newarchive": "//a[@data-ng-click='addFolder()']",
+        "newarchive_folder": "//input[@id='txtFolderName']",
+        "create_permission": "//span[contains(text(), 'Enabled')]/..",
+        "newarchive_save": "//button[@data-ng-click='saveFolder()']/span",
+        "archive_newfolder": "//a[contains(@class, 'dynatree-title') and contains(., '%s')]",
+        "search_details": {
+            "menu_name": "archive",
+            "listfooter_xpath": "//div[@id='archive-tab-content']/div/list-view/div/div[2]/div/div[2]/div[1]",
+            "search_dict": {},
+            "expander_xpath": "//a[@data-ng-click='showSearchFormToolbar()']",
+            "selectbox_xpath": "//select[@id='archive-search-field']",
+            "searchinput_xpath": "//div[contains(@class, 'active')]/list-view/div/div[1]/div[3]/div/div[4]/div[3]/form/div/input",
+            "search_button_xpath": "//div[contains(@class, 'task-search-layout')]/button[contains(., 'Search')]"
+        }, 
+        "write":[
+            "//div[@id='archive-tab-content']/div/list-view/div/div/div[2]/div/button[2]",
+            "//input[@id='form-field-subject']"
+        ]
+    },
+
+    "asset":{
+        "pen_button":"//*[@id='ngw.asset.asset']/split-screen-view/list-view/div/div[1]/div[2]/div/button[2]",
+        "asset_id":"//input[@id='asset_id']",
+        "asset_name":"//input[@id='asset_name']",
+        "asset_report": "//div[@class='report-asset']",
+        "purchase_date_calendar":"//div[@id='asset-info']/div[2]/div/div[4]/div/ace-datepicker/div/span",
+        "asset_location":"//div[@id='asset-info']/div/div[2]/div[4]/div/select",
+        "asset_cost":"//input[@id='cost']",
+        "asset_curreny":"//div[@id='asset-info']/div[2]/div[2]/div/div/select",
+        "save_button":"//div[@id='ngw.asset.asset']/split-screen-view/list-view/div/div/div[3]/div/div[2]/div[2]/button/span",
+        "list_asset_title": "//div[@id='message-list']/asset-react-list/div/div/span[6]/a[contains(text(),'%s')]",
+        "list_item":"//div[@id='message-list']/asset-react-list/div/div/span[6]/a",
+        "list_footer": "//*[@id='ngw.asset.asset']/split-screen-view/list-view/div/div[2]/div/div[2]/div[1]",
+        "content_name":"//div[@id='ngw.asset.asset']/split-screen-view/list-view/div/div[2]/div/div[3]/ng-include/div/div/div/div[2]/div/span[2]",
+        "content_purchase_date":"//div[@id='information']/div/div[4]/div[2]",
+        "create_history":"//div[contains(@class, 'timeline-items')]",
+        "back_button":"//div[@id='ngw.asset.asset']/split-screen-view/list-view/div/div/div[3]/div/div[2]/div[2]/div/button",
+        "list_target":"//div[@id='message-list']/asset-react-list/div/div",
+        "page_total":"//div[@id='ngw.asset.asset']/split-screen-view/list-view/div/div[2]/div/div[2]/div[2]/ul/li[3]/span[2]",
+        "item_suf":"/span[6]/a",
+        "selected_category": "//input[@value='%s']",
+        "file_uploader": "//*[@id='file']",
+        "purchased_date": "//td[contains(.,'%s') and contains(@class,'day')]",
+        "nextpage_icon":"//div[@id='ngw.asset.asset']/split-screen-view/list-view/div/div[2]/div/div[2]/div[2]/ul/li[4]/span",
+        "exist_id":"//span[contains(.,'This item ID already exists.')]",
+        "import_location":"//div[@id='modal-step1']/form/div/div/select",
+        "import_save":"//div[contains(@ng-click, 'close($event)')]/div/div/div[3]/button",
+        "write_back_xpath": "//*[@id='ngw.asset.asset' and contains(@class, 'active')]/split-screen-view/list-view/div/div[1]/div[3]/div/div[2]/div[1]/button",
+        "view_back_xpath": "//*[@id='ngw.asset.asset' and contains(@class, 'active')]/split-screen-view/list-view/div/div[1]/div[3]/div/div[2]/div[2]/div[1]/button",
+        "asset_folder_li": "//span[text()=' Manage Items']/parent::a/following-sibling::ul/li",
+        "asset_folder_span": "//span[text()=' Manage Items']/parent::a/following-sibling::ul/li[%s]/a/span/span",
+        "manage_items": "//span[@class='menu-text' and text()=' Manage Items']",
+        "asset_folder_1": "//span[text()=' Manage Items']/parent::a/following-sibling::ul/li[1]/a/span/span",
+        "category_tree": "//div[@id='category-tree-write']/preceding-sibling::div/span/a",
+        "category_li": "//*[@id='category-tree-write']/div/ul/li/ul/li[1]/span/a",
+        "import_button": "//button[contains(.,' Import')]",
+        "list_asset_1": "//asset-react-list/div/div[1]/span[6]/a",
+        "search_id": "//asset-react-list/div/div/span[2]",
+        "search_name": "//asset-react-list/div/div/span[6]/a",
+        "search_model": "//asset-react-list/div/div/span[4]/span",
+        "admin_submenu": "//li[@ng-if='permissionMenu.manage']",
+        "report_cate_select": "//select[@ng-model='listParams.category_id']/option",
+        "report_notEmpty": "//tr[contains(@ng-repeat, 'statusReport')]/td[text()='1']",
+        "admin_submenu_txt": "//li[@ng-if='permissionMenu.manage']/a/span",
+        "admin_isActive": "//li[@ng-if='permissionMenu.manage' and contains(@class, 'open')]",
+        "admin_category": "//a[@href='/asset/admin/category']/span",
+        "category_form": "//form[@name='settingFormCategory']",
+        "category_name": "//input[@name='category_name']",
+        "save_category": "//button[@data-ng-click='saveCategory()']/span",
+        "confirm_success": "//div[contains(., 'successfully')]/following-sibling::div/button[contains(., 'Close')]",
+        "new_category": "//*[@id='ngw.asset.admin_category']/div/div[2]/div[1]/div[2]/div/div/ul/li/ul/li/span/a[contains(., '%s')]",
+        "location_submenu": "//a[@href='/asset/admin/location']/span",
+        "location_form": "//form[@name='locationForm']",
+        "location_li": "//div[@id='location_tree']/ul/li/ul/li",
+        "location_input": "//input[@data-ng-model='locationItem.name']",
+        "save_location": "//button[@data-ng-click='saveLocation()']/span",
+        "new_location": "//*[@id='location_tree']/ul/li/ul/li/span/a[contains(., '%s')]",
+        "search_details": {
+            "menu_name": "asset",
+            "listfooter_xpath": "//*[@id='ngw.asset.asset']/split-screen-view/list-view/div/div[2]/div/div[2]/div[1]",
+            "search_dict": {},
+            "expander_xpath": "//div[@id='asset-search']/a",
+            "selectbox_xpath": "//*[@id='asset-search']/div/dl/dd[1]/select",
+            "searchinput_xpath": "//input[@name='board-search-keyword']",
+            "search_button_xpath": "//div[@id='asset-search']/div/button"
+        },
+        "search_input":[
+            "//div[@id='ngw.asset.asset']/split-screen-view/list-view/div/div[2]/div/div[2]/div",
+            "//div[@id='message-list']/asset-react-list/div/div",
+            "//div[@id='message-list']/asset-react-list/div/div[",
+            "]/span[6]/a",
+            "//div[@id='asset-search']/input",
+            "//div[@id='message-list']/asset-react-list/div/div/span[6]/a"
+        ]
+    },
+
+    "resource":{
+        "header_title": "//span[@class='page-header-title']",
+        "view_container":"//div[contains(@class, 'fc-view-container')]",
+        "fc_title":"//span[contains(@class, 'fc-title')]",
+        "title":"//input[@name='title']",
+        "all_day":"//label[contains(@ng-if, 'formdata.showallday')]",
+        "calendar_start":"//form[@id='resourceform']/div[3]/div/div/div/ace-datepicker/div/span",
+        "calendar_active":"//td[contains(@class, 'active day')]",
+        "start_date":"//form[@id='resourceform']/div[3]/div/div/div/ace-datepicker/div/input",
+        "end_date":"//form[@id='resourceform']/div[3]/div/div[2]/div/ace-datepicker/div/input",
+        "save_reservation":"//button/span[contains(.,'Reservation System')]",
+        "warning":"//h4[contains(.,'Warning')]",
+        "close_warning":"//button[contains(@ng-click, 'cancel(false)')]",
+        "content_title":"//div[starts-with(@id, 'ngw.resource.container.resource')]/list-view/div/div[2]/div/div[2]/div/div/div",
+        "content_comment":"//div[starts-with(@id, 'ngw.resource.container.resource')]/list-view/div/div[2]/div/div[2]/div/div[2]/div[2]/div[4]/div[2]/div/div/p",
+        "modify_button":"//button/span[contains(.,'Modify')]",
+        "cancel_button":"//button/span[contains(.,'Cancel')]",
+        "cancel_reason":"//textarea[@name='es_etc']",
+        "confirm_button":"//button[contains(@ng-click, 'ok()')]",
+        "back_to_calendar": "//div[starts-with(@id, 'ngw.resource.container.resource')]/list-view/div/div[1]/div[3]/div[1]/div[1]/button",
+        "write_back_xpath": "//div[starts-with(@id, 'ngw.resource.container.resource') and contains(@class, 'active')]/list-view/div/div[1]/div[3]/div[1]/div[1]/button",
+        "view_back_xpath": "//div[starts-with(@id, 'ngw.resource.container.resource') and contains(@class, 'active')]/list-view/div/div[1]/div[3]/div[1]/div[1]/button",
+        "tree_category": "//label[text()='Resource']/following-sibling::div/div[1]/span[1]",
+        "resource_title": "//span[contains(., '%s')]",
+        "resource_attr": "//span[contains(., '%s')]",
+        "memo": "//button[contains(.,' Memo')]",
+        "ok_button": "//button[contains(@ng-click, 'ok($event)')]",
+        "new_comment": "//li[starts-with(@id, 'content')]/div[2]/div[2]/div/p[contains(., '%s')]",
+        "resource_arrow": "//span[@class='menu-text' and text()='Resource']/following-sibling::b",
+        "resource_li": "//span[@class='menu-text' and text()='Resource']/../..",
+        "resource_comp": "//span[@class='menu-text' and text()='Resource']/../following-sibling::ul/li/a/span",
+        "category_name": "//span[@class='menu-text' and text()='Resource']/../following-sibling::ul/li%s/a/span",
+        "category_arrow": "//span[@class='menu-text' and text()='Resource']/../following-sibling::ul/li%s/a/b",
+        "category_li": "//span[@class='menu-text' and text()='Resource']/../following-sibling::ul/li%s",
+        "category_a": "//span[@class='menu-text' and text()='Resource']/../following-sibling::ul/li%s/a",
+        "approve_button": "//div[starts-with(@id, 'ngw.resource.container.resource')]/list-view/div/div/div[3]/div/div[2]/div/div/button[2]/span",
+        "add_resource_submenu": "//span[@class='menu-text' and contains(., 'Add Resource')]",
+        "add_resource_child": "//ul[@style='%s']/li/a//span/span[@class='menu-text' and contains(., 'Add Resource')]",
+        "add_category": "//a[@ng-click='CategoryAdd()']",
+        "conference_room": "//label[contains(., 'Type')]/following-sibling::div/label[contains(., 'Conference Room')]",
+        "new_category_name": "//input[@data-ng-model='categoryResource.name']",
+        "save_category": "//button[@data-ng-click='saveCategory()']",
+        "resource_category": "//a[contains(., '%s')]/../../../../../parent::div[contains(@class, 'ui-draggable-handle')]",
+        "add_resource": "//a[@ng-click='EquipAdd('cate')']",
+        "permission_system": "//label[contains(., 'Permission System')]",
+        "resource_name": "//input[@id='et_name']",
+        "permission_send_mail": "//label[contains(., 'Send Email')]",
+        "save_resource": "//button[@data-ng-click='saveEquip()']",
+        "category_expander": "//a[contains(., '%s')]/preceding-sibling::span[@class='dynatree-expander']"
+    },
+
+    "postmaster":{
+        "menu":"//a[contains(@ui-sref, 'admin.user.set-user')]",
+        "org_plus":"//div[@id='main-container']/div[2]/div/div/div[2]/div/div/div/div/div[2]/div/a[contains(@data-action, 'add')]",
+        "add_dept":"//a[contains(.,'Add Dept.')]",
+        "dept_name":"//div[3]/div/input",
+        "loading":"//div[@class='block-ui']",
+        "end_dept":"//div[@id='dept_org']/ul/li[contains(@class, 'dynatree-lastsib')]",
+        "add_user":"//a[contains(.,'Add User')]",
+        "user_id":"//input[contains(@ng-model, 'Form.user.userInfo.id')]",
+        "check_id":"//button[contains(.,'Check ID')]",
+        "check_alert":"//div[2]/div/div/div/span",
+        "input_pw":"(//input[@type='password'])[2]",
+        "user_name":"//input[contains(@ng-model, 'Form.user.userInfo.name')]",
+        "success_h4":"//h4[contains(.,'Success')]",
+        "close_success":"//button[contains(@data-ng-click, 'cancel(false)')]",
+        "end_user":"//div[@id='dept_org']/ul/li[contains(@class, 'dynatree-lastsib')]/ul/li/span/a",
+        "excel_button":"//div[@id='main-container']/div[2]/div/div/div[2]/div/div/div/div/div[2]/div[2]/a[contains(@data-action, 'common')]",
+        "save_import":"//button[contains(@ng-click,'ok($event)')]",
+        "progress_title":"//*[@id='index-page']/body/div[7]/div/div/div/h1[contains(.,'Request processing in progress.')]",
+        "progress_percent":"//div[contains(@data-percent, '100%')]",
+        "success_modal":"//div[contains(., 'Data saved successfully.')]",
+        "close_confirm":"//button[contains(@data-ng-click,'cancel()')]",
+        "delete_user":"//form[@id='boot-strap-valid']/div/div[2]/div[2]/button[contains(.,' Delete')]",
+        "delete_confirm":"//button[contains(@data-ng-click, 'ok()') and contains(., 'Delete')]",
+        "navbar_brand": "//*[@class='navbar-brand']",
+        "save_button": "//button[contains(.,'Save')]",
+        "organization_menu": "//a/span[contains(.,'Organization')]",
+        "import_button": "//a[contains(., 'Import')]",
+        "last_dept_parent": "//div[@id='dept_org']/ul/li[@class='dynatree-lastsib']",
+        "delete_button": "//div[@id='dept_org']/ul/li[@class='dynatree-lastsib']/ul/li/span/a",
+        "delete_dept": "//form[@id='boot-strap-valid']/div/div[2]/div[2]/button[2]",
+        "dept_org": "//div[@id='dept_org']",
+        "userid_name": "//*[@name='userid']",
+        "register_button": "//a[contains(@data-ng-click, 'register()')]",
+        "check_id_2": "//button[contains(@ng-click, 'checkId()')]",
+        "check_circle": "//i[contains(@class, 'fa-check-circle')]",
+        "unavailable_id": "//div[contains(., 'Unavailable ID')]",
+        "close_warning": "//button[contains(@ng-click, 'cancel(false)')]",
+        "username_id": "//*[@id='username']",
+        "select_button": "//button[contains(.,'Select')]",
+        "open_dept": "//*[@id='select-open-org-tree']",
+        "reg_confirm": "//*[@id='btn-reg-confirm']",
+        "reg_success": "//div[contains(., 'Registered successfully.')]",
+        "applicant_menu": "//a[contains(@href, '#/organize/application')]",
+        "approve_button": "//button[contains(@ng-click, 'approve()')]",
+        "org_menu_href": "//a[contains(@href, '#/user/set-user/user/')]",
+        "search_input": "//div[@id='main-container']/div[2]/div/div/div[2]/div/div/div/div[2]/div/tree-user/div/input",
+        "delete_user_2": "//button[contains(@ng-click, 'deleteUser()')]"
+    },
+
+    "domain_config":{
+        "qa":{
+            "domain_name": "http://qa.hanbiro.net/ngw/app/#",
+            "user_id": "automationtest", 
+            "user_pw": "automationtest1!",  
+            "org_key": "automationtest",
+            "user1": "Selenium/AutomationTest",
+            "user2": "Selenium/AutomationTest1",
+            "user3": "Selenium/AutomationTest2",
+            "recipient_id": "automationtest2",
+            "recipient_name": "AutomationTest2", 
+            "board_folder_link": "/board/list/u0_661/", 
+            "clouddisk_folder_id": "1561", 
+            "project_link": "/project/view/2_0_0/pseqno/0_336", 
+            "archive_folder_link": "/archive/list/p_272_0/", 
+            "asset_folder_link": "/asset/asset/list/0_5//", 
+            "reservation_folder_link": "/resource/list/476_0/", 
+            "resource_permission_folder_name": "Meeting room 2",
+            "postmaster_pw": "$Bhngk6@"
+        },
+
+        "qa1":{
+            "domain_name": "http://qa1.hanbiro.net/ngw/app/#",
+            "user_id": "phuongdofu1", 
+            "user_pw": "phuong1!!!",  
+            "org_key": "phuongdofu",
+            "user1": "PhuongDofu/PhuongDofu1 (aa)",
+            "user2": "Dept2/PhuongDofu2 (Adviser)",
+            "user3": "PhuongDofu/PhuongDofu3 (CMO)",
+            "recipient_id": "phuongdofu2",
+            "recipient_name": "Dept2/PhuongDofu2 (Adviser)", 
+            "board_folder_link": "/board/list/u0_661/", 
+            "clouddisk_folder_id": "1561", 
+            "project_link": "/project/view/2_0_0/pseqno/0_336", 
+            "archive_folder_link": "/archive/list/p_272_0/", 
+            "asset_folder_link": "/asset/asset/list/0_5//", 
+            "reservation_folder_link": "/resource/list/207_0/", 
+            "resource_permission_folder_name": "Phong hop 01",
+            "postmaster_pw": "$Bhngk6@"
+        },
+
+        "global3":{
+            "domain_name": "https://global3.hanbiro.com/ngw/app/#",
+            "user_id": "automationtest", 
+            "user_pw": "automationtest1!", 
+            "org_key": "automationtest",
+            "user1": "Selenium/AutomationTest",
+            "user2": "Selenium/AutomationTest1",
+            "user3": "Selenium/AutomationTest2",
+            "recipient_id": "automationtest2",
+            "recipient_name": "AutomationTest2", 
+            "board_folder_link": "/board/list/u102_2842/", 
+            "clouddisk_folder_id": "104826", 
+            "project_link": "/project/view/2_0_0/pseqno/102_1642", 
+            "archive_folder_link": "/archive/list/p_223_102/", 
+            "asset_folder_link": "/asset/asset/list/102_132//", 
+            "reservation_folder_link": "/resource/list/408_102/", 
+            "resource_permission_folder_name": "Meeting room 2",
+            "postmaster_pw": "!gksqlfh1!"
+        },
+
+        "dofu":{
+            "domain_name": "http://dofu.hanbiro.net/ngw/app/#",
+            "user_id": "phuong", 
+            "user_pw": "phuong1!", 
+            "org_key": "phuong1",
+            "user1": "Selenium/AutomationTest",
+            "user2": "Selenium/AutomationTest1",
+            "user3": "Selenium/AutomationTest2",
+            "recipient_id": "phuong1", 
+            "recipient_name": "Phuong 1", 
+            "board_folder_link": "/board/list/u0_15/", 
+            "clouddisk_folder_id": "321", 
+            "project_link": "/project/view/2_0_0/pseqno/0_9", 
+            "archive_folder_link": "/archive/list/p_11_0/", 
+            "asset_folder_link": "/asset/asset/list/0_1//", 
+            "reservation_folder_link": "/resource/list/6_0/", 
+            "resource_permission_folder_name": "Meeting room 2",
+            "postmaster_pw": "$Bhngk6@"
+        },
+
+        "groupware57":{
+            "domain_name": "https://groupware57.hanbiro.net/ngw/app/#",
+            "user_id": "automationtest", 
+            "user_pw": "automationtest1!", 
+            "org_key": "automationtest",
+            "user1": "Selenium/AutomationTest",
+            "user2": "Selenium/AutomationTest1",
+            "user3": "Selenium/AutomationTest2",
+            "recipient_id": "automationtest2", 
+            "recipient_name": "AutomationTest2", 
+            "board_folder_link": "/board/list/u0_1/", 
+            "clouddisk_folder_id": "166", 
+            "project_link": "/project/view/2_0_0/pseqno/0_3", 
+            "archive_folder_link": "/archive/list/p_3_0/", 
+            "asset_folder_link": "/asset/asset/list/0_1//", 
+            "reservation_folder_link": "/resource/list/17_0/", 
+            "resource_permission_folder_name": "Meeting room 2",
+            "postmaster_pw": "$Bhngk6@"
+        },
+
+        "qavn":{
+            "domain_name": "http://qavn.hanbiro.net/ngw/app/#",
+            "user_id": "automationtest", 
+            "user_pw": "automationtest1!", 
+            "org_key": "automationtest",
+            "user1": "Selenium/AutomationTest",
+            "user2": "Selenium/AutomationTest1",
+            "user3": "Selenium/AutomationTest2",
+            "recipient_id": "automationtest2", 
+            "recipient_name": "AutomationTest2",
+            "reservation_folder_link": "/resource/list/51_0/",
+            "resource_permission_folder_name": "Meeting room 2",
+            "postmaster_pw": "DzdlGFdp"
+        },
+
+        "centos7":{
+            "domain_name": "http://gw.hanbirolinux.tk/ngw/app/#",
+            "user_id": "automationtest", 
+            "user_pw": "automationtest1!", 
+            "org_key": "automationtest",
+            "user1": "Selenium/AutomationTest",
+            "user2": "Selenium/AutomationTest1",
+            "user3": "Selenium/AutomationTest2",
+            "recipient_id": "automationtest2", 
+            "recipient_name": "AutomationTest2",
+            "reservation_folder_link": "/resource/list/4_20/",
+            "resource_permission_folder_name": "Meeting room 2",
+            "postmaster_pw": "Hanbiro1!"
+        },
+
+        "tg01":{
+            "domain_name": "https://tg01.hanbiro.net/ngw/app/#",
+            "user_id": "automationtest", 
+            "user_pw": "automationtest1!", 
+            "org_key": "automationtest",
+            "user1": "Selenium/AutomationTest",
+            "user2": "Selenium/AutomationTest1",
+            "user3": "Selenium/AutomationTest2",
+            "recipient_id": "automationtest1", 
+            "recipient_name": "AutomationTest1",
+            "reservation_folder_link": "/resource/list/4_20/",
+            "resource_permission_folder_name": "Meeting room 2",
+            "postmaster_pw": "!gksqlfh1!"
+        },
+
+        "tg02":{
+            "domain_name": "https://tg02.hanbiro.net/ngw/app/#",
+            "user_id": "automationtest", 
+            "user_pw": "automationtest1!", 
+            "org_key": "automationtest",
+            "user1": "Selenium/AutomationTest",
+            "user2": "Selenium/AutomationTest1",
+            "user3": "Selenium/AutomationTest2",
+            "recipient_id": "automationtest1", 
+            "recipient_name": "AutomationTest1",
+            "reservation_folder_link": "/resource/list/4_20/",
+            "resource_permission_folder_name": "Meeting room 2",
+            "postmaster_pw": "!gksqlfh1!"
+        }
+    },
+
+    "testcase_result": {
+        "mail":{
+            "send": {
+                "pass":{
+                    "menu": "Mail",
+                    "sub_menu": "Main Features",
+                    "testcase": "Send mail",
+                    "status": "Pass",
+                    "description": "Mail is saved successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Mail",
+                    "sub_menu": "Main Features",
+                    "testcase": "Send mail",
+                    "status": "Fail",
+                    "description": "Fail to save mail",
+                    "tester": "Phuong"
+                }
+            },
+            "notification": {
+                "pass":{
+                    "menu": "Mail",
+                    "sub_menu": "Main Features",
+                    "testcase": "Receive notification",
+                    "status": "Pass",
+                    "description": "Receive push notification successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Mail",
+                    "sub_menu": "Main Features",
+                    "testcase": "Receive notification",
+                    "status": "Fail",
+                    "description": "Fail to receive push notification",
+                    "tester": "Phuong"
+                }
+            },
+            "view": {
+                "pass":{
+                    "menu": "Mail",
+                    "sub_menu": "Main Features",
+                    "testcase": "View Mail",
+                    "status": "Pass",
+                    "description": "Mail subject is displayed normally",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Mail",
+                    "sub_menu": "Main Features",
+                    "testcase": "View Mail",
+                    "status": "Fail",
+                    "description": "Mail subject is recognized as None",
+                    "tester": "Phuong"
+                }
+            },
+            "reply": { 
+                "pass":{
+                    "menu": "Mail",
+                    "sub_menu": "Main Features",
+                    "testcase": "Reply mail",
+                    "status": "Pass",
+                    "description": "Reply mail successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Mail",
+                    "sub_menu": "Main Features",
+                    "testcase": "Reply mail",
+                    "status": "Fail",
+                    "description": "Fail to save reply mail",
+                    "tester": "Phuong"
+                }
+            },
+            "reply_all": {
+                "pass":{
+                    "menu": "Mail",
+                    "sub_menu": "Main Features",
+                    "testcase": "Reply All Mail",
+                    "status": "Pass",
+                    "description": "Reply all successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Mail",
+                    "sub_menu": "Main Features",
+                    "testcase": "Reply All Mail",
+                    "status": "Fail",
+                    "description": "Fail to reply all",
+                    "tester": "Phuong"
+                }
+            },
+            "forward": {
+                "pass":{
+                    "menu": "Mail",
+                    "sub_menu": "Main Features",
+                    "testcase": "Forward Mail",
+                    "status": "Pass",
+                    "description": "Forward mail successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Mail",
+                    "sub_menu": "Main Features",
+                    "testcase": "Forward Mail",
+                    "status": "Fail",
+                    "description": "Fail to forward mail",
+                    "tester": "Phuong"
+                }
+            },
+            "report_spam": {
+                "pass":{
+                    "menu": "Mail",
+                    "sub_menu": "Main Features",
+                    "testcase": "Report Spam",
+                    "status": "Pass",
+                    "description": "Mail is moved to Spam successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Mail",
+                    "sub_menu": "Main Features",
+                    "testcase": "Report Spam",
+                    "status": "Fail",
+                    "description": "Fail to move mail to Spam",
+                    "tester": "Phuong"
+                }
+            },
+            "report_not_spam": {
+                "pass":{
+                    "menu": "Mail",
+                    "sub_menu": "Main Features",
+                    "testcase": "Report Not Spam",
+                    "status": "Pass",
+                    "description": "Mail is moved back from Spam successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Mail",
+                    "sub_menu": "Main Features",
+                    "testcase": "Report Not Spam",
+                    "status": "Fail",
+                    "description": "Fail to move mail back from Spam",
+                    "tester": "Phuong"
+                }
+            },
+            "outlook_send": {
+                "pass":{
+                    "menu": "Mail",
+                    "sub_menu": "Main Features",
+                    "testcase": "Send Mail - Outlook",
+                    "status": "Pass",
+                    "description": "Mail is displayed in Inbox of Web Mail",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Mail",
+                    "sub_menu": "Main Features",
+                    "testcase": "Send Mail - Outlook",
+                    "status": "Fail",
+                    "description": "Cannot find mail in Inbox of Web Mail",
+                    "tester": "Phuong"
+                }
+            },
+            "outlook_receive": {
+                "pass":{
+                    "menu": "Mail",
+                    "sub_menu": "Main Features",
+                    "testcase": "Receive Mail - Outlook",
+                    "status": "Pass",
+                    "description": "Mail is displayed in Inbox of Outlook app",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Mail",
+                    "sub_menu": "Main Features",
+                    "testcase": "Receive Mail - Outlook",
+                    "status": "Fail",
+                    "description": "Cannot find mail in Inbox of Outlook app",
+                    "tester": "Phuong"
+                }
+            },
+            "search": {
+                "pass":{
+                    "menu": "Mail",
+                    "sub_menu": "Main Features",
+                    "testcase": "Search Mail",
+                    "status": "Pass",
+                    "description": "Search mail successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Mail",
+                    "sub_menu": "Main Features",
+                    "testcase": "Search Mail",
+                    "status": "Fail",
+                    "description": "Fail to search mail",
+                    "tester": "Phuong"
+                }
+            }
+        },
+        "board": {
+            "write":{
+                "pass":{
+                    "menu": "Board",
+                    "sub_menu": "Main Features",
+                    "testcase": "Write board",
+                    "status": "Pass",
+                    "description": "New board is saved successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Board",
+                    "sub_menu": "Main Features",
+                    "testcase": "Write board",
+                    "status": "Fail",
+                    "description": "Fail to save board",
+                    "tester": "Phuong"
+                }
+            },
+            "comment":{
+                "pass":{
+                    "menu": "Board",
+                    "sub_menu": "Main Features",
+                    "testcase": "Board Comment",
+                    "status": "Pass",
+                    "description": "Comment is saved successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Board",
+                    "sub_menu": "Main Features",
+                    "testcase": "Board Comment",
+                    "status": "Fail",
+                    "description": "Fail to save comment",
+                    "tester": "Phuong"
+                }
+            },
+            "view":{
+                "pass":{
+                    "menu": "Board",
+                    "sub_menu": "Main Features",
+                    "testcase": "View Board",
+                    "status": "Pass",
+                    "description": "Access selected board successfully (correct content)",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Board",
+                    "sub_menu": "Main Features",
+                    "testcase": "View Board",
+                    "status": "Fail",
+                    "description": "Fail to access selected board (incorrect content)",
+                    "tester": "Phuong"
+                }
+            },
+            "check_unread":{
+                "pass":{
+                    "menu": "Board",
+                    "sub_menu": "Main Features",
+                    "testcase": "Check unread board",
+                    "status": "Pass",
+                    "description": "Unread counter is updated correctly",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Board",
+                    "sub_menu": "Main Features",
+                    "testcase": "Check unread board",
+                    "status": "Fail",
+                    "description": "Unread counter is updated incorrectly",
+                    "tester": "Phuong"
+                }
+            },
+            "search":{
+                "pass":{
+                    "menu": "Board",
+                    "sub_menu": "Main Features",
+                    "testcase": "Search Board",
+                    "status": "Pass",
+                    "description": "Search board successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Board",
+                    "sub_menu": "Main Features",
+                    "testcase": "Search Board",
+                    "status": "Fail",
+                    "description": "Fail to search board",
+                    "tester": "Phuong"
+                }
+            }
+        },
+        "task_report":{
+            "write":{
+                "pass":{
+                    "menu": "Task Report",
+                    "sub_menu": "Main Features",
+                    "testcase": "Write Task Report",
+                    "status": "Pass",
+                    "description": "Save task report successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Task Report",
+                    "sub_menu": "Main Features",
+                    "testcase": "Write Task Report",
+                    "status": "Fail",
+                    "description": "Fail to save task report",
+                    "tester": "Phuong"
+                }
+            },
+            "view":{
+                "pass":{
+                    "menu": "Task Report",
+                    "sub_menu": "Main Features",
+                    "testcase": "View Report",
+                    "status": "Pass",
+                    "description": "Report subject is not empty",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Task Report",
+                    "sub_menu": "Main Features",
+                    "testcase": "View Report",
+                    "status": "Fail",
+                    "description": "Report subject is not correct as input",
+                    "tester": "Phuong"
+                }
+            },
+            "comment":{
+                "pass":{
+                    "menu": "Task Report",
+                    "sub_menu": "Main Features",
+                    "testcase": "Write comment",
+                    "status": "Pass",
+                    "description": "Write comment successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Task Report",
+                    "sub_menu": "Main Features",
+                    "testcase": "Write comment",
+                    "status": "Fail",
+                    "description": "Fail to save comment",
+                    "tester": "Phuong"
+                }
+            },
+            "search":{
+                "pass":{
+                    "menu": "Task Report",
+                    "sub_menu": "Main Features",
+                    "testcase": "Search task report",
+                    "status": "Pass",
+                    "description": "Search task report successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Task Report",
+                    "sub_menu": "Main Features",
+                    "testcase": "Search task report",
+                    "status": "Fail",
+                    "description": "Fail to search task report",
+                    "tester": "Phuong"
+                }
+            }
+        },
+        "work_diary":{
+            "write":{
+                "pass":{
+                    "menu": "Work Diary",
+                    "sub_menu": "Main Features",
+                    "testcase": "Write work diary",
+                    "status": "Pass",
+                    "description": "Save work diary successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Work Diary",
+                    "sub_menu": "Main Features",
+                    "testcase": "Write work diary",
+                    "status": "Fail",
+                    "description": "Fail to save work diary",
+                    "tester": "Phuong"
+                }
+            },
+            "view":{
+                "pass":{
+                    "menu": "Work Diary",
+                    "sub_menu": "Main Features",
+                    "testcase": "View work diary",
+                    "status": "Pass",
+                    "description": "Access work diary content successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Work Diary",
+                    "sub_menu": "Main Features",
+                    "testcase": "View work diary",
+                    "status": "Fail",
+                    "description": "Fail to access work diary",
+                    "tester": "Phuong"
+                }
+            },
+            "comment":{
+                "pass":{
+                    "menu": "Work Diary",
+                    "sub_menu": "Main Features",
+                    "testcase": "Comment",
+                    "status": "Pass",
+                    "description": "Comment is saved successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Work Diary",
+                    "sub_menu": "Main Features",
+                    "testcase": "Comment",
+                    "status": "Fail",
+                    "description": "Fail to save comment",
+                    "tester": "Phuong"
+                }
+            },
+            "search":{
+                "pass":{
+                    "menu": "Work Diary",
+                    "sub_menu": "Main Features",
+                    "testcase": "Search work diary",
+                    "status": "Pass",
+                    "description": "Search work diary successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Work Diary",
+                    "sub_menu": "Main Features",
+                    "testcase": "Search work diary",
+                    "status": "Fail",
+                    "description": "Fail to search work diary",
+                    "tester": "Phuong"
+                }
+            }
+        },
+        "calendar_folder":{
+            "write":{
+                "pass":{
+                    "menu": "Calendar Folder",
+                    "sub_menu": "Main Features",
+                    "testcase": "Add event",
+                    "status": "Pass",
+                    "description": "Save event successfully (display on calendar)",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Calendar Folder",
+                    "sub_menu": "Main Features",
+                    "testcase": "Add event",
+                    "status": "Fail",
+                    "description": "Fail to save event (not found on calendar)",
+                    "tester": "Phuong"
+                }
+            },
+            "view":{
+                "pass":{
+                    "menu": "Calendar Folder",
+                    "sub_menu": "Main Features",
+                    "testcase": "View Event",
+                    "status": "Pass",
+                    "description": "Click to view event successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Calendar Folder",
+                    "sub_menu": "Main Features",
+                    "testcase": "View Event",
+                    "status": "Fail",
+                    "description": "Fail to click view event",
+                    "tester": "Phuong"
+                }
+            },
+            "edit":{
+                "pass":{
+                    "menu": "Calendar Folder",
+                    "sub_menu": "Main Features",
+                    "testcase": "Edit Event",
+                    "status": "Pass",
+                    "description": "Event date when edit is same as created date",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Calendar Folder",
+                    "sub_menu": "Main Features",
+                    "testcase": "Edit Event",
+                    "status": "Fail",
+                    "description": "Event date when edit is different from created date",
+                    "tester": "Phuong"
+                }
+            },
+            "copy":{
+                "pass":{
+                    "menu": "Calendar Folder",
+                    "sub_menu": "Main Features",
+                    "testcase": "Copy Event",
+                    "status": "Pass",
+                    "description": "Copy event successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Calendar Folder",
+                    "sub_menu": "Main Features",
+                    "testcase": "Copy Event",
+                    "status": "Fail",
+                    "description": "Fail to copy event",
+                    "tester": "Phuong"
+                }
+            },
+            "import":{
+                "pass":{
+                    "menu": "Calendar Folder",
+                    "sub_menu": "Main Features",
+                    "testcase": "Import Event",
+                    "status": "Pass",
+                    "description": "All events are imported successfully (allday event and time event)",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Calendar Folder",
+                    "sub_menu": "Main Features",
+                    "testcase": "Import Event",
+                    "status": "Fail",
+                    "description": "Fail to import event",
+                    "tester": "Phuong"
+                }
+            },
+            "delete":{
+                "pass":{
+                    "menu": "Calendar Folder",
+                    "sub_menu": "Main Features",
+                    "testcase": "Delete event",
+                    "status": "Pass",
+                    "description": "Delete event successfully (not found on calendar)",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Calendar Folder",
+                    "sub_menu": "Main Features",
+                    "testcase": "Delete event",
+                    "status": "Fail",
+                    "description": "Fail to delete event (still displayed after delete)",
+                    "tester": "Phuong"
+                }
+            }
+        },
+        "contact":{
+            "write":{
+                "pass":{
+                    "menu": "Contact",
+                    "sub_menu": "Main Features",
+                    "testcase": "Add contact",
+                    "status": "Pass",
+                    "description": "Add new contact successfully (access contact view page after created)",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Contact",
+                    "sub_menu": "Main Features",
+                    "testcase": "Add contact",
+                    "status": "Fail",
+                    "description": "Fail to add new contact (not access contact view page)",
+                    "tester": "Phuong"
+                }
+            },
+            "view":{
+                "pass":{
+                    "menu": "Contact",
+                    "sub_menu": "Main Features",
+                    "testcase": "View contact",
+                    "status": "Pass",
+                    "description": "View contact successfully (contact info is displayed when access view page)",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Contact",
+                    "sub_menu": "Main Features",
+                    "testcase": "View contact",
+                    "status": "Fail",
+                    "description": "Fail to view contact (contact info is displayed when access view page)",
+                    "tester": "Phuong"
+                }
+            },
+            "search":{
+                "pass":{
+                    "menu": "Contact",
+                    "sub_menu": "Main Features",
+                    "testcase": "Search contact",
+                    "status": "Pass",
+                    "description": "Search contact successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Contact",
+                    "sub_menu": "Main Features",
+                    "testcase": "Search contact",
+                    "status": "Fail",
+                    "description": "Fail to search contact",
+                    "tester": "Phuong"
+                }
+            },
+            "import":{
+                "pass":{
+                    "menu": "Contact",
+                    "sub_menu": "Main Features",
+                    "testcase": "Import contact",
+                    "status": "Pass",
+                    "description": "Import contact successfully (contact is found when search)",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Contact",
+                    "sub_menu": "Main Features",
+                    "testcase": "Import contact",
+                    "status": "Fail",
+                    "description": "Fail to import contact (cannot find contact when search)",
+                    "tester": "Phuong"
+                }
+            },
+            "copy":{
+                "pass":{
+                    "menu": "Contact",
+                    "sub_menu": "Main Features",
+                    "testcase": "Copy Contact",
+                    "status": "Pass",
+                    "description": "Copy contact successfully (number of contacts in list are increased)",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Contact",
+                    "sub_menu": "Main Features",
+                    "testcase": "Copy Contact",
+                    "status": "Fail",
+                    "description": "Fail to copy contact (number of contacts in list are not increased)",
+                    "tester": "Phuong"
+                }
+            },
+            "list_exposure":{
+                "pass":{
+                    "menu": "Contact",
+                    "sub_menu": "Main Features",
+                    "testcase": "Check List Exposure",
+                    "status": "Pass",
+                    "description": "",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Contact",
+                    "sub_menu": "Main Features",
+                    "testcase": "Check List Exposure",
+                    "status": "Fail",
+                    "description": "",
+                    "tester": "Phuong"
+                }
+            }
+        },
+        "clouddisk": {
+            "upload": {
+                "pass":{
+                    "menu": "CloudDisk",
+                    "sub_menu": "Main Features",
+                    "testcase": "Upload file",
+                    "status": "Pass",
+                    "description": "Upload file successfully (count number of items in list)",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "CloudDisk",
+                    "sub_menu": "Main Features",
+                    "testcase": "Upload file",
+                    "status": "Fail",
+                    "description": "Fail to upload file (count number of items in list)",
+                    "tester": "Phuong"
+                }
+            },
+            "preview": {
+                "pass":{
+                    "menu": "CloudDisk",
+                    "sub_menu": "Main Features",
+                    "testcase": "Preview file",
+                    "status": "Pass",
+                    "description": "Image is displayed in preview modal",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "CloudDisk",
+                    "sub_menu": "Main Features",
+                    "testcase": "Preview file",
+                    "status": "Fail",
+                    "description": "Cannot find image in preview modal",
+                    "tester": "Phuong"
+                }
+            },
+            "copy": {
+                "pass":{
+                    "menu": "CloudDisk",
+                    "sub_menu": "Main Features",
+                    "testcase": "Copy file",
+                    "status": "Pass",
+                    "description": "Copied file is displayed in copied folder",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "CloudDisk",
+                    "sub_menu": "Main Features",
+                    "testcase": "Copy file",
+                    "status": "Fail",
+                    "description": "Cannot find copied file in copied folder",
+                    "tester": "Phuong"
+                }
+            },
+            "search": {
+                "pass":{
+                    "menu": "CloudDisk",
+                    "sub_menu": "Main Features",
+                    "testcase": "Search file",
+                    "status": "Pass",
+                    "description": "Search file successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "CloudDisk",
+                    "sub_menu": "Main Features",
+                    "testcase": "Search file",
+                    "status": "Fail",
+                    "description": "Fail to search file",
+                    "tester": "Phuong"
+                }
+            },
+            "lock": {
+                "pass":{
+                    "menu": "CloudDisk",
+                    "sub_menu": "Main Features",
+                    "testcase": "Lock file",
+                    "status": "Pass",
+                    "description": "File is locked successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "CloudDisk",
+                    "sub_menu": "Main Features",
+                    "testcase": "Lock file",
+                    "status": "Fail",
+                    "description": "Fail to lock file",
+                    "tester": "Phuong"
+                }
+            },
+            "unlock": {
+                "pass":{
+                    "menu": "CloudDisk",
+                    "sub_menu": "Main Features",
+                    "testcase": "Unlock file",
+                    "status": "Pass",
+                    "description": "File is UNlocked successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "CloudDisk",
+                    "sub_menu": "Main Features",
+                    "testcase": "Unlock file",
+                    "status": "Fail",
+                    "description": "Fail to UNlock file",
+                    "tester": "Phuong"
+                }
+            },
+            "weblink": {
+                "pass":{
+                    "menu": "CloudDisk",
+                    "sub_menu": "Main Features",
+                    "testcase": "Create weblink",
+                    "status": "Pass",
+                    "description": "Create weblink successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "CloudDisk",
+                    "sub_menu": "Main Features",
+                    "testcase": "Create weblink",
+                    "status": "Fail",
+                    "description": "Fail to create weblink",
+                    "tester": "Phuong"
+                }
+            }
+        },
+        "circular": {
+            "write":{
+                "pass":{
+                    "menu": "Circular",
+                    "sub_menu": "Main Features",
+                    "testcase": "Send circular",
+                    "status": "Pass",
+                    "description": "Save circular successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Circular",
+                    "sub_menu": "Main Features",
+                    "testcase": "Send circular",
+                    "status": "Fail",
+                    "description": "Fail to save circular",
+                    "tester": "Phuong"
+                }
+            },
+            "notification":{
+                "pass":{
+                    "menu": "Circular",
+                    "sub_menu": "Main Features",
+                    "testcase": "Notification",
+                    "status": "Pass",
+                    "description": "Push notification is valid",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Circular",
+                    "sub_menu": "Main Features",
+                    "testcase": "Notification",
+                    "status": "Fail",
+                    "description": "Fail to receive push notification",
+                    "tester": "Phuong"
+                }
+            },
+            "view":{
+                "pass":{
+                    "menu": "Circular",
+                    "sub_menu": "Main Features",
+                    "testcase": "View circular",
+                    "status": "Pass",
+                    "description": "Access view page successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Circular",
+                    "sub_menu": "Main Features",
+                    "testcase": "View circular",
+                    "status": "Fail",
+                    "description": "Fail to access page",
+                    "tester": "Phuong"
+                }
+            },
+            "unread_counter":{
+                "pass":{
+                    "menu": "Circular",
+                    "sub_menu": "Main Features",
+                    "testcase": "Check Counter",
+                    "status": "Pass",
+                    "description": "Unread counter is updated successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Circular",
+                    "sub_menu": "Main Features",
+                    "testcase": "Check Counter",
+                    "status": "Fail",
+                    "description": "Fail to update unread counter",
+                    "tester": "Phuong"
+                }
+            },
+            "read_counter":{
+                "pass":{
+                    "menu": "Circular",
+                    "sub_menu": "Main Features",
+                    "testcase": "Check Counter",
+                    "status": "Pass",
+                    "description": "Read counter is updated successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Circular",
+                    "sub_menu": "Main Features",
+                    "testcase": "Check Counter",
+                    "status": "Fail",
+                    "description": "Fail to update read counter",
+                    "tester": "Phuong"
+                }
+            },
+            "comment":{
+                "pass":{
+                    "menu": "Circular",
+                    "sub_menu": "Main Features",
+                    "testcase": "Comment as receipt",
+                    "status": "Pass",
+                    "description": "Write comment as receipt successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Circular",
+                    "sub_menu": "Main Features",
+                    "testcase": "Comment as receipt",
+                    "status": "Fail",
+                    "description": "Fail to write comment as receipt",
+                    "tester": "Phuong"
+                }
+            },
+            "search":{
+                "pass":{
+                    "menu": "Circular",
+                    "sub_menu": "Main Features",
+                    "testcase": "Search circular",
+                    "status": "Pass",
+                    "description": "Search successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Circular",
+                    "sub_menu": "Main Features",
+                    "testcase": "Search circular",
+                    "status": "Fail",
+                    "description": "Fail to search",
+                    "tester": "Phuong"
+                }
+            }
+        },
+        "todo":{
+            "write":{
+                "pass":{
+                    "menu": "ToDo",
+                    "sub_menu": "Main Features",
+                    "testcase": "Write ToDo",
+                    "status": "Pass",
+                    "description": "Save ToDo successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "ToDo",
+                    "sub_menu": "Main Features",
+                    "testcase": "Write ToDo",
+                    "status": "Fail",
+                    "description": "Fail to save ToDo",
+                    "tester": "Phuong"
+                }
+            },
+            "view":{
+                "pass":{
+                    "menu": "ToDo",
+                    "sub_menu": "Main Features",
+                    "testcase": "View ToDo",
+                    "status": "Pass",
+                    "description": "Access ToDo view page successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "ToDo",
+                    "sub_menu": "Main Features",
+                    "testcase": "View ToDo",
+                    "status": "Fail",
+                    "description": "Fail to access ToDo view page",
+                    "tester": "Phuong"
+                }
+            },
+            "update_progress":{
+                "pass":{
+                    "menu": "ToDo",
+                    "sub_menu": "Main Features",
+                    "testcase": "Update ToDo progress",
+                    "status": "Pass",
+                    "description": "ToDo progress is saved successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "ToDo",
+                    "sub_menu": "Main Features",
+                    "testcase": "Update ToDo progress",
+                    "status": "Fail",
+                    "description": "Fail to save ToDo progress",
+                    "tester": "Phuong"
+                }
+            },
+            "search":{
+                "pass":{
+                    "menu": "ToDo",
+                    "sub_menu": "Main Features",
+                    "testcase": "Search ToDo",
+                    "status": "Pass",
+                    "description": "Search successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "ToDo",
+                    "sub_menu": "Main Features",
+                    "testcase": "Search ToDo",
+                    "status": "Fail",
+                    "description": "Fail to search",
+                    "tester": "Phuong"
+                }
+            }
+        },
+        "project": {
+            "access_menu": {
+                "pass":{
+                    "menu": "Project",
+                    "sub_menu": "Main Features",
+                    "testcase": "Write Work",
+                    "status": "Pass",
+                    "description": "Access menu successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Project",
+                    "sub_menu": "Main Features",
+                    "testcase": "Write Work",
+                    "status": "Fail",
+                    "description": "Fail to access menu",
+                    "tester": "Phuong"
+                }
+            },
+            "write_work": {
+                "pass":{
+                    "menu": "Project",
+                    "sub_menu": "Main Features",
+                    "testcase": "Write Work",
+                    "status": "Pass",
+                    "description": "New work is displayed in list",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Project",
+                    "sub_menu": "Main Features",
+                    "testcase": "Write Work",
+                    "status": "Fail",
+                    "description": "Cannot find work in list",
+                    "tester": "Phuong"
+                }
+            },
+            "write_ticket": {
+                "pass":{
+                    "menu": "Project",
+                    "sub_menu": "Main Features",
+                    "testcase": "Write Ticket",
+                    "status": "Pass",
+                    "description": "Ticket is displayed in ticket list",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Project",
+                    "sub_menu": "Main Features",
+                    "testcase": "Write Ticket",
+                    "status": "Fail",
+                    "description": "Cannot find ticket in list",
+                    "tester": "Phuong"
+                }
+            },
+            "write_reference": {
+                "pass":{
+                    "menu": "Project",
+                    "sub_menu": "Main Features",
+                    "testcase": "Write Reference",
+                    "status": "Pass",
+                    "description": "Reference is displayed in reference list",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Project",
+                    "sub_menu": "Main Features",
+                    "testcase": "Write Reference",
+                    "status": "Fail",
+                    "description": "Cannot find reference in list",
+                    "tester": "Phuong"
+                }
+            },
+            "view_work": {
+                "pass":{
+                    "menu": "Project",
+                    "sub_menu": "Main Features",
+                    "testcase": "View Work",
+                    "status": "Pass",
+                    "description": "Access work view page successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Project",
+                    "sub_menu": "Main Features",
+                    "testcase": "View Work",
+                    "status": "Fail",
+                    "description": "Fail to access work view page",
+                    "tester": "Phuong"
+                }
+            },
+            "view_ticket": {
+                "pass":{
+                    "menu": "Project",
+                    "sub_menu": "Main Features",
+                    "testcase": "View Ticket",
+                    "status": "Pass",
+                    "description": "Ticket content is displayed in view page",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Project",
+                    "sub_menu": "Main Features",
+                    "testcase": "View Ticket",
+                    "status": "Fail",
+                    "description": "Ticket content is not displayed in view page",
+                    "tester": "Phuong"
+                }
+            },
+            "view_reference": {
+                "pass":{
+                    "menu": "Project",
+                    "sub_menu": "Main Features",
+                    "testcase": "View Reference",
+                    "status": "Pass",
+                    "description": "Reference title is displayed in view page",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Project",
+                    "sub_menu": "Main Features",
+                    "testcase": "View Reference",
+                    "status": "Fail",
+                    "description": "Reference title is not displayed in view page",
+                    "tester": "Phuong"
+                }
+            },
+            "insert_reference": {
+                "pass":{
+                    "menu": "Project",
+                    "sub_menu": "Main Features",
+                    "testcase": "Insert Reference",
+                    "status": "Pass",
+                    "description": "Insert reference successfully (Find reference)",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Project",
+                    "sub_menu": "Main Features",
+                    "testcase": "Insert Reference",
+                    "status": "Fail",
+                    "description": "Fail to insert reference (Cannot find reference)",
+                    "tester": "Phuong"
+                }
+            },
+            "insert_ticket": {
+                "pass":{
+                    "menu": "Project",
+                    "sub_menu": "Main Features",
+                    "testcase": "Insert Ticket",
+                    "status": "Pass",
+                    "description": "Insert ticket successfully (Find ticket)",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Project",
+                    "sub_menu": "Main Features",
+                    "testcase": "Insert Ticket",
+                    "status": "Fail",
+                    "description": "Fail to insert ticket (Cannot find ticket)",
+                    "tester": "Phuong"
+                }
+            },
+            "update_status": {
+                "pass":{
+                    "menu": "Project",
+                    "sub_menu": "Main Features",
+                    "testcase": "Update Status",
+                    "status": "Pass",
+                    "description": "Work Status is changed to Resolved successfully %Done == 100%",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Project",
+                    "sub_menu": "Main Features",
+                    "testcase": "Update Status",
+                    "status": "Fail",
+                    "description": "Fail to change work status to Resolved %Done != 100%",
+                    "tester": "Phuong"
+                }
+            },
+            "work_comment": {
+                "pass":{
+                    "menu": "Project",
+                    "sub_menu": "Main Features",
+                    "testcase": "Write work comment",
+                    "status": "Pass",
+                    "description": "Save comment successfully (find comment)",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Project",
+                    "sub_menu": "Main Features",
+                    "testcase": "Write work comment",
+                    "status": "Fail",
+                    "description": "Cannot find comment",
+                    "tester": "Phuong"
+                }
+            }
+        },
+        "archive": {
+            "write": {
+                "pass":{
+                    "menu": "Archive",
+                    "sub_menu": "Main Features",
+                    "testcase": "Write new document",
+                    "status": "Pass",
+                    "description": "Archive is displayed in list",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Archive",
+                    "sub_menu": "Main Features",
+                    "testcase": "Write new document",
+                    "status": "Fail",
+                    "description": "Fail to save archive (cannot find archive in list)",
+                    "tester": "Phuong"
+                }
+            },
+            "view": {
+                "pass":{
+                    "menu": "Archive",
+                    "sub_menu": "Main Features",
+                    "testcase": "View Archive",
+                    "status": "Pass",
+                    "description": "Archive content is displayed",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Archive",
+                    "sub_menu": "Main Features",
+                    "testcase": "View Archive",
+                    "status": "Fail",
+                    "description": "Cannot find archive content",
+                    "tester": "Phuong"
+                }
+            },
+            "search": {
+                "pass":{
+                    "menu": "Archive",
+                    "sub_menu": "Main Features",
+                    "testcase": "Search Archive",
+                    "status": "Pass",
+                    "description": "Search archive successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Archive",
+                    "sub_menu": "Main Features",
+                    "testcase": "Search Archive",
+                    "status": "Fail",
+                    "description": "Fail to search archive",
+                    "tester": "Phuong"
+                }
+            }
+        },
+        "asset": {
+            "write": {
+                "pass":{
+                    "menu": "Asset",
+                    "sub_menu": "Main Features",
+                    "testcase": "Add Asset",
+                    "status": "Pass",
+                    "description": "Asset is displayed in list",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Asset",
+                    "sub_menu": "Main Features",
+                    "testcase": "Add Asset",
+                    "status": "Fail",
+                    "description": "cannot find asset in list",
+                    "tester": "Phuong"
+                }
+            },
+            "view": {
+                "pass":{
+                    "menu": "Asset",
+                    "sub_menu": "Main Features",
+                    "testcase": "View Asset",
+                    "status": "Pass",
+                    "description": "Access asset view page successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Asset",
+                    "sub_menu": "Main Features",
+                    "testcase": "View Asset",
+                    "status": "Fail",
+                    "description": "Fail to asset view page",
+                    "tester": "Phuong"
+                }
+            },
+            "search": {
+                "pass":{
+                    "menu": "Asset",
+                    "sub_menu": "Main Features",
+                    "testcase": "Search asset",
+                    "status": "Pass",
+                    "description": "Search asset successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Asset",
+                    "sub_menu": "Main Features",
+                    "testcase": "Search asset",
+                    "status": "Fail",
+                    "description": "Fail to search asset",
+                    "tester": "Phuong"
+                }
+            }
+        },
+        "expense": {
+            "write_expense": {
+                "pass":{
+                    "menu": "Expense",
+                    "sub_menu": "Main Features",
+                    "testcase": "Write Expense",
+                    "status": "Pass",
+                    "description": "Expense is displayed in list",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Expense",
+                    "sub_menu": "Main Features",
+                    "testcase": "Write Expense",
+                    "status": "Fail",
+                    "description": "Expense is not displayed in list",
+                    "tester": "Phuong"
+                }
+            },
+            "add_item": {
+                "pass":{
+                    "menu": "Expense",
+                    "sub_menu": "Main Features",
+                    "testcase": "Add Item",
+                    "status": "Pass",
+                    "description": "Item is displayed after created",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Expense",
+                    "sub_menu": "Main Features",
+                    "testcase": "Add Item",
+                    "status": "Fail",
+                    "description": "Item is not displayed after created",
+                    "tester": "Phuong"
+                }
+            },
+            "import_item": {
+                "pass":{
+                    "menu": "Expense",
+                    "sub_menu": "Main Features",
+                    "testcase": "Import Item",
+                    "status": "Pass",
+                    "description": "Item is imported successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Expense",
+                    "sub_menu": "Main Features",
+                    "testcase": "Import Item",
+                    "status": "Fail",
+                    "description": "Fail to import item",
+                    "tester": "Phuong"
+                }
+            },
+            "view_expense": {
+                "pass":{
+                    "menu": "Expense",
+                    "sub_menu": "Main Features",
+                    "testcase": "View Expense",
+                    "status": "Pass",
+                    "description": "Access view page successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Expense",
+                    "sub_menu": "Main Features",
+                    "testcase": "View Expense",
+                    "status": "Fail",
+                    "description": "Fail to access view page",
+                    "tester": "Phuong"
+                }
+            },
+            "view_item": {
+                "pass":{
+                    "menu": "Expense",
+                    "sub_menu": "Main Features",
+                    "testcase": "View Item",
+                    "status": "Pass",
+                    "description": "Item data is correct",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Expense",
+                    "sub_menu": "Main Features",
+                    "testcase": "View Item",
+                    "status": "Fail",
+                    "description": "Item data is incorrect",
+                    "tester": "Phuong"
+                }
+            },
+            "submit_approval": {
+                "pass":{
+                    "menu": "Expense",
+                    "sub_menu": "Main Features",
+                    "testcase": "Submit Approval",
+                    "status": "Pass",
+                    "description": "Submit approval successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Expense",
+                    "sub_menu": "Main Features",
+                    "testcase": "Submit Approval",
+                    "status": "Fail",
+                    "description": "Fail to submit approval",
+                    "tester": "Phuong"
+                }
+            },
+            "search": {
+                "pass":{
+                    "menu": "Expense",
+                    "sub_menu": "Main Features",
+                    "testcase": "Search Expense",
+                    "status": "Pass",
+                    "description": "Search expense successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Expense",
+                    "sub_menu": "Main Features",
+                    "testcase": "Search Expense",
+                    "status": "Fail",
+                    "description": "Fail to search expense",
+                    "tester": "Phuong"
+                }
+            }
+        },
+        "whisper": {
+            "write": {
+                "pass":{
+                    "menu": "Whisper",
+                    "sub_menu": "Main Features",
+                    "testcase": "Send Whisper",
+                    "status": "Pass",
+                    "description": "Save whisper successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Whisper",
+                    "sub_menu": "Main Features",
+                    "testcase": "Send Whisper",
+                    "status": "Fail",
+                    "description": "Fail to save whisper",
+                    "tester": "Phuong"
+                }
+            },
+            "view": {
+                "pass":{
+                    "menu": "Whisper",
+                    "sub_menu": "Main Features",
+                    "testcase": "View Whisper",
+                    "status": "Pass",
+                    "description": "Access whisper view page successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Whisper",
+                    "sub_menu": "Main Features",
+                    "testcase": "View Whisper",
+                    "status": "Fail",
+                    "description": "Fail to access whisper view page",
+                    "tester": "Phuong"
+                }
+            },
+            "search": {
+                "pass":{
+                    "menu": "Whisper",
+                    "sub_menu": "Main Features",
+                    "testcase": "Search whisper",
+                    "status": "Pass",
+                    "description": "Search whisper successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Whisper",
+                    "sub_menu": "Main Features",
+                    "testcase": "Search whisper",
+                    "status": "Fail",
+                    "description": "Fail to search whisper",
+                    "tester": "Phuong"
+                }
+            }
+        },
+        "resource": {
+            "write": {
+                "pass":{
+                    "menu": "Resource",
+                    "sub_menu": "Main Features",
+                    "testcase": "Request Resource",
+                    "status": "Pass",
+                    "description": "Resource request is displayed on calendar",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Resource",
+                    "sub_menu": "Main Features",
+                    "testcase": "Request Resource",
+                    "status": "Fail",
+                    "description": "Cannot find resource request on calendar",
+                    "tester": "Phuong"
+                }
+            },
+            "view": {
+                "pass":{
+                    "menu": "Resource",
+                    "sub_menu": "Main Features",
+                    "testcase": "View Request",
+                    "status": "Pass",
+                    "description": "Access resource view page successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Resource",
+                    "sub_menu": "Main Features",
+                    "testcase": "View Request",
+                    "status": "Fail",
+                    "description": "Fail to access resource request",
+                    "tester": "Phuong"
+                }
+            },
+            "comment": {
+                "pass":{
+                    "menu": "Resource",
+                    "sub_menu": "Main Features",
+                    "testcase": "Comment",
+                    "status": "Pass",
+                    "description": "Comment is saved successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Resource",
+                    "sub_menu": "Main Features",
+                    "testcase": "Comment",
+                    "status": "Fail",
+                    "description": "Fail to save comment",
+                    "tester": "Phuong"
+                }
+            },
+            "approval": {
+                "pass":{
+                    "menu": "Resource",
+                    "sub_menu": "Main Features",
+                    "testcase": "Request Approval",
+                    "status": "Pass",
+                    "description": "Request is approved successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Resource",
+                    "sub_menu": "Main Features",
+                    "testcase": "Request Approval",
+                    "status": "Fail",
+                    "description": "Fail to approve request",
+                    "tester": "Phuong"
+                }
+            },
+            "cancel": {
+                "pass":{
+                    "menu": "Resource",
+                    "sub_menu": "Main Features",
+                    "testcase": "Cancel Approval",
+                    "status": "Pass",
+                    "description": "Cancel request successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Resource",
+                    "sub_menu": "Main Features",
+                    "testcase": "Cancel Approval",
+                    "status": "Fail",
+                    "description": "Fail to cancel request",
+                    "tester": "Phuong"
+                }
+            }
+        },
+        "approval":{
+            "write":{
+                "pass":{
+                    "menu": "Approval",
+                    "sub_menu": "Main Features",
+                    "testcase": "Write Approval",
+                    "status": "Pass",
+                    "description": "Approval is displayed in list",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Approval",
+                    "sub_menu": "Main Features",
+                    "testcase": "Write Approval",
+                    "status": "Fail",
+                    "description": "Cannot find approval in list",
+                    "tester": "Phuong"
+                }
+            },
+            "view":{
+                "pass":{
+                    "menu": "Approval",
+                    "sub_menu": "Main Features",
+                    "testcase": "View Approval",
+                    "status": "Pass",
+                    "description": "Access approval view page successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Approval",
+                    "sub_menu": "Main Features",
+                    "testcase": "View Approval",
+                    "status": "Fail",
+                    "description": "Fail to access approval view page",
+                    "tester": "Phuong"
+                }
+            },
+            "approve":{
+                "pass":{
+                    "menu": "Approval",
+                    "sub_menu": "Main Features",
+                    "testcase": "Approve Approval",
+                    "status": "Pass",
+                    "description": "Approve approval successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Approval",
+                    "sub_menu": "Main Features",
+                    "testcase": "Approve Approval",
+                    "status": "Fail",
+                    "description": "Fail to approve approval",
+                    "tester": "Phuong"
+                }
+            },
+            "create_documentation":{
+                "pass":{
+                    "menu": "Approval",
+                    "sub_menu": "Main Features",
+                    "testcase": "Create Official Documentation",
+                    "status": "Pass",
+                    "description": "Create official documenation successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Approval",
+                    "sub_menu": "Main Features",
+                    "testcase": "Create Official Documentation",
+                    "status": "Fail",
+                    "description": "Fail to save official documentation",
+                    "tester": "Phuong"
+                }
+            },
+            "search":{
+                "pass":{
+                    "menu": "Approval",
+                    "sub_menu": "Main Features",
+                    "testcase": "Search Documentation",
+                    "status": "Pass",
+                    "description": "Search official documentation successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Approval",
+                    "sub_menu": "Main Features",
+                    "testcase": "Search Documentation",
+                    "status": "Fail",
+                    "description": "Fail to search official documentation",
+                    "tester": "Phuong"
+                }
+            }
+        },
+        "postmaster":{
+            "register_user": {
+                "pass":{
+                    "menu": "postmaster",
+                    "sub_menu": "Organization",
+                    "testcase": "Register User",
+                    "status": "Pass",
+                    "description": "Register new user successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "postmaster",
+                    "sub_menu": "Organization",
+                    "testcase": "Register User",
+                    "status": "Fail",
+                    "description": "Fail to register new user",
+                    "tester": "Phuong"
+                }
+            },
+            "approve_user": {
+                "pass":{
+                    "menu": "postmaster",
+                    "sub_menu": "Organization",
+                    "testcase": "Approve User",
+                    "status": "Pass",
+                    "description": "Approve new user successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "postmaster",
+                    "sub_menu": "Organization",
+                    "testcase": "Approve User",
+                    "status": "Fail",
+                    "description": "Fail to Approver new user",
+                    "tester": "Phuong"
+                }
+            },
+            "add_dept": {
+                "pass":{
+                    "menu": "postmaster",
+                    "sub_menu": "Organization",
+                    "testcase": "Add Dept",
+                    "status": "Pass",
+                    "description": "Add new Dept successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "postmaster",
+                    "sub_menu": "Organization",
+                    "testcase": "Add Dept",
+                    "status": "Fail",
+                    "description": "Fail to add new Dept",
+                    "tester": "Phuong"
+                }
+            },
+            "add_user": {
+                "pass":{
+                    "menu": "postmaster",
+                    "sub_menu": "Organization",
+                    "testcase": "Add User",
+                    "status": "Pass",
+                    "description": "Add new user successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "postmaster",
+                    "sub_menu": "Organization",
+                    "testcase": "Add User",
+                    "status": "Fail",
+                    "description": "Fail to add new user",
+                    "tester": "Phuong"
+                }
+            },
+            "import_user": {
+                "pass":{
+                    "menu": "postmaster",
+                    "sub_menu": "Organization",
+                    "testcase": "Import User",
+                    "status": "Pass",
+                    "description": "Import new user successfully",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "postmaster",
+                    "sub_menu": "Organization",
+                    "testcase": "Import User",
+                    "status": "Fail",
+                    "description": "Fail to Import new user",
+                    "tester": "Phuong"
+                }
+            }
+        },
+        "right_sidebar": {
+            "timecard":{
+                "pass":{
+                    "menu": "Right Sidebar",
+                    "sub_menu": "Timecard",
+                    "testcase": "Clock In/Out",
+                    "status": "Pass",
+                    "description": "Confirm working time successfully in right sidebar",
+                    "tester": "Phuong"
+                },
+                "fail":{
+                    "menu": "Right Sidebar",
+                    "sub_menu": "Timecard",
+                    "testcase": "Clock In/Out",
+                    "status": "Fail",
+                    "description": "Fail to confirm working time in right sidebar",
+                    "tester": "Phuong"
+                }
+            }
+        }
+    }
+}

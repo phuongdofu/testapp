@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Private Test</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="fontawesome-free-6.2.0-web\css\all.css">
+    <style>
+        @charset "utf-8";
+            body
+            {
+                margin: 0;
+                font-size: 15pt;
+            }
+
+            .col_menu{
+                width: 15%;
+                height: 100vh;
+                box-sizing: border-box;
+                margin: 0;
+                float: left;
+                background-color: #2D353E;
+            }
+            .main_title{
+                padding: 5px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                border-bottom: 1px solid gray;
+            }
+            .main_title h3{
+                color: #EBEEF4;
+                font-weight: bold;
+                margin: 0;
+                padding-left: 15px;
+            }
+            .main_title i{
+                color: #4570E8;
+                font-weight: bold;
+                margin: 0;
+                padding-left: 10px;
+            }
+
+            .sidebar{
+                padding: 20px;
+            }
+            .menu_bar ul{
+                margin: 0;
+                padding: 0;
+            }
+            .menu_bar ul li{
+                list-style: none;
+                height: 50px;
+                font-weight: bold;
+                display: flex;
+                align-items: center;
+            }
+            .menu_bar ul li:hover{
+                transform: scale(1.1);
+                background-color: #e1e7f759;
+                border-radius: 50px;
+                list-style: none;
+                height: 50px;
+                font-weight: bold;
+                display: flex;
+                align-items: center;
+            }
+            .menu_bar ul li:hover i{
+                color: white;
+            }
+            .menu_bar ul li:hover p{
+                color: white;
+            }
+            .menu_bar ul li p{
+                margin: 0;
+                color: white;
+                font-size: 12pt;
+            }
+            .menu_bar ul li i{
+                margin: 0;
+                color: #a7a7a7;
+                margin: 0 20px;
+                font-size: 12pt;
+            }
+            .col_content{
+                width: 85%;
+                height: 100vh;
+                float: right;
+                box-sizing: border-box;
+            }
+            .content_title{
+                padding: 5px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                border-bottom: 1px solid #a7a7a7;
+            }
+            .menu_title i{
+                color: #a7a7a7;
+                font-size: 12pt;
+            }
+            .menu_title span{
+                margin: 0;
+                font-size: 12pt;
+                padding-left: 20px;
+                color: #3B3D3A;
+            }
+            .menu_title{
+                width: 30%;
+                display: flex;
+                align-items: center;
+                margin-left: 20px;
+            }
+            .nav{
+                width: 70%;
+            }
+            .nav_bar ul{
+                margin: 0;
+                float: right;
+                padding-right: 50px;
+            }
+            .nav_bar ul li{
+                list-style: none;
+                display: inline;
+                margin-left: 30px;
+            }
+
+            .nav_bar ul li a{
+                text-decoration: none;
+            }
+            .nav_bar ul li a i{
+                text-decoration: none;
+                color: #a7a7a7;
+            }
+            .nav_bar ul li a i:hover{
+                transform: scale(1.1);
+                text-decoration: none;
+                color: rgb(82, 82, 82);
+            }
+            .nav-bar ul {  
+                list-style-type: none;  
+                margin: 0;  
+                padding: 0;  
+                overflow: hidden;  
+                border-bottom: 1px solid #08090D;
+            }
+            .nav-bar li {  
+                float: left;  
+            }
+            .nav-bar li a {  
+                display: block;  
+                color: black;  
+                text-align: center;  
+                padding: 14px 16px;  
+                text-decoration: none;
+            }
+            .body-site .row{
+                margin-top: 10%;
+            }
+            #project_name{
+                width: 405px;
+                height: 45px;
+                border-radius: 5px;
+                border: 1px solid gray;
+                padding: 5px;
+            }
+            .input-mail{
+                width: 400px;
+                height: 40px;
+                border-radius: 5px;
+                border: 1px solid gray;
+            }
+            .main_content{
+                margin-top: 200px;
+            }
+            td{
+                padding: 10px;
+            }
+            .title_box{
+                color: #3B3D3A;
+            }
+            .submit{
+                text-align: center;
+                margin-top: 100px;
+            }
+            .submit button{
+                width: 120px;
+                height: 50px;
+                border: none;
+                background-color: #4570E8;
+                font-size: 15pt;
+                border-radius: 50px;
+                color: white;
+            }
+            .submit button:hover{
+                text-align: center;
+                background-color: transparent;
+                color: #4570E8;
+                border: 2px solid #4570E8;
+                transition: all 0.3s;
+            }
+            .warning_mail{
+                font-size: 9pt;
+                color: red;
+                font-style: italic;
+            }
+            .main_content_table{
+                margin: 50px;
+            }
+            .table-name{
+                margin-top: 40px;
+            }
+            .table-result{
+                margin-top: 40px;
+            }
+            .col-calendar{
+                margin-left: 500pt;
+                margin-top: 30px;
+            }
+            .col-calendar i{
+                font-size: 18pt;
+                padding: 10px;
+            }
+    </style>
+</head>
+
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col_menu">
+            <div class="col_menu_content">
+                <div class="main_title">
+                    <i class="fa-brands fa-slack"></i>
+                    <h3>QA Test Page</h3>
+                </div>
+                <div class="sidebar">
+                    <div class="menu_bar">
+                        <ul>
+                            <li class="private_test">
+                                <i class="fa-solid fa-key"></i>
+                                <p>Private Test</p>
+                            </li>
+                            <li class="public_test">
+                                <i class="fa-solid fa-globe"></i>
+                                <p>Public Test</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col_content">
+            <div class="col_main_content">
+                <div class="container-fluid">
+                    <div class="nav-bar">
+                        <ul>
+                            <li>
+                                <a><i class="fa-solid fa-key"></i> <b>PRIVATE TEST</b></a>
+                            </li>
+                            <li style="float: right">
+                                <a href="#download" title="Download Test App">
+                                    <i class="fas fa-arrow-down"></i>
+                                </a>
+                            </li>
+                            <li style="float: right">
+                                <a href="#help" title="How to use Test App">
+                                    <i class="fa-regular fa-circle-question"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main_content_table">
+                    <div class="table">
+                        <table class="table table-bordered">
+                            <tr>
+                                <th width="20%" align="left">Date</th>
+                                <th width="20%">ID</th>
+                                <th width="30%">Project</th>
+                                <th width="15%">Pass</th>
+                                <th width="15%">Fail</th>
+                            </tr>
+                        {% for testcase in list_data.keys() %}
+                            <tr>
+                                <td align="left">{{ list_data[testcase]["no"] }}</td>
+                                <td><a href="/details/{{ list_data[testcase]['id'] }}">{{ list_data[testcase]["id"] }}</a></td>
+                                <td>{{ list_data[testcase]["name"] }}</td>
+                                <td>{{ list_data[testcase]["pass"] }}</td>
+                                <td>{{ list_data[testcase]["fail"] }}</td>
+                            </tr>
+                        {% endfor %}
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
