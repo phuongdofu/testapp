@@ -183,7 +183,7 @@ def Groupware_Execution(**domain_config):
 
     UserLogIn_Quick(driver, domain_name, user_id, user_pw)
     MailExecution(domain_name)
-    '''BoardExecution()
+    BoardExecution()
     ContactExecution(domain_name)
     diary_data = TaskWorkDiaryExecution(domain_name)
     report_data = TaskReportExcution(domain_name, recipient_id)
@@ -197,7 +197,7 @@ def Groupware_Execution(**domain_config):
     ExpenseExecution(domain_name, recipient_id)
     ResourceReservationExecution(domain_name)
     time.sleep(1)
-    approval_data = Approval_Execution(domain_name, recipient_id)'''
+    approval_data = Approval_Execution(domain_name, recipient_id)
     #WhisperExecution_Driver1(domain_name, user_id)
     
     # archive_list = [diary_data, report_data, approval_data]

@@ -556,6 +556,9 @@ def SubmitTestPlan():
     else:
         messagebox.showwarning("Warning", "This test plan already exists!")
 
+def SaveLogs():
+    print("")
+
 file_path_text = None
 file_path = None
 log_msg = None
@@ -796,7 +799,7 @@ def LogPage():
     lb.insert(2,'Account :')
     lb.insert(3,'Version :')
 
-    Save_logs = tk.Button(canvas,text = "Save logs",width=15)
+    Save_logs = tk.Button(canvas,text = "Save logs", width=15, command=SaveLogs)
     canvas.create_window(200, 380, anchor="nw", window=Save_logs)
     
     View_Web = tk.Button(canvas,text = "View on Web",width=15)

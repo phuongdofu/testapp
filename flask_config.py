@@ -54,7 +54,7 @@ def section_list():
 
                 files.append(file_name)
 
-        files_len = len(files)
+        files_len = len( files)
         for file in range(0,files_len):
             file+=1
 

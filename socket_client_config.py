@@ -19,5 +19,5 @@ def SendTestCaseFile():
 
     client_socket.close()
 
-if __name__ == '__main__':
-    SendTestCaseFile()
+# if __name__ == '__main__':
+#     SendTestCaseFile()
