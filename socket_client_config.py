@@ -7,7 +7,7 @@ from common_functions import Files
 ''' This file will run at client '''
 
 def SendTestCaseFile():
-    host = socket.gethostname()
+    host = "qavn.hanbiro.net"
     port = 5000 
 
     client_socket = socket.socket()  # instantiate

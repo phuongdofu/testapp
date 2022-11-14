@@ -1,4 +1,5 @@
-import socket, shutil, os
+import socket, shutil, os, json
+from openpyxl import load_workbook
 
 # [Reference] https://www.digitalocean.com/community/tutorials/python-socket-programming-server-client
 # [Reference] https://viblo.asia/p/lap-trinh-socket-bang-python-jvEla084Zkw
@@ -6,7 +7,7 @@ import socket, shutil, os
 ''' This file will be run at server '''
 
 def ReceiveInput():
-    # get the hostname
+    # get the host name
     host = socket.gethostname()
     port = 5000  # initiate port no above 1024
 
@@ -20,26 +21,44 @@ def ReceiveInput():
     print("Connection from: " + str(address))
 
     while True:
-        data = conn.recv(1024).decode()
-        if str(data).endswith(".xlsx"):
-            print("client send test case file result")
-            # server: test case file name include the test plan name
-            #         server recognize test plan by file name
-            #         if test plan does not exist (folder): create new folder
-            # client: submit test plan -> save test plan name in txt file
-            #         test case file name is named by test plan name + date (id)
+        data = conn.recv(1024).decode('utf-8')
+        parsed_data = json.loads(data)
+        
+        testplan_name = parsed_data["1"]["tester"]
+        
+        current_path = os.path.dirname(os.path.realpath(__file__)) + '/Log/Test Log/%s' % testplan_name
+        if "\\" in current_path:
+            file_name = current_path + '\\Log\\Test Log\\%s' % testplan_name
+        else:
+            file_name = current_path + '/Log/Test Log/%s' % testplan_name
 
-            file_name = str(data)
-            print("file_name: " + str(file_name))
+        wb = load_workbook(file_name)
+        ws = wb.active
 
-            if "\\Log\\Test Log\\" in file_name:
-                testplan_name = file_name.split("\\Log\\Test Log\\")[1].split("_result_")[0]
-                destination_path = os.path.dirname(os.path.realpath(__file__)) + '\\Log\\Test Log\\%s' % testplan_name
+        last_row = 101
+        for row_number in range(1,last_row):
+            if row_number == 1:
+                ws.cell(row=row_number, column=1).value = "No"
+                ws.cell(row=row_number, column=2).value = "Menu"
+                ws.cell(row=row_number, column=3).value = "Submenu"
+                ws.cell(row=row_number, column=4).value = "Test Case"
+                ws.cell(row=row_number, column=5).value = "Status"
+                ws.cell(row=row_number, column=6).value = "Date"
+                ws.cell(row=row_number, column=7).value = "Tester"
             else:
-                testplan_name = file_name.split("/Log/Test Log/")[1].split("_result_")[0]
-                destination_path = os.path.dirname(os.path.realpath(__file__)) + '/Log/Test Log/%s' % testplan_name
-             
-            shutil.copy(data, destination_path)
+                tc_id = str(row_number)
+                ws.cell(row=row_number, column=1).value = tc_id
+                ws.cell(row=row_number, column=2).value = parsed_data[tc_id]["menu"]
+                ws.cell(row=row_number, column=3).value = parsed_data[tc_id]["submenu"]
+                ws.cell(row=row_number, column=4).value = parsed_data[tc_id]["testcase"]
+                ws.cell(row=row_number, column=5).value = parsed_data[tc_id]["status"]
+                ws.cell(row=row_number, column=6).value = parsed_data[tc_id]["date"]
+                ws.cell(row=row_number, column=7).value = parsed_data[tc_id]["tester"]
+
+            row_number+=1
+
+        wb.save(file_name)
+
 
 if __name__ == '__main__':
     ReceiveInput()

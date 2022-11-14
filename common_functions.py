@@ -879,19 +879,11 @@ def TestCase_LogResult(menu, sub_menu, testcase, status, description, tester):
             if status == "Pass":
                 Logging(objects.testcase_pass)
                 current_sheet.cell(row=current_row, column=5).value = "Pass"
-                current_sheet.cell(row=current_row, column=7).value = ""
-                tl_status = "Pass"
             else:
                 Logging(objects.testcase_fail)
                 current_sheet.cell(row=current_row, column=5).value = "Fail"
-                current_sheet.cell(row=current_row, column=7).value = description  
-                tl_status = "Fail"
             
-            testcase_id = current_sheet.cell(row=current_row, column=1).value
-            try:
-                TestLink.Report(testcase_id, tl_status)
-            except:
-                pass
+            current_sheet.cell(row=current_row, column=7).value = Files.testplan_name
 
     wb.save(Files.testcase_log)
 

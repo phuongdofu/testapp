@@ -20,7 +20,6 @@ from menu.board_automation import *
 from menu.calendar_automation import *
 from menu.circular_automation import *
 from menu.clouddisk_automation import *
-from common_functions import *
 from menu.contact_automation import *
 from menu.expense_automation import *
 from menu.login import *
@@ -233,3 +232,8 @@ def RunMainFeatures(**domain_config):
     print(duration)
 
     return driver
+
+def Postmaster():
+    import menu.hanbiro_postmaster as postmaster
+
+    postmaster.NewOrganization_Execution("https://tg01.hanbiro.net/ngw/app/#", "o&YHK_+TJo?MtX&")
