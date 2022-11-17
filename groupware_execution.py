@@ -222,10 +222,10 @@ def RunMainFeatures(**domain_config):
     start_time = time.time()
 
     # Main Execution
-    GroupwareExecution(**domain_config)
+    # GroupwareExecution(**domain_config)
 
     # DEBUG Execution
-    # Groupware_Execution(**data["domain_config"]["tg01"]) #debug
+    Groupware_Execution(**data["domain_config"]["tg01"]) #debug
     
     end_time = time.time()
     duration = end_time - start_time
@@ -236,4 +236,7 @@ def RunMainFeatures(**domain_config):
 def Postmaster():
     import menu.hanbiro_postmaster as postmaster
 
-    postmaster.NewOrganization_Execution("https://tg01.hanbiro.net/ngw/app/#", "o&YHK_+TJo?MtX&")
+    #postmaster.NewOrganization_Execution("https://tg01.hanbiro.net/ngw/app/#", "o&YHK_+TJo?MtX&")
+    postmaster.NewOrganization_Execution("http://qavn.hanbiro.net/ngw/app/#", "$Bhngk6@")
+
+Postmaster()

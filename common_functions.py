@@ -873,8 +873,11 @@ def TestCase_LogResult(menu, sub_menu, testcase, status, description, tester):
         menu_cell = current_sheet.cell(row=current_row, column=2).value
         testcase_cell = current_sheet.cell(row=current_row, column=4).value
         
+        if current_row > 1:
+            current_sheet.cell(row=current_row, column=1).value = str(current_row-1)
+
         if testcase_cell == testcase and menu_cell == menu:
-            current_sheet.cell(row=current_row, column=6).value = objects.today + objects.time1
+            current_sheet.cell(row=current_row, column=6).value = "%s %s" % (objects.time1, objects.today)
             
             if status == "Pass":
                 Logging(objects.testcase_pass)

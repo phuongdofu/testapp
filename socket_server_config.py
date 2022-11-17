@@ -1,10 +1,17 @@
-import socket, shutil, os, json
-from openpyxl import load_workbook
+import socket, shutil, os, json, ast
+from openpyxl import load_workbook, Workbook
 
 # [Reference] https://www.digitalocean.com/community/tutorials/python-socket-programming-server-client
 # [Reference] https://viblo.asia/p/lap-trinh-socket-bang-python-jvEla084Zkw
 
 ''' This file will be run at server '''
+
+def get_maximum_rows(*, sheet_object):
+    rows = 0
+    for max_row, row in enumerate(sheet_object, 1):
+        if not all(col.value is None for col in row):
+            rows += 1
+    return rows
 
 def ReceiveInput():
     # get the host name
@@ -21,22 +28,25 @@ def ReceiveInput():
     print("Connection from: " + str(address))
 
     while True:
-        data = conn.recv(1024).decode('utf-8')
-        parsed_data = json.loads(data)
-        
-        testplan_name = parsed_data["1"]["tester"]
-        
-        current_path = os.path.dirname(os.path.realpath(__file__)) + '/Log/Test Log/%s' % testplan_name
-        if "\\" in current_path:
-            file_name = current_path + '\\Log\\Test Log\\%s' % testplan_name
-        else:
-            file_name = current_path + '/Log/Test Log/%s' % testplan_name
+        data = conn.recv(10485760).decode('utf-8')
+        parsed_data = ast.literal_eval(str(data).replace("'", '"'))
 
-        wb = load_workbook(file_name)
+        testplan_name = parsed_data["1"]["tester"]
+        section_id = parsed_data["1"]["section_id"]
+        testcase_filename = "%s_result_%s" % (testplan_name, section_id)
+
+        current_path = os.path.dirname(os.path.realpath(__file__))
+        if "\\" in current_path:
+            file_name = current_path + '\\Log\\Test Log\\%s.xlsx' % testcase_filename
+        else:
+            file_name = current_path + '/Log/Test Log/%s.xlsx' % testcase_filename
+
+        wb = Workbook()
         ws = wb.active
 
-        last_row = 101
-        for row_number in range(1,last_row):
+        last_row = get_maximum_rows(sheet_object=ws)
+
+        for row_number in range(1, last_row):
             if row_number == 1:
                 ws.cell(row=row_number, column=1).value = "No"
                 ws.cell(row=row_number, column=2).value = "Menu"
