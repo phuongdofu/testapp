@@ -7,7 +7,7 @@ from tkinter import filedialog, messagebox
 from openpyxl import load_workbook
 from common_functions import *
 from groupware_execution import RunMainFeatures
-
+from socket_client_config import SendTestCaseFile
 
 def Messages(status):
     if status == "pass":
@@ -486,6 +486,9 @@ def ImportFunction():
     #import_frame.mainloop()
 
 def StartFunction():
+    # Create logs file
+    section_data_dict = Logs.CreateLogFiles()
+
     # Reset excel log before checking new selected folder
     Logs.ClearExcel_CollectMenu()
 
@@ -538,6 +541,14 @@ def StartFunction():
         messagebox.showinfo("Success", "Execution finished")
     
     InsertLogs()
+
+    
+    section_id = section_data_dict["section_id"]
+    testcase_filename = "%s_result_%s.xlsx" % (testplan_name, section_id)
+    testcase_file  = Files.test_log_folder + testcase_filename
+
+    shutil.copy(Files.testcase_log, testcase_file)
+    SendTestCaseFile()
 
 def SubmitTestPlan():
     ''' When user submit the test plan, write the test plan name in txt file

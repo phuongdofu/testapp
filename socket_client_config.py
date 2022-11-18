@@ -1,5 +1,5 @@
 import socket
-from common_functions import Files, section_id
+from common_functions import Files
 from openpyxl import load_workbook
 
 # [Reference] https://www.digitalocean.com/community/tutorials/python-socket-programming-server-client
@@ -8,8 +8,8 @@ from openpyxl import load_workbook
 ''' This file will run at client '''
 
 def SendTestCaseFile():
-    #host = "qavn.hanbiro.net"
-    host = socket.gethostname()
+    host = "qavn.hanbiro.net"
+    #host = socket.gethostname()
     port = 5000 
 
     client_socket = socket.socket()  # instantiate
@@ -32,6 +32,7 @@ def SendTestCaseFile():
         status = ws.cell(row=row_number, column=5).value
         date = ws.cell(row=row_number, column=6).value
         tester = ws.cell(row=row_number, column=7).value
+        section_id = ws.cell(row=2, column=9).value
 
         api_data[str(no)] = {
             "no": no,

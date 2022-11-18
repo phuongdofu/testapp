@@ -1,1 +1,0 @@
-[FAILED TEST CASE] Cannot find user timecard information

@@ -30,8 +30,6 @@ from menu.task_automation import *
 from menu.todo_automation import *
 from menu.whisper_automation import *
 
-from socket_client_config import SendTestCaseFile
-
 def GroupwareExecution(**domain_config):
     domain_name = domain_config["domain_name"]
     user_id = domain_config["user_id"]
@@ -170,8 +168,8 @@ def GroupwareExecution(**domain_config):
             except WebDriverException:
                 pass'''
     
-    shutil.copy(Files.testcase_log, Files.testcase_file)
-    SendTestCaseFile()
+    # shutil.copy(Files.testcase_log, Files.testcase_file)
+    # SendTestCaseFile()
                                                                                                                                                                                                                                                                                         
 def Groupware_Execution(**domain_config):
     domain_name = domain_config["domain_name"]
@@ -217,15 +215,15 @@ def RunMainFeatures(**domain_config):
     
     # Create logs file
     # logs = [Files.execution_log, Files.fail_log, Files.error_log, Files.testcase_log]
-    Logs.CreateLogFiles()
+    #Logs.CreateLogFiles() # -> move to file testapp_ui.py
 
     start_time = time.time()
 
     # Main Execution
-    # GroupwareExecution(**domain_config)
+    GroupwareExecution(**domain_config)
 
     # DEBUG Execution
-    Groupware_Execution(**data["domain_config"]["tg01"]) #debug
+    # Groupware_Execution(**data["domain_config"]["tg01"]) #debug
     
     end_time = time.time()
     duration = end_time - start_time
@@ -238,5 +236,3 @@ def Postmaster():
 
     #postmaster.NewOrganization_Execution("https://tg01.hanbiro.net/ngw/app/#", "o&YHK_+TJo?MtX&")
     postmaster.NewOrganization_Execution("http://qavn.hanbiro.net/ngw/app/#", "$Bhngk6@")
-
-Postmaster()

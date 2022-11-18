@@ -31,7 +31,7 @@ else:
     system_path = ""
 
 date_time = datetime.now().strftime("%Y/%m/%d, %H:%M:%S")
-section_id = date_time.replace("/", "").replace(", ", "").replace(":", "")[2:]
+# section_id = date_time.replace("/", "").replace(", ", "").replace(":", "")[2:]
 
 with open(json_file) as json_data_file:
     data = json.load(json_data_file)
@@ -99,8 +99,8 @@ class Files():
     section_history = log_folder + "section-history.xlsx"
 
     testplan_name = open(testplan, "r").read()
-    testcase_filename = "%s_result_%s.xlsx" % (testplan_name, section_id)
-    testcase_file  = test_log_folder + testcase_filename
+    #testcase_filename = "%s_result_%s.xlsx" % (testplan_name, section_id)
+    #testcase_file  = test_log_folder + testcase_filename
 
     image_attachment = attachment_folder + "download.jpg"
     asset_import = attachment_folder + "Asset-SeleniumPython.xls"
@@ -697,6 +697,8 @@ class Functions():
 
 class Logs():
     def CreateLogFiles():
+        date_time = datetime.now().strftime("%Y/%m/%d, %H:%M:%S")
+        section_id = date_time.replace("/", "").replace(", ", "").replace(":", "")[2:]
         logs = [Files.execution_log, Files.fail_log, Files.error_log, Files.testcase_log]
         for log in logs:
             if ".txt" in str(log):
@@ -720,8 +722,29 @@ class Logs():
                         ws.cell(row=row_number, column=column).value = ""
                     
                     row_number+=1
+
+                ws.cell(row=2, column=9).value = section_id
                 
                 wb.save(Files.testcase_log)
+        
+        return {"logs": logs, "section_id": section_id}
+
+    def CreateTestCaseFiles(section_id):
+        testcase_filename = "%s_result_%s.xlsx" % (Files.testplan_name, section_id)
+        testcase_file  = Files.test_log_folder + testcase_filename
+
+        wb = load_workbook(testcase_file)
+        ws = wb.active
+
+        last_row = ws.max_row
+        for row_number in range(2,last_row):
+            for column in range(4, 15):
+                column +=1
+                ws.cell(row=row_number, column=column).value = ""
+            
+            row_number+=1
+        
+        wb.save(testcase_file)
 
     def TestCaseStatus(testcase_no, status):
         wb = load_workbook(Files.testcase_log)
