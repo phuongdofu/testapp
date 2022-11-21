@@ -6,7 +6,7 @@ from openpyxl import load_workbook, Workbook
 
 ''' This file will be run at server '''
 
-def get_maximum_rows(*, sheet_object):
+def get_maximum_rows(sheet_object):
     rows = 0
     for max_row, row in enumerate(sheet_object, 1):
         if not all(col.value is None for col in row):

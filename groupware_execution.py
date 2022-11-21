@@ -234,5 +234,5 @@ def RunMainFeatures(**domain_config):
 def Postmaster():
     import menu.hanbiro_postmaster as postmaster
 
-    #postmaster.NewOrganization_Execution("https://tg01.hanbiro.net/ngw/app/#", "o&YHK_+TJo?MtX&")
-    postmaster.NewOrganization_Execution("http://qavn.hanbiro.net/ngw/app/#", "$Bhngk6@")
+    postmaster.NewOrganization_Execution("https://tg01.hanbiro.net/ngw/app/#", "6y<i=A@x53IIOAc")
+    # postmaster.NewOrganization_Execution("http://qavn.hanbiro.net/ngw/app/#", "$Bhngk6@")
