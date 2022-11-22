@@ -1,4 +1,4 @@
-import socket
+import socket, json
 from common_functions import Files
 from openpyxl import load_workbook
 
@@ -49,7 +49,6 @@ def SendTestCaseFile():
     
     data_send = str(api_data).encode()
     client_socket.send(data_send)
-
     client_socket.close()
 
 if __name__ == '__main__':

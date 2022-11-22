@@ -13,6 +13,16 @@ def get_maximum_rows(sheet_object):
             rows += 1
     return rows
 
+def recvall(sock, n):
+    # Helper function to recv n bytes or return None if EOF is hit
+    data = bytearray()
+    while len(data) < n:
+        packet = sock.recv(n - len(data))
+        if not packet:
+            return None
+        data.extend(packet)
+    return data
+
 def ReceiveInput():
     # get the host name
     host = socket.gethostname()
@@ -27,55 +37,59 @@ def ReceiveInput():
     conn, address = server_socket.accept()  # accept new connection
     print("Connection from: " + str(address))
 
+    data = b''
     while True:
-        try:
-            data = conn.recv(10485760).decode('utf-8')
-            parsed_data = ast.literal_eval(str(data).replace("'", '"'))
+        data_chunk = conn.recv(1024)
+        if data_chunk:
+            data+=data_chunk
+        else:
+            break
 
-            testcase_dict = dict(parsed_data)
-            testplan_name = testcase_dict["1"]["tester"]
-            section_id = testcase_dict["1"]["section_id"]
-            testcase_filename = "%s_result_%s" % (testplan_name, section_id)
+    data = data.decode('utf-8')
+    parsed_data = ast.literal_eval(str(data).replace("'", '"'))
 
-            current_path = os.path.dirname(os.path.realpath(__file__))
-            if "\\" in current_path:
-                file_name = current_path + '\\Log\\Test Log\\%s.xlsx' % testcase_filename
-            else:
-                file_name = current_path + '/Log/Test Log/%s.xlsx' % testcase_filename
+    testcase_dict = dict(parsed_data)
+    testplan_name = testcase_dict["1"]["tester"]
+    section_id = testcase_dict["1"]["section_id"]
+    testcase_filename = "%s_result_%s" % (testplan_name, section_id)
 
-            create_wb = Workbook()
-            create_wb.save(file_name)
-            
-            time.sleep(1)
-            
-            wb = load_workbook(file_name)
-            ws = wb.active
+    current_path = os.path.dirname(os.path.realpath(__file__))
+    if "\\" in current_path:
+        file_name = current_path + '\\Log\\Test Log\\%s.xlsx' % testcase_filename
+    else:
+        file_name = current_path + '/Log/Test Log/%s.xlsx' % testcase_filename
 
-            last_row = 88
-            for row_number in range(1, last_row):
-                if row_number == 1:
-                    ws.cell(row=row_number, column=1).value = "No"
-                    ws.cell(row=row_number, column=2).value = "Menu"
-                    ws.cell(row=row_number, column=3).value = "Submenu"
-                    ws.cell(row=row_number, column=4).value = "Test Case"
-                    ws.cell(row=row_number, column=5).value = "Status"
-                    ws.cell(row=row_number, column=6).value = "Date"
-                    ws.cell(row=row_number, column=7).value = "Tester"
-                else:
-                    tc_id = str(row_number)
-                    ws.cell(row=row_number, column=1).value = tc_id
-                    ws.cell(row=row_number, column=2).value = testcase_dict[tc_id]["menu"]
-                    ws.cell(row=row_number, column=3).value = testcase_dict[tc_id]["submenu"]
-                    ws.cell(row=row_number, column=4).value = testcase_dict[tc_id]["testcase"]
-                    ws.cell(row=row_number, column=5).value = testcase_dict[tc_id]["status"]
-                    ws.cell(row=row_number, column=6).value = testcase_dict[tc_id]["date"]
-                    ws.cell(row=row_number, column=7).value = testcase_dict[tc_id]["tester"]
+    create_wb = Workbook()
+    create_wb.save(file_name)
+    
+    time.sleep(1)
+    
+    wb = load_workbook(file_name)
+    ws = wb.active
 
-                row_number+=1
+    last_row = 88
+    for row_number in range(1, last_row):
+        if row_number == 1:
+            ws.cell(row=row_number, column=1).value = "No"
+            ws.cell(row=row_number, column=2).value = "Menu"
+            ws.cell(row=row_number, column=3).value = "Submenu"
+            ws.cell(row=row_number, column=4).value = "Test Case"
+            ws.cell(row=row_number, column=5).value = "Status"
+            ws.cell(row=row_number, column=6).value = "Date"
+            ws.cell(row=row_number, column=7).value = "Tester"
+        else:
+            tc_id = str(row_number)
+            ws.cell(row=row_number, column=1).value = tc_id
+            ws.cell(row=row_number, column=2).value = testcase_dict[tc_id]["menu"]
+            ws.cell(row=row_number, column=3).value = testcase_dict[tc_id]["submenu"]
+            ws.cell(row=row_number, column=4).value = testcase_dict[tc_id]["testcase"]
+            ws.cell(row=row_number, column=5).value = testcase_dict[tc_id]["status"]
+            ws.cell(row=row_number, column=6).value = testcase_dict[tc_id]["date"]
+            ws.cell(row=row_number, column=7).value = testcase_dict[tc_id]["tester"]
 
-            wb.save(file_name)
-        except:
-            pass
+        row_number+=1
+
+    wb.save(file_name)
 
 
 if __name__ == '__main__':
