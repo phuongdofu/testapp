@@ -469,14 +469,20 @@ def CloudDisk_ReloadPage():
 
 def CloudDiskExecution(domain_name):
     access_clouddisk = CloudDisk_AccessMyFolder(domain_name)    
-    CloudDisk_UploadMyFolder()
+    clouddisk_file = CloudDisk_UploadMyFolder()
+    
     if "qavn.hanbiro.net" not in domain_name:
         clouddisk_list = CloudDisk_CollectListData()
         CloudDisk_CreateWeblink()
         CloudDisk_PreviewFile()
+    
     CloudDisk_SearchInput()
+    
     if "qavn.hanbiro.net" not in domain_name:
         CloudDisk_CopyFile()
         CloudDisk_LockFile()
         CloudDisk_ReloadPage()
+    
     ValidateUnexpectedModal()
+
+    return clouddisk_file

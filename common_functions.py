@@ -107,6 +107,7 @@ class Files():
     calendar_import = attachment_folder + "Calendar-SeleniumPython.xls"
     contact_import = attachment_folder + "Contact-SeleniumPython.xls"
     expense_import = attachment_folder + "Expense-SeleniumPython.xls"
+    testplan_file = attachment_folder + "TestPlan_Database.xlsx"
 
     def ConfigFiles():
         if system_name == "Windows" and Files.myfolder == False:

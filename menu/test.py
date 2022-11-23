@@ -1,19 +1,8 @@
-# Python3 code to demonstrate
-# convert dictionary string to dictionary
-# using json.loads()
-import json
+from openpyxl import load_workbook
 
-# initializing string
-test_string = '{"Nikhil" : 1, "Akshat" : 2, "Akash" : 3}'
+wb = load_workbook("D:\\PhuongDofu\\groupware-auto-test-2\\Attachment\\testcase_log_result.xlsx")
+ws = wb.active
 
-# printing original string
-#print("The original string : " + str(test_string))
-print(type(test_string))
+last_row = ws.max_row
 
-# using json.loads()
-# convert dictionary string to dictionary
-res = json.loads(test_string)
-
-# print result
-#print("The converted dictionary : " + str(res))
-print(type(res))
+print(last_row)

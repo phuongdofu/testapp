@@ -277,7 +277,7 @@
                     <div class="container-fluid mt-3">
                         <div class="row">
                             <div class="col-sm-6">
-                                <button type="button" class="btn btn-success btn-lg"><a href="/list" style="text-decoration: none; color: #fff">Back</a></button>
+                                <button type="button" class="btn btn-success btn-lg" onClick="goList()">Back</button>
                             </div>
                             <div class="col-sm-6" align="right">
                                 <button type="button" class="btn btn-success btn-lg">Export</button>
@@ -341,6 +341,12 @@
         </div>
     </div>
 </div>
+
+<script>
+    function goList(){
+        history.back();
+    }
+</script>
 
 </body>
 </html>

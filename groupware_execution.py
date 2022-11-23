@@ -84,10 +84,11 @@ def GroupwareExecution(**domain_config):
     
     if Logs.Value_CollectMenu(menu_dict["CloudDisk"], 2):
         try:
-            CloudDiskExecution(domain_name)
+            clouddisk_file = CloudDiskExecution(domain_name)
             Logs.UpdateSuccess_ColectMenu("CloudDisk")
         except (WebDriverException, TimeoutException) as error:
-            pass
+            # pass
+            clouddisk_file = None
     
     if Logs.Value_CollectMenu(menu_dict["Circular"], 2):
         try:
@@ -168,8 +169,8 @@ def GroupwareExecution(**domain_config):
             except WebDriverException:
                 pass'''
     
-    # shutil.copy(Files.testcase_log, Files.testcase_file)
-    # SendTestCaseFile()
+    if bool(clouddisk_file) == True:
+        os.remove(clouddisk_file)
                                                                                                                                                                                                                                                                                         
 def Groupware_Execution(**domain_config):
     domain_name = domain_config["domain_name"]
@@ -185,7 +186,7 @@ def Groupware_Execution(**domain_config):
     diary_data = TaskWorkDiaryExecution(domain_name)
     report_data = TaskReportExcution(domain_name, recipient_id)
     CalendarExecution()
-    CloudDiskExecution(domain_name)
+    clouddisk_file = CloudDiskExecution(domain_name)
     CircularExecution(user_id)
     ToDoExecution()
     ProjectExecution(user_id)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
@@ -205,6 +206,9 @@ def Groupware_Execution(**domain_config):
     #         folder_name=archive_dict["archive_folder"][1], 
     #         document_name=archive_dict["archived_name"]
     #     )
+
+    if clouddisk_file:
+        os.remove(clouddisk_file)
 
 def RunMainFeatures(**domain_config):
     global driver

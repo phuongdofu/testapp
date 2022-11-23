@@ -273,6 +273,7 @@
                         </ul>
                     </div>
                 </div>
+                <div style="display: none;">{{ testplan_id }}</div>
                 <div class="main_content_table">
                     <div class="table">
                         <table class="table table-bordered">
@@ -286,7 +287,7 @@
                         {% for testcase in list_data.keys() %}
                             <tr>
                                 <td align="left">{{ list_data[testcase]["no"] }}</td>
-                                <td><a href="/details/{{ list_data[testcase]['id'] }}">{{ list_data[testcase]["id"] }}</a></td>
+                                <td><a href='/details/{{ testplan_id }}/{{ list_data[testcase]["id"] }}'>{{ list_data[testcase]["id"] }}</a></td>
                                 <td>{{ list_data[testcase]["name"] }}</td>
                                 <td>{{ list_data[testcase]["pass"] }}</td>
                                 <td>{{ list_data[testcase]["fail"] }}</td>

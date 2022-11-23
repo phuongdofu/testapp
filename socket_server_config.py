@@ -1,27 +1,12 @@
-import socket, shutil, os, json, ast, time
+import socket, shutil, os, json, ast, time, platform, random
 from openpyxl import load_workbook, Workbook
+from flask_config import log_folder, testplan_id_file
+
 
 # [Reference] https://www.digitalocean.com/community/tutorials/python-socket-programming-server-client
 # [Reference] https://viblo.asia/p/lap-trinh-socket-bang-python-jvEla084Zkw
 
 ''' This file will be run at server '''
-
-def get_maximum_rows(sheet_object):
-    rows = 0
-    for max_row, row in enumerate(sheet_object, 1):
-        if not all(col.value is None for col in row):
-            rows += 1
-    return rows
-
-def recvall(sock, n):
-    # Helper function to recv n bytes or return None if EOF is hit
-    data = bytearray()
-    while len(data) < n:
-        packet = sock.recv(n - len(data))
-        if not packet:
-            return None
-        data.extend(packet)
-    return data
 
 def ReceiveInput():
     # get the host name
@@ -58,6 +43,34 @@ def ReceiveInput():
         file_name = current_path + '\\Log\\Test Log\\%s.xlsx' % testcase_filename
     else:
         file_name = current_path + '/Log/Test Log/%s.xlsx' % testcase_filename
+
+    for file in os.listdir(log_folder):
+        if not file.startswith(testplan_name):
+            wb = load_workbook(testplan_id_file)
+            ws = wb.active
+
+            existing_id = []
+
+            last_row = ws.max_row
+            new_row = None
+
+            for row in range(1,last_row):
+                row+=1
+                testplan_name_value = ws.cell(row=row_number, column=1).value
+                testplan_id_value = ws.cell(row=row_number, column=2).value
+                if bool(testplan_name_value) == False:
+                    new_row = row_number
+                    break
+                else:
+                    existing_id.append(testplan_id_value)
+            
+            while new_id < 1000:
+                new_id = int(random.randint(1, 1000))
+                if new_id not in existing_id:
+                    break
+                
+            ws.cell(row=new_row, column=1).value = testplan_name
+            ws.cell(row=new_row, column=2).value = new_id
 
     create_wb = Workbook()
     create_wb.save(file_name)
