@@ -11,7 +11,7 @@ from flask_config import log_folder, testplan_id_file
 def ReceiveInput():
     # get the host name
     host = socket.gethostname()
-    port = 5000  # initiate port no above 1024
+    port = 5001  # initiate port no above 1024
 
     server_socket = socket.socket()  # get instance
     # look closely. The bind() function takes tuple as argument
@@ -32,10 +32,9 @@ def ReceiveInput():
 
     data = data.decode('utf-8')
     parsed_data = ast.literal_eval(str(data).replace("'", '"'))
-
     testcase_dict = dict(parsed_data)
-    testplan_name = testcase_dict["1"]["tester"]
-    section_id = testcase_dict["1"]["section_id"]
+    testplan_name = str(testcase_dict["1"]["tester"])
+    section_id = str(testcase_dict["1"]["section_id"])
     testcase_filename = "%s_result_%s" % (testplan_name, section_id)
 
     current_path = os.path.dirname(os.path.realpath(__file__))
@@ -45,7 +44,7 @@ def ReceiveInput():
         file_name = current_path + '/Log/Test Log/%s.xlsx' % testcase_filename
 
     for file in os.listdir(log_folder):
-        if not file.startswith(testplan_name):
+        if not file.startswith(testplan_name): # Case name: Test Plan is not existing
             wb = load_workbook(testplan_id_file)
             ws = wb.active
 
@@ -56,14 +55,15 @@ def ReceiveInput():
 
             for row in range(1,last_row):
                 row+=1
-                testplan_name_value = ws.cell(row=row_number, column=1).value
-                testplan_id_value = ws.cell(row=row_number, column=2).value
+                testplan_name_value = ws.cell(row=row, column=1).value
+                testplan_id_value = ws.cell(row=row, column=2).value
                 if bool(testplan_name_value) == False:
-                    new_row = row_number
+                    new_row = row
                     break
                 else:
                     existing_id.append(testplan_id_value)
             
+            new_id = int()
             while new_id < 1000:
                 new_id = int(random.randint(1, 1000))
                 if new_id not in existing_id:
@@ -77,6 +77,7 @@ def ReceiveInput():
     
     time.sleep(1)
     
+    # Write the received data in new excel file
     wb = load_workbook(file_name)
     ws = wb.active
 
@@ -106,4 +107,5 @@ def ReceiveInput():
 
 
 if __name__ == '__main__':
-    ReceiveInput()
+    while True:
+        ReceiveInput()

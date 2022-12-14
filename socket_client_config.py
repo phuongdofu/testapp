@@ -10,7 +10,7 @@ from openpyxl import load_workbook
 def SendTestCaseFile():
     host = "qavn.hanbiro.net"
     #host = socket.gethostname()
-    port = 5000 
+    port = 5001
 
     client_socket = socket.socket()  # instantiate
     client_socket.connect((host, port))  # connect to the server

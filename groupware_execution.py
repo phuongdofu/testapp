@@ -87,8 +87,7 @@ def GroupwareExecution(**domain_config):
             clouddisk_file = CloudDiskExecution(domain_name)
             Logs.UpdateSuccess_ColectMenu("CloudDisk")
         except (WebDriverException, TimeoutException) as error:
-            # pass
-            clouddisk_file = None
+            pass
     
     if Logs.Value_CollectMenu(menu_dict["Circular"], 2):
         try:
@@ -169,8 +168,10 @@ def GroupwareExecution(**domain_config):
             except WebDriverException:
                 pass'''
     
-    if bool(clouddisk_file) == True:
+    try:
         os.remove(clouddisk_file)
+    except:
+        pass
                                                                                                                                                                                                                                                                                         
 def Groupware_Execution(**domain_config):
     domain_name = domain_config["domain_name"]
@@ -180,7 +181,7 @@ def Groupware_Execution(**domain_config):
     recipient_name = domain_config["recipient_name"]
 
     UserLogIn_Quick(driver, domain_name, user_id, user_pw)
-    MailExecution(domain_name)
+    #MailExecution(domain_name)
     BoardExecution()
     ContactExecution(domain_name)
     diary_data = TaskWorkDiaryExecution(domain_name)
@@ -196,7 +197,7 @@ def Groupware_Execution(**domain_config):
     ResourceReservationExecution(domain_name)
     time.sleep(1)
     approval_data = Approval_Execution(domain_name, recipient_id)
-    #WhisperExecution_Driver1(domain_name, user_id)
+    WhisperExecution_Driver1(domain_name, user_id)
     
     # archive_list = [diary_data, report_data, approval_data]
     # for archive_dict in archive_list:
@@ -207,8 +208,10 @@ def Groupware_Execution(**domain_config):
     #         document_name=archive_dict["archived_name"]
     #     )
 
-    if clouddisk_file:
+    try:
         os.remove(clouddisk_file)
+    except:
+        pass
 
 def RunMainFeatures(**domain_config):
     global driver
@@ -238,5 +241,6 @@ def RunMainFeatures(**domain_config):
 def Postmaster():
     import menu.hanbiro_postmaster as postmaster
 
-    postmaster.NewOrganization_Execution("https://tg01.hanbiro.net/ngw/app/#", "6y<i=A@x53IIOAc")
-    # postmaster.NewOrganization_Execution("http://qavn.hanbiro.net/ngw/app/#", "$Bhngk6@")
+    postmaster.NewOrganization_Execution("https://tg01.hanbiro.net/ngw/app/#", "pm@pfV6J8$uG@Ho")
+    #postmaster.NewOrganization_Execution("http://qavn.hanbiro.net/ngw/app/#", "$Bhngk6@")
+    

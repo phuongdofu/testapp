@@ -1,8 +1,6 @@
-from openpyxl import load_workbook
-
-wb = load_workbook("D:\\PhuongDofu\\groupware-auto-test-2\\Attachment\\testcase_log_result.xlsx")
-ws = wb.active
-
-last_row = ws.max_row
-
-print(last_row)
+testplan_name = "Test App"
+file = "Test App_result_221214141157.xlsx"
+if not file.startswith(testplan_name):
+    print("not")
+else:
+    print("yes")
